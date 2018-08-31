@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>GlitchedPolygons.Services.CompressionUtility</PackageId>
+    <Product>GlitchedPolygons.Services.CompressionUtility</Product>
+    <Company>GlitchedPolygons</Company>
+    <Authors>GlitchedPolygons</Authors>
+  </PropertyGroup>
+
+</Project>
