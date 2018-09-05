@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/GlitchedPolygons/CompressionUtility/tree/master.svg?style=shield)](https://circleci.com/gh/GlitchedPolygons/CompressionUtility/tree/master) [![Build Status](https://travis-ci.org/GlitchedPolygons/CompressionUtility.svg?branch=master)](https://travis-ci.org/GlitchedPolygons/CompressionUtility)
+[![NuGet](https://img.shields.io/nuget/v/GlitchedPolygons.Services.CompressionUtility.svg)](https://www.nuget.org/packages/JWT) [![CircleCI](https://circleci.com/gh/GlitchedPolygons/CompressionUtility/tree/master.svg?style=shield)](https://circleci.com/gh/GlitchedPolygons/CompressionUtility/tree/master) [![Build Status](https://travis-ci.org/GlitchedPolygons/CompressionUtility.svg?branch=master)](https://travis-ci.org/GlitchedPolygons/CompressionUtility)
 
 # Compression Utility
 
