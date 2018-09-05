@@ -1,0 +1,16 @@
+
+language: csharp
+sudo: false
+solution: ./CompressionUtility.sln
+dist: trusty
+notifications:
+  email: false
+install:
+  - dotnet restore ./CompressionUtility.sln
+mono: none
+dotnet: 2.1.300
+script:
+  - dotnet restore ./CompressionUtility.sln
+  - cd UnitTests/
+  - dotnet test
+  
