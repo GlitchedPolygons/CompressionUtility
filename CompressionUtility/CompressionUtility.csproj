@@ -13,13 +13,13 @@
 Can be used in ASP.NET Core using the included dependency injection container (under Startup.cs call services.AddTransient and register the compression utility service there).</Description>
     <PackageIconUrl>https://cdn3.iconfinder.com/data/icons/musthave/256/Archive.png</PackageIconUrl>
     <PackageProjectUrl>https://github.com/GlitchedPolygons/CompressionUtility</PackageProjectUrl>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <AssemblyName>GlitchedPolygons.Services.CompressionUtility</AssemblyName>
     <RootNamespace>GlitchedPolygons.Services.CompressionUtility</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\Release\netstandard2.0\CompressionUtility.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\netstandard2.0\GlitchedPolygons.Services.CompressionUtility.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

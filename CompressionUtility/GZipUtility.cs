@@ -5,6 +5,11 @@ using System.IO.Compression;
 
 namespace GlitchedPolygons.Services.CompressionUtility
 {
+    /// <summary>
+    /// Compression utility class for gzipping data.
+    /// Implements the <see cref="GlitchedPolygons.Services.CompressionUtility.ICompressionUtility" /> interface.
+    /// </summary>
+    /// <seealso cref="GlitchedPolygons.Services.CompressionUtility.ICompressionUtility" />
     public class GZipUtility : ICompressionUtility
     {
         /// <summary>
