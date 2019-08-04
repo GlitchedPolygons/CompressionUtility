@@ -23,7 +23,7 @@ Can be used in ASP.NET Core using the included dependency injection container (u
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>C:\git\glitched-polygons\nuget\CompressionUtility\CompressionUtility\GlitchedPolygons.Services.CompressionUtility.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\netstandard2.0\GlitchedPolygons.Services.CompressionUtility.xml</DocumentationFile>
   </PropertyGroup>
 
 </Project>
