@@ -6,11 +6,8 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Greeting
-          command: echo Hello, world.
-      - run:
           name: dotnet restore
           command: dotnet restore
       - run:
           name: Run xunit tests
-          command: dotnet test UnitTests/UnitTests.csproj
+          command: dotnet test CompressionUtility.Tests/CompressionUtility.Tests.csproj

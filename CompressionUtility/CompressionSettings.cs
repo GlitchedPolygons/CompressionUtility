@@ -8,14 +8,13 @@ namespace GlitchedPolygons.Services.CompressionUtility
     public class CompressionSettings
     {
         /// <summary>
-        /// The size of the underlying stream buffer.<para> </para>
-        /// Try to give a rough estimate of how many bytes you'll need...
+        /// The size of the underlying stream buffer. Default value is <c>65536</c><para> </para>
         /// </summary>
-        public int BufferSize { get; set; } = 4096;
+        public int BufferSize { get; set; } = 65536;
 
         /// <summary>
         /// Choose the desired compression level.<para> </para>
-        /// The default value favors speed over maximum efficiency (<see cref="CompressionLevel.Fastest"/>).
+        /// The default value favors speed over maximum efficiency (<see cref="System.IO.Compression.CompressionLevel.Fastest"/>).
         /// </summary>
         public CompressionLevel CompressionLevel { get; set; } = CompressionLevel.Fastest;
     }

@@ -1,9 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
 
     <IsPackable>false</IsPackable>
+
+    <RootNamespace>GlitchedPolygons.Services.CompressionUtility.Tests</RootNamespace>
+
+    <AssemblyName>GlitchedPolygons.Services.CompressionUtility.Tests</AssemblyName>
+
+    <PackageId>GlitchedPolygons.Services.CompressionUtility.Tests</PackageId>
+
+    <Authors />
   </PropertyGroup>
 
   <ItemGroup>

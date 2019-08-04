@@ -1,6 +1,6 @@
 ﻿using System;
-using System.IO;
 using System.Text;
+using System.IO;
 using System.IO.Compression;
 
 namespace GlitchedPolygons.Services.CompressionUtility
@@ -23,7 +23,7 @@ namespace GlitchedPolygons.Services.CompressionUtility
         static readonly CompressionSettings DEFAULT_COMPRESSION_SETTINGS = new CompressionSettings();
 
         /// <summary>
-        /// Empty byte array for handling certain edge cases/failures
+        /// Empty <c>byte[]</c> array for handling certain edge cases/failures
         /// (e.g. compressing an empty array will result in an empty array).
         /// </summary>
         static readonly byte[] EMPTY_BYTE_ARRAY = new byte[0];

@@ -2,24 +2,23 @@ using System;
 using System.IO;
 using Xunit;
 
-namespace GlitchedPolygons.Services.CompressionUtility.UnitTests
+namespace GlitchedPolygons.Services.CompressionUtility.Tests
 {
     public class GZipUtilityTests
     {
-        ICompressionUtility GZip { get; }
-        CompressionSettings CompressionSettings { get; }
+        private readonly ICompressionUtility gzip;
+        private static readonly CompressionSettings COMPRESSION_SETTINGS= new CompressionSettings();
 
         public GZipUtilityTests()
         {
-            GZip = new GZipUtility();
-            CompressionSettings = new CompressionSettings();
+            gzip = new GZipUtility();
         }
 
         [Fact]
         public void GZip_CompressEmptyArray_ReturnsEmptyArray()
         {
             byte[] empty = new byte[0];
-            byte[] result = GZip.Compress(empty, CompressionSettings);
+            byte[] result = gzip.Compress(empty, COMPRESSION_SETTINGS);
             Assert.Empty(result);
         }
 
@@ -27,21 +26,21 @@ namespace GlitchedPolygons.Services.CompressionUtility.UnitTests
         public void GZip_DecompressEmptyArray_ReturnsEmptyArray()
         {
             byte[] empty = new byte[0];
-            byte[] result = GZip.Decompress(empty, CompressionSettings);
+            byte[] result = gzip.Decompress(empty, COMPRESSION_SETTINGS);
             Assert.Empty(result);
         }
 
         [Fact]
         public void GZip_CompressNullArray_ReturnsNull()
         {
-            byte[] result = GZip.Compress(null, CompressionSettings);
+            byte[] result = gzip.Compress(null, COMPRESSION_SETTINGS);
             Assert.Null(result);
         }
 
         [Fact]
         public void GZip_DecompressNullArray_ReturnsNull()
         {
-            byte[] result = GZip.Decompress(null, CompressionSettings);
+            byte[] result = gzip.Decompress(null, COMPRESSION_SETTINGS);
             Assert.Null(result);
         }
 
@@ -54,7 +53,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.UnitTests
                 data[i] = (byte)(new Random().NextDouble() > 0.5d ? 5 : 75);
             }
 
-            byte[] result = GZip.Compress(data, new CompressionSettings { BufferSize = 1024 });
+            byte[] result = gzip.Compress(data, new CompressionSettings { BufferSize = 1024 });
             Assert.True(result.Length < data.Length);
         }
 
@@ -62,7 +61,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.UnitTests
         public void GZip_CompressLongString_ReturnsSmallerString()
         {
             const string STRING = "mcvlmoqepoir4298DMKEKNKNEInofndogoidnoigorenoigniofoienoign983874389759835978465798469kdnfndiiudjfbniuigorenoigniofoienoign983874389759835978465798469kdnfndiiudjfbniuigorenoigniofoienoign983874389759835978465798469kdnfndiiudjfbniuigorenoigniofoienoign983874389759835978465798469kdnfndiiudjfbniuigorenoigniofoienoign983874389759835978465798469kdnfndiiudjfbniuigorenoigniofoienoign983874389759835978465798469kdnfndiiudjfbniuebujfneufsbunskjdfkje";
-            string compressed = GZip.Compress(STRING);
+            string compressed = gzip.Compress(STRING);
             Assert.True(compressed.Length < STRING.Length);
         }
 
@@ -77,8 +76,8 @@ namespace GlitchedPolygons.Services.CompressionUtility.UnitTests
 
             var compressionSettings = new CompressionSettings { BufferSize = 1024 };
 
-            byte[] compressed = GZip.Compress(data, compressionSettings);
-            byte[] decompressed = GZip.Decompress(compressed, compressionSettings);
+            byte[] compressed = gzip.Compress(data, compressionSettings);
+            byte[] decompressed = gzip.Decompress(compressed, compressionSettings);
 
             Assert.Equal(data, decompressed);
         }
@@ -87,8 +86,8 @@ namespace GlitchedPolygons.Services.CompressionUtility.UnitTests
         public void GZip_DecompressCompressedString_ReturnsOriginalString()
         {
             const string STRING = "mcvlmoqepoir4298DMKfgfgdKNEInofndogoidnoigorenoigniofoienoign983874389759835978465798469kdnfndiiudjfbniuigorenoigniofoienoign983874389759835978465798469kdnfndiiudjfbniuigorenoigniofoienoign983874389759835978465798469kdnfndiiudjfbniuigorenoigniofoienoign983874389759835978465798469kdnfndiiudjfbniuigorenoigniofoienoign983874389759835978465798469kdnfndiiudjfbniuigorenoigniofoienoign983874389759835978465798469kdnfndiiudjfbniuebujfneufsbunskjdfkje";
-            string compressed = GZip.Compress(STRING);
-            Assert.Equal(STRING, GZip.Decompress(compressed));
+            string compressed = gzip.Compress(STRING);
+            Assert.Equal(STRING, gzip.Decompress(compressed));
         }
 
         [Fact]
@@ -100,7 +99,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.UnitTests
                 data[i] = (byte)(new Random().NextDouble() > 0.5d ? 5 : 75);
             }
             
-            Assert.Throws<InvalidDataException>(() => GZip.Decompress(data, CompressionSettings));
+            Assert.Throws<InvalidDataException>(() => gzip.Decompress(data, COMPRESSION_SETTINGS));
         }
     }
 }
