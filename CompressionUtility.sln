@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2016
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompressionUtility", "CompressionUtility\CompressionUtility.csproj", "{3F91AAC9-ECC2-474F-98FD-69B38863E454}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompressionUtility", "src\CompressionUtility.csproj", "{3F91AAC9-ECC2-474F-98FD-69B38863E454}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompressionUtility.Tests", "CompressionUtility.Tests\CompressionUtility.Tests.csproj", "{7B5E2277-6426-4C20-8D90-86650EA0CE85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompressionUtility.Tests", "tests\CompressionUtility.Tests.csproj", "{7B5E2277-6426-4C20-8D90-86650EA0CE85}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

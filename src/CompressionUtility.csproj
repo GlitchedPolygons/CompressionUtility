@@ -15,7 +15,7 @@
         </Description>
         <PackageIconUrl>https://media.githubusercontent.com/media/GlitchedPolygons/NugetIcons/962bb6f229925043eba426bc884af379321ad79a/archive.png</PackageIconUrl>
         <PackageProjectUrl>https://github.com/GlitchedPolygons/CompressionUtility</PackageProjectUrl>
-        <PackageVersion>1.0.4</PackageVersion>
+        <PackageVersion>1.1.0</PackageVersion>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
         <AssemblyName>GlitchedPolygons.Services.CompressionUtility</AssemblyName>

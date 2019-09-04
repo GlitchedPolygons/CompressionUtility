@@ -68,6 +68,8 @@ namespace GlitchedPolygons.Services.CompressionUtility
 
             return compressedBytes;
         }
+        
+        
 
         /// <summary>
         /// Compresses ("gee-zips") the specified <c>string</c> using <see cref="GZipStream"/> and default <see cref="CompressionSettings"/>.

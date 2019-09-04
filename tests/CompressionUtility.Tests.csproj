@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CompressionUtility\CompressionUtility.csproj" />
+    <ProjectReference Include="..\src\CompressionUtility.csproj" />
   </ItemGroup>
 
 </Project>

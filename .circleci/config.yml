@@ -10,4 +10,4 @@ jobs:
           command: dotnet restore
       - run:
           name: Run xunit tests
-          command: dotnet test CompressionUtility.Tests/CompressionUtility.Tests.csproj
+          command: cd tests && dotnet test
