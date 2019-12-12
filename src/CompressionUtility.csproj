@@ -11,8 +11,8 @@
         <RepositoryUrl>https://github.com/GlitchedPolygons/CompressionUtility</RepositoryUrl>
         <PackageTags>zip gzip compression decompression c# asp.net core netstandard2.0 class library interface service</PackageTags>
         <Description>Useful compression utility for easily and quickly (de)compressing strings and byte[] arrays.
-            Can be used in ASP.NET Core using the included dependency injection container (under Startup.cs call services.AddTransient and register the compression utility service there).
-        </Description>
+Can be used in ASP.NET Core using the included dependency injection container (under Startup.cs call services.AddTransient and register the compression utility service there).
+</Description>
         <PackageIconUrl>https://media.githubusercontent.com/media/GlitchedPolygons/NugetIcons/962bb6f229925043eba426bc884af379321ad79a/archive.png</PackageIconUrl>
         <PackageProjectUrl>https://github.com/GlitchedPolygons/CompressionUtility</PackageProjectUrl>
         <PackageVersion>1.1.0</PackageVersion>
@@ -20,6 +20,7 @@
         <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
         <AssemblyName>GlitchedPolygons.Services.CompressionUtility</AssemblyName>
         <RootNamespace>GlitchedPolygons.Services.CompressionUtility</RootNamespace>
+        <Version>1.1.0</Version>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -29,5 +30,9 @@
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
         <DocumentationFile>bin\Debug\netstandard2.0\GlitchedPolygons.Services.CompressionUtility.xml</DocumentationFile>
     </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Brotli.NET" Version="2.0.4.2" />
+    </ItemGroup>
 
 </Project>

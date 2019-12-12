@@ -1,4 +1,6 @@
-﻿namespace GlitchedPolygons.Services.CompressionUtility
+﻿using System.IO;
+
+namespace GlitchedPolygons.Services.CompressionUtility
 {
     /// <summary>
     /// Useful utility interface for quickly and easily compress/decompress data.
@@ -27,6 +29,7 @@
         /// <param name="compressedBytes">The compressed <c>byte[]</c> array that you want to decompress.</param>
         /// <param name="compressionSettings">The <see cref="CompressionSettings"/> that have been used to compress the bytes.</param>
         /// <returns>The decompressed <c>bytes[]</c>.</returns>
+        /// <exception cref="InvalidDataException">Thrown when the passed bytes are invalid in any way (e.g. corrupt/incomplete data, wrong format, etc...).</exception>
         byte[] Decompress(byte[] compressedBytes, CompressionSettings compressionSettings);
 
         /// <summary>
