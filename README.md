@@ -9,8 +9,9 @@ This library is built as a **netstandard2.0** class library and available throug
 
 ### Implementations
 
-* Currently, only a GZip implementation exists (making use of [`GZipStream`](https://docs.microsoft.com/en-us/dotnet/api/system.io.compression.gzipstream)). But more can be added in the future by implementing the `ICompressionUtility` interface.
+* Currently, only a GZip implementation (making use of [`GZipStream`](https://docs.microsoft.com/en-us/dotnet/api/system.io.compression.gzipstream)) as well as a [Brotli](https://github.com/google/brotli) variant exist. But more can be added in the future by implementing the [`ICompressionUtility`](https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/ICompressionUtility.cs) interface.
 
 ## Dependencies
 
+* [Brotli.NET](https://www.nuget.org/packages/Brotli.NET)
 * xunit NuGet packages (for unit testing only).
