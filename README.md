@@ -9,7 +9,7 @@ This library is built as a **netstandard2.0** class library and available throug
 
 ### Implementations
 
-* Currently, only a GZip implementation (making use of [`GZipStream`](https://docs.microsoft.com/en-us/dotnet/api/system.io.compression.gzipstream)) as well as a [Brotli](https://github.com/google/brotli) variant exist. But more can be added in the future by implementing the [`ICompressionUtility`](https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/ICompressionUtility.cs) interface.
+* Currently, there are a few compression implementations available such as [GZip](http://gzip.org/) (making use of [`GZipStream`](https://docs.microsoft.com/en-us/dotnet/api/system.io.compression.gzipstream)), a [Brotli](https://github.com/google/brotli) implementation as well as [LZMA](https://www.7-zip.org/sdk.html) (uses the managed C# API). But more can be added in the future by implementing the [`ICompressionUtility`](https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/ICompressionUtility.cs) interface.
 
 ## Dependencies
 
