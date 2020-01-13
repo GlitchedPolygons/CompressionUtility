@@ -177,7 +177,7 @@ namespace GlitchedPolygons.Services.CompressionUtility
                 byte[] props = new byte[5];
                 if (inBytes.Read(props, 0, 5) != 5)
                 {
-                    throw new InvalidDataException($"{nameof(LzmaUtility)}: input LZMA data is too short. Returning null...");
+                    throw new InvalidDataException($"{nameof(LzmaUtility)}: input .lzma data is too short. Returning null...");
                 }
 
                 long outSize = 0;

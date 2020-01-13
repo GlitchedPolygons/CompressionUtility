@@ -17,6 +17,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.Tests
 
         [Theory]
         [InlineData(typeof(GZipUtilityAsync))]
+        [InlineData(typeof(LzmaUtilityAsync))]
         [InlineData(typeof(BrotliUtilityAsync))]
         public async Task AsyncImpl_CompressEmptyArray_ReturnsEmptyArray(Type type)
         {
@@ -27,6 +28,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.Tests
 
         [Theory]
         [InlineData(typeof(GZipUtilityAsync))]
+        [InlineData(typeof(LzmaUtilityAsync))]
         [InlineData(typeof(BrotliUtilityAsync))]
         public async Task AsyncImpl_DecompressEmptyArray_ReturnsEmptyArray(Type type)
         {
@@ -37,6 +39,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.Tests
 
         [Theory]
         [InlineData(typeof(GZipUtilityAsync))]
+        [InlineData(typeof(LzmaUtilityAsync))]
         [InlineData(typeof(BrotliUtilityAsync))]
         public async Task AsyncImpl_CompressNullArray_ReturnsNull(Type type)
         {
@@ -46,6 +49,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.Tests
 
         [Theory]
         [InlineData(typeof(GZipUtilityAsync))]
+        [InlineData(typeof(LzmaUtilityAsync))]
         [InlineData(typeof(BrotliUtilityAsync))]
         public async Task AsyncImpl_DecompressNullArray_ReturnsNull(Type type)
         {
@@ -55,6 +59,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.Tests
 
         [Theory]
         [InlineData(typeof(GZipUtilityAsync))]
+        [InlineData(typeof(LzmaUtilityAsync))]
         [InlineData(typeof(BrotliUtilityAsync))]
         public async Task AsyncImpl_Compress5MB_ResultSmallerThanOriginal(Type type)
         {
@@ -70,6 +75,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.Tests
 
         [Theory]
         [InlineData(typeof(GZipUtilityAsync))]
+        [InlineData(typeof(LzmaUtilityAsync))]
         [InlineData(typeof(BrotliUtilityAsync))]
         public async Task AsyncImpl_CompressLongString_ReturnsSmallerString(Type type)
         {
@@ -80,6 +86,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.Tests
 
         [Theory]
         [InlineData(typeof(GZipUtilityAsync))]
+        [InlineData(typeof(LzmaUtilityAsync))]
         [InlineData(typeof(BrotliUtilityAsync))]
         public async Task AsyncImpl_CompressDataAndThenDecompress_ResultIdenticalData(Type type)
         {
@@ -99,6 +106,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.Tests
 
         [Theory]
         [InlineData(typeof(GZipUtilityAsync))]
+        [InlineData(typeof(LzmaUtilityAsync))]
         [InlineData(typeof(BrotliUtilityAsync))]
         public async Task AsyncImpl_DecompressCompressedString_ReturnsOriginalString(Type type)
         {
@@ -109,6 +117,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.Tests
 
         [Theory]
         [InlineData(typeof(GZipUtilityAsync))]
+        [InlineData(typeof(LzmaUtilityAsync))]
         [InlineData(typeof(BrotliUtilityAsync))]
         public async Task AsyncImpl_DecompressNonCompressedArray_ThrowsIOException(Type type)
         {
