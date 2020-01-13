@@ -2,8 +2,8 @@
 using System.IO;
 using System.Text;
 using System.IO.Compression;
+
 using SevenZip;
-using SevenZip.Compression.LZMA;
 
 namespace GlitchedPolygons.Services.CompressionUtility
 {
@@ -58,7 +58,7 @@ namespace GlitchedPolygons.Services.CompressionUtility
         };
 
         static object[] propertiesOptimal =
-       {
+        {
             (System.Int32)1 << 25, // 32MB
             (System.Int32)(2),
             (System.Int32)(3),
