@@ -16,6 +16,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.Tests
 
         [Theory]
         [InlineData(typeof(GZipUtility))]
+        [InlineData(typeof(LzmaUtility))]
         [InlineData(typeof(BrotliUtility))]
         public void SyncImpl_CompressEmptyArray_ReturnsEmptyArray(Type type)
         {
@@ -28,6 +29,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.Tests
 
         [Theory]
         [InlineData(typeof(GZipUtility))]
+        [InlineData(typeof(LzmaUtility))]
         [InlineData(typeof(BrotliUtility))]
         public void SyncImpl_DecompressEmptyArray_ReturnsEmptyArray(Type type)
         {
@@ -39,6 +41,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.Tests
         }
 
         [Theory]
+        [InlineData(typeof(LzmaUtility))]
         [InlineData(typeof(GZipUtility))]
         [InlineData(typeof(BrotliUtility))]
         public void SyncImpl_CompressNullArray_ReturnsNull(Type type)
@@ -50,6 +53,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.Tests
         }
 
         [Theory]
+        [InlineData(typeof(LzmaUtility))]
         [InlineData(typeof(GZipUtility))]
         [InlineData(typeof(BrotliUtility))]
         public void SyncImpl_DecompressNullArray_ReturnsNull(Type type)
@@ -61,6 +65,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.Tests
         }
 
         [Theory]
+        [InlineData(typeof(LzmaUtility))]
         [InlineData(typeof(GZipUtility))]
         [InlineData(typeof(BrotliUtility))]
         public void SyncImpl_Compress5MB_ResultSmallerThanOriginal(Type type)
@@ -78,6 +83,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.Tests
         }
 
         [Theory]
+        [InlineData(typeof(LzmaUtility))]
         [InlineData(typeof(GZipUtility))]
         [InlineData(typeof(BrotliUtility))]
         public void SyncImpl_CompressLongString_ReturnsSmallerString(Type type)
@@ -90,6 +96,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.Tests
         }
 
         [Theory]
+        [InlineData(typeof(LzmaUtility))]
         [InlineData(typeof(GZipUtility))]
         [InlineData(typeof(BrotliUtility))]
         public void SyncImpl_CompressDataAndThenDecompress_ResultIdenticalData(Type type)
@@ -111,6 +118,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.Tests
         }
 
         [Theory]
+        [InlineData(typeof(LzmaUtility))]
         [InlineData(typeof(GZipUtility))]
         [InlineData(typeof(BrotliUtility))]
         public void SyncImpl_DecompressCompressedString_ReturnsOriginalString(Type type)
@@ -123,6 +131,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.Tests
         }
 
         [Theory]
+        [InlineData(typeof(LzmaUtility))]
         [InlineData(typeof(GZipUtility))]
         [InlineData(typeof(BrotliUtility))]
         public void SyncImpl_DecompressNonCompressedArray_ThrowsIOException(Type type)

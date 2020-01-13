@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 namespace GlitchedPolygons.Services.CompressionUtility
 {
     /// <summary>
-    /// Useful utility interface for quickly and easily compress/decompress data asynchronously.
+    /// Useful utility interface for quickly and easily compress/decompress data using async/await.
     /// </summary>
     public interface ICompressionUtilityAsync
     {

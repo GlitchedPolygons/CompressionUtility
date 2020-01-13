@@ -40,7 +40,7 @@ namespace GlitchedPolygons.Services.CompressionUtility
             if (ReferenceEquals(bytes, null))
             {
 #if UNITY_EDITOR
-                Debug.LogError($"{nameof(GZipUtility)}: You tried to compress a null array; returning null...");
+                Debug.LogError($"{nameof(GZipUtilityAsync)}: You tried to compress a null array; returning null...");
 #endif
                 return null;
             }
@@ -48,7 +48,7 @@ namespace GlitchedPolygons.Services.CompressionUtility
             if (bytes.Length == 0)
             {
 #if UNITY_EDITOR
-                Debug.LogWarning($"{nameof(GZipUtility)}: You tried to compress an empty array; the resulting array will also be empty!");
+                Debug.LogWarning($"{nameof(GZipUtilityAsync)}: You tried to compress an empty array; the resulting array will also be empty!");
 #endif
                 return EMPTY_BYTE_ARRAY;
             }
@@ -92,7 +92,7 @@ namespace GlitchedPolygons.Services.CompressionUtility
             if (ReferenceEquals(gzippedBytes, null))
             {
 #if UNITY_EDITOR
-                Debug.LogError($"{nameof(GZipUtility)}: You tried to decompress a null array; returning null...");
+                Debug.LogError($"{nameof(GZipUtilityAsync)}: You tried to decompress a null array; returning null...");
 #endif
                 return null;
             }
@@ -100,7 +100,7 @@ namespace GlitchedPolygons.Services.CompressionUtility
             if (gzippedBytes.Length == 0)
             {
 #if UNITY_EDITOR
-                Debug.LogWarning($"{nameof(GZipUtility)}: You tried to decompress an empty array; the resulting array will also be empty!");
+                Debug.LogWarning($"{nameof(GZipUtilityAsync)}: You tried to decompress an empty array; the resulting array will also be empty!");
 #endif
                 return EMPTY_BYTE_ARRAY;
             }
