@@ -1,0 +1,14 @@
+version: 2.0.{build}
+image: Visual Studio 2019
+environment:
+  DOTNET_CLI_TELEMETRY_OPTOUT: 1
+before_build:
+- nuget restore
+- choco install codecov
+configuration: 
+- Debug
+build_script:
+- cd src && dotnet build && cd ..
+test_script:
+- cd tests && dotnet build && dotnet add package Appveyor.TestLogger --version 2.0.0 && dotnet restore && dotnet test /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov --test-adapter-path:. --logger:Appveyor
+- codecov -f "TestResults\coverage.info"
