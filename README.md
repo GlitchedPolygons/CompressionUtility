@@ -1,6 +1,7 @@
 [![NuGet](https://img.shields.io/nuget/v/GlitchedPolygons.Services.CompressionUtility.svg)](https://www.nuget.org/packages/GlitchedPolygons.Services.CompressionUtility) 
 [![CircleCI](https://circleci.com/gh/GlitchedPolygons/CompressionUtility/tree/master.svg?style=shield)](https://circleci.com/gh/GlitchedPolygons/CompressionUtility/tree/master) 
 [![Travis](https://travis-ci.org/GlitchedPolygons/CompressionUtility.svg?branch=master)](https://travis-ci.org/GlitchedPolygons/CompressionUtility)
+[![Build status](https://ci.appveyor.com/api/projects/status/kf50jywtff4kcpwd?svg=true)](https://ci.appveyor.com/project/GlitchedPolygons/compressionutility)
 [![Codecov](https://codecov.io/gh/GlitchedPolygons/CompressionUtility/branch/master/graph/badge.svg)](https://codecov.io/gh/GlitchedPolygons/CompressionUtility)
 
 # Compression Utility
