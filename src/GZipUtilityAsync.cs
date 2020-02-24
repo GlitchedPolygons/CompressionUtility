@@ -1,8 +1,8 @@
 ﻿using System;
-using System.Text;
 using System.IO;
 using System.IO.Compression;
 using System.Threading.Tasks;
+using System.Text;
 
 namespace GlitchedPolygons.Services.CompressionUtility
 {
@@ -61,7 +61,7 @@ namespace GlitchedPolygons.Services.CompressionUtility
                 {
                     using (var gzip = new GZipStream(compressedStream, compressionSettings?.CompressionLevel ?? DEFAULT_COMPRESSION_SETTINGS.CompressionLevel))
                     {
-                        await originalStream.CopyToAsync(gzip, compressionSettings?.BufferSize ?? DEFAULT_COMPRESSION_SETTINGS.BufferSize);
+                        await originalStream.CopyToAsync(gzip, compressionSettings?.BufferSize ?? DEFAULT_COMPRESSION_SETTINGS.BufferSize).ConfigureAwait(false);
                     }
                 }
                 compressedBytes = compressedStream.ToArray();
@@ -77,7 +77,7 @@ namespace GlitchedPolygons.Services.CompressionUtility
         /// <returns>The gzipped <c>string</c>.</returns>
         public async Task<string> Compress(string text)
         {
-            return Convert.ToBase64String(await Compress(DEFAULT_ENCODING.GetBytes(text), DEFAULT_COMPRESSION_SETTINGS));
+            return Convert.ToBase64String(await Compress(DEFAULT_ENCODING.GetBytes(text), DEFAULT_COMPRESSION_SETTINGS).ConfigureAwait(false));
         }
 
         /// <summary>
@@ -111,7 +111,7 @@ namespace GlitchedPolygons.Services.CompressionUtility
                 {
                     using (GZipStream gzip = new GZipStream(compressedStream, CompressionMode.Decompress))
                     {
-                        await gzip.CopyToAsync(decompressedStream, compressionSettings?.BufferSize ?? DEFAULT_COMPRESSION_SETTINGS.BufferSize);
+                        await gzip.CopyToAsync(decompressedStream, compressionSettings?.BufferSize ?? DEFAULT_COMPRESSION_SETTINGS.BufferSize).ConfigureAwait(false);
                     }
                 }
 
@@ -126,7 +126,7 @@ namespace GlitchedPolygons.Services.CompressionUtility
         /// <returns>The decompressed <c>string</c></returns>.
         public async Task<string> Decompress(string gzippedString)
         {
-            return DEFAULT_ENCODING.GetString(await Decompress(Convert.FromBase64String(gzippedString), DEFAULT_COMPRESSION_SETTINGS));
+            return DEFAULT_ENCODING.GetString(await Decompress(Convert.FromBase64String(gzippedString), DEFAULT_COMPRESSION_SETTINGS).ConfigureAwait(false));
         }
     }
 }

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 namespace GlitchedPolygons.Services.CompressionUtility
 {
     /// <summary>
-    /// Compression utility class for LZMAing data using async/await. Uses <c>Task.Run</c> to run the synchronous variant:
+    /// Compression utility class for LZMAing data using async/await. Uses <c>Task.Run</c> to call the synchronous LZMA SDK:
     /// compression is usually a high-latency, CPU bound op; that's why this deserves a dedicated thread via <c>Task.Run</c>
     /// Implements the <see cref="GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync" /> interface.
     /// </summary>
@@ -15,17 +15,17 @@ namespace GlitchedPolygons.Services.CompressionUtility
         /// <summary>
         /// Synchronous LZMA utility instance.
         /// </summary>
-        static readonly LzmaUtility lzma = new LzmaUtility();
+        private readonly LzmaUtility lzma = new LzmaUtility();
 
         /// <summary>
         /// The default <see cref="Encoding"/> to use for compressing/decompressing strings.
         /// </summary>
-        static readonly Encoding DEFAULT_ENCODING = Encoding.UTF8;
+        private static readonly Encoding DEFAULT_ENCODING = Encoding.UTF8;
 
         /// <summary>
         /// Default <see cref="CompressionSettings"/> to use for compressing/decompressing strings.
         /// </summary>
-        static readonly CompressionSettings DEFAULT_COMPRESSION_SETTINGS = new CompressionSettings();
+        private static readonly CompressionSettings DEFAULT_COMPRESSION_SETTINGS = new CompressionSettings();
 
         /// <summary>
         /// Compresses the specified bytes using LZMA.
@@ -43,9 +43,10 @@ namespace GlitchedPolygons.Services.CompressionUtility
         /// </summary>
         /// <param name="text">The <c>string</c> to compress.</param>
         /// <returns>The compressed <c>string</c>.</returns>
-        public Task<string> Compress(string text)
+        public async Task<string> Compress(string text)
         {
-            return Task.Run(async () => Convert.ToBase64String(await Compress(DEFAULT_ENCODING.GetBytes(text), DEFAULT_COMPRESSION_SETTINGS)));
+            byte[] compressedBytes = await Compress(DEFAULT_ENCODING.GetBytes(text), DEFAULT_COMPRESSION_SETTINGS).ConfigureAwait(false);
+            return Convert.ToBase64String(compressedBytes);
         }
 
         /// <summary>
@@ -54,7 +55,7 @@ namespace GlitchedPolygons.Services.CompressionUtility
         /// </summary>
         /// <param name="compressedBytes">The compressed <c>byte[]</c> array that you want to decompress.</param>
         /// <param name="compressionSettings">The <see cref="CompressionSettings"/> that have been used to compress the bytes.</param>
-        /// <returns>The decompressed <c>bytes[]</c>; <c>null</c> if decompression failed.</returns>
+        /// <returns>The decompressed <c>bytes[]</c>.</returns>
         public Task<byte[]> Decompress(byte[] compressedBytes, CompressionSettings compressionSettings)
         {
             return Task.Run(() => lzma.Decompress(compressedBytes, compressionSettings));
@@ -65,9 +66,10 @@ namespace GlitchedPolygons.Services.CompressionUtility
         /// </summary>
         /// <param name="compressedString">The compressed <c>string</c> to decompress.</param>
         /// <returns>The decompressed <c>string</c></returns>.
-        public Task<string> Decompress(string compressedString)
+        public async Task<string> Decompress(string compressedString)
         {
-            return Task.Run(async () => DEFAULT_ENCODING.GetString(await Decompress(Convert.FromBase64String(compressedString), DEFAULT_COMPRESSION_SETTINGS)));
+            byte[] decompressedBytes = await Decompress(Convert.FromBase64String(compressedString), DEFAULT_COMPRESSION_SETTINGS).ConfigureAwait(false);
+            return DEFAULT_ENCODING.GetString(decompressedBytes);
         }
     }
 }

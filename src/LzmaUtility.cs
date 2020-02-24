@@ -93,8 +93,8 @@ namespace GlitchedPolygons.Services.CompressionUtility
                 return EMPTY_BYTE_ARRAY;
             }
 
-            byte[] compressedBytes = null;
-
+            byte[] compressedBytes;
+            
             var encoder = new Encoder();
             encoder.SetCoderProperties(propIDs, compressionSettings.CompressionLevel == CompressionLevel.Optimal ? propertiesOptimal : propertiesNormal);
 
@@ -114,11 +114,12 @@ namespace GlitchedPolygons.Services.CompressionUtility
                 encoder.Code(inBytes, outBytes, -1, -1, null);
                 compressedBytes = outBytes.ToArray();
             }
-            catch (Exception e)
+            catch
             {
 #if UNITY_EDITOR
                 Debug.LogWarning($"{nameof(LzmaUtility)}: Compression failed; thrown exception: {e.ToString()}");
 #endif
+                compressedBytes = null;
             }
             finally
             {
@@ -145,7 +146,7 @@ namespace GlitchedPolygons.Services.CompressionUtility
         /// </summary>
         /// <param name="compressedBytes">The compressed <c>byte[]</c> array that you want to decompress.</param>
         /// <param name="compressionSettings">The <see cref="CompressionSettings"/> that have been used to compress the bytes.</param>
-        /// <returns>The decompressed <c>bytes[]</c>; <c>null</c> if decompression failed.</returns>
+        /// <returns>The decompressed <c>bytes[]</c>.</returns>
         public byte[] Decompress(byte[] compressedBytes, CompressionSettings compressionSettings)
         {
             if (ReferenceEquals(compressedBytes, null))
@@ -163,10 +164,10 @@ namespace GlitchedPolygons.Services.CompressionUtility
 #endif
                 return EMPTY_BYTE_ARRAY;
             }
-
+            
+            byte[] decompressedBytes;
             var decoder = new Decoder();
-            byte[] decompressedBytes = null;
-
+            
             MemoryStream inBytes = new MemoryStream(compressedBytes);
             MemoryStream outBytes = new MemoryStream();
 
@@ -177,7 +178,7 @@ namespace GlitchedPolygons.Services.CompressionUtility
                 byte[] props = new byte[5];
                 if (inBytes.Read(props, 0, 5) != 5)
                 {
-                    throw new InvalidDataException($"{nameof(LzmaUtility)}: input .lzma data is too short. Returning null...");
+                    throw new InvalidDataException($"{nameof(LzmaUtility)}: input LZMA data is too short. Returning null...");
                 }
 
                 long outSize = 0;

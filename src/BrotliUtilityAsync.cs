@@ -54,30 +54,31 @@ namespace GlitchedPolygons.Services.CompressionUtility
                 return EMPTY_BYTE_ARRAY;
             }
 
-            using (var outputStream = new MemoryStream())
-            using (var inputStream = new MemoryStream(bytes))
+            BrotliStream brotliStream = null;
+            var outputStream = new MemoryStream();
+            var inputStream = new MemoryStream(bytes);
+            
+            try
             {
-                BrotliStream brotliStream = null;
-                try
-                {
-                    brotliStream = new BrotliStream(outputStream, CompressionMode.Compress);
-                    brotliStream.SetQuality(11);
-                    brotliStream.SetWindow(22);
-                    await inputStream.CopyToAsync(brotliStream, compressionSettings?.BufferSize ?? DEFAULT_COMPRESSION_SETTINGS.BufferSize);
-                    brotliStream.Close();
-                    return outputStream.ToArray();
-                }
-                catch (Exception e)
-                {
+                brotliStream = new BrotliStream(outputStream, CompressionMode.Compress);
+                brotliStream.SetQuality(11);
+                brotliStream.SetWindow(22);
+                await inputStream.CopyToAsync(brotliStream, compressionSettings?.BufferSize ?? DEFAULT_COMPRESSION_SETTINGS.BufferSize).ConfigureAwait(false);
+                brotliStream.Close();
+                return outputStream.ToArray();
+            }
+            catch (Exception e)
+            {
 #if UNITY_EDITOR
                     Debug.LogError($"{nameof(BrotliUtilityAsync)}: Compression failure; thrown error message: " + e.Message);
 #endif
-                    throw e;
-                }
-                finally
-                {
-                    brotliStream?.Dispose();
-                }
+                throw e;
+            }
+            finally
+            {
+                inputStream.Dispose();
+                outputStream.Dispose();
+                brotliStream?.Dispose();
             }
         }
 
@@ -88,7 +89,7 @@ namespace GlitchedPolygons.Services.CompressionUtility
         /// <returns>The gzipped <c>string</c>.</returns>
         public async Task<string> Compress(string text)
         {
-            return Convert.ToBase64String(await Compress(DEFAULT_ENCODING.GetBytes(text), DEFAULT_COMPRESSION_SETTINGS));
+            return Convert.ToBase64String(await Compress(DEFAULT_ENCODING.GetBytes(text), DEFAULT_COMPRESSION_SETTINGS).ConfigureAwait(false));
         }
 
         /// <summary>
@@ -115,25 +116,30 @@ namespace GlitchedPolygons.Services.CompressionUtility
                 return EMPTY_BYTE_ARRAY;
             }
 
-            using (var outputStream = new MemoryStream())
-            using (var inputStream = new MemoryStream(compressedBytes))
+            BrotliStream brotliStream = null;
+            var outputStream = new MemoryStream();
+            var inputStream = new MemoryStream(compressedBytes);
+            
+            try
             {
-                BrotliStream brotliStream = null;
-                try
-                {
-                    brotliStream = new BrotliStream(inputStream, CompressionMode.Decompress);
-                    await brotliStream.CopyToAsync(outputStream, compressionSettings?.BufferSize ?? DEFAULT_COMPRESSION_SETTINGS.BufferSize);
-                    outputStream.Seek(0, SeekOrigin.Begin);
-                    return outputStream.ToArray();
-                }
-                catch (BrotliDecodeException e)
-                {
-                    throw new InvalidDataException($"{nameof(BrotliUtilityAsync)}: Decompression failure due to invalid data stream (e.g. corrupt, wrong format?). Thrown exception message: {e.Message}");
-                }
-                finally
-                {
-                    brotliStream?.Dispose();
-                }
+                brotliStream = new BrotliStream(inputStream, CompressionMode.Decompress);
+                await brotliStream.CopyToAsync(outputStream, compressionSettings?.BufferSize ?? DEFAULT_COMPRESSION_SETTINGS.BufferSize).ConfigureAwait(false);
+                outputStream.Seek(0, SeekOrigin.Begin);
+                return outputStream.ToArray();
+            }
+            catch (BrotliDecodeException e)
+            {
+                string msg = $"{nameof(BrotliUtilityAsync)}: Decompression failure due to invalid data stream (e.g. corrupt, wrong format?). Thrown exception message: {e.Message}";
+#if UNITY_EDITOR
+                Debug.LogError(msg);
+#endif
+                throw new InvalidDataException(msg);
+            }
+            finally
+            {
+                inputStream.Dispose();
+                outputStream.Dispose();
+                brotliStream?.Dispose();
             }
         }
 
@@ -144,7 +150,7 @@ namespace GlitchedPolygons.Services.CompressionUtility
         /// <returns>The decompressed <c>string</c></returns>.
         public async Task<string> Decompress(string compressedString)
         {
-            return DEFAULT_ENCODING.GetString(await Decompress(Convert.FromBase64String(compressedString), DEFAULT_COMPRESSION_SETTINGS));
+            return DEFAULT_ENCODING.GetString(await Decompress(Convert.FromBase64String(compressedString), DEFAULT_COMPRESSION_SETTINGS).ConfigureAwait(false));
         }
     }
 }

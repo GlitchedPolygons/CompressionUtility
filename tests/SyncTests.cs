@@ -134,7 +134,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.Tests
         [InlineData(typeof(LzmaUtility))]
         [InlineData(typeof(GZipUtility))]
         [InlineData(typeof(BrotliUtility))]
-        public void SyncImpl_DecompressNonCompressedArray_ThrowsIOException(Type type)
+        public void SyncImpl_DecompressNonCompressedArray_ReturnsNull(Type type)
         {
             ICompressionUtility impl = GetImpl(type);
 
