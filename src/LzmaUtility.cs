@@ -5,6 +5,10 @@ using System.IO.Compression;
 
 using SevenZip;
 
+#if UNITY_EDITOR
+using UnityEngine;
+#endif
+
 namespace GlitchedPolygons.Services.CompressionUtility
 {
     using Encoder = SevenZip.Compression.LZMA.Encoder;

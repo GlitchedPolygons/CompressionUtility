@@ -4,6 +4,10 @@ using System.IO.Compression;
 using System.Threading.Tasks;
 using System.Text;
 
+#if UNITY_EDITOR
+using UnityEngine;
+#endif
+
 namespace GlitchedPolygons.Services.CompressionUtility
 {
     /// <summary>
