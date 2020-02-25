@@ -4,6 +4,7 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/kf50jywtff4kcpwd?svg=true)](https://ci.appveyor.com/project/GlitchedPolygons/compressionutility)
 [![Codecov](https://codecov.io/gh/GlitchedPolygons/CompressionUtility/branch/master/graph/badge.svg)](https://codecov.io/gh/GlitchedPolygons/CompressionUtility)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/99512152352640b49ee9c7707636ef8a)](https://app.codacy.com/manual/GlitchedPolygons/CompressionUtility?utm_source=github.com&utm_medium=referral&utm_content=GlitchedPolygons/CompressionUtility&utm_campaign=Badge_Grade_Dashboard)
+[![API](https://img.shields.io/badge/api-docs-informational)](https://glitchedpolygons.github.io/CompressionUtility/api/GlitchedPolygons.Services.CompressionUtility.html) 
 
 # Compression Utility
 
