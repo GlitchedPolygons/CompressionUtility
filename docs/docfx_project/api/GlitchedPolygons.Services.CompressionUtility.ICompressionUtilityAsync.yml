@@ -1,0 +1,418 @@
+### YamlMime:ManagedReference
+items:
+- uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync
+  commentId: T:GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync
+  id: ICompressionUtilityAsync
+  parent: GlitchedPolygons.Services.CompressionUtility
+  children:
+  - GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Compress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  - GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Compress(System.String,System.Text.Encoding)
+  - GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Decompress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  - GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Decompress(System.String,System.Text.Encoding)
+  langs:
+  - csharp
+  - vb
+  name: ICompressionUtilityAsync
+  nameWithType: ICompressionUtilityAsync
+  fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync
+  type: Interface
+  source:
+    remote:
+      path: src/ICompressionUtilityAsync.cs
+      branch: master
+      repo: git@github.com:GlitchedPolygons/CompressionUtility.git
+    id: ICompressionUtilityAsync
+    path: ../../src/ICompressionUtilityAsync.cs
+    startLine: 9
+  assemblies:
+  - GlitchedPolygons.Services.CompressionUtility
+  namespace: GlitchedPolygons.Services.CompressionUtility
+  summary: "\nUseful utility interface for quickly and easily compress/decompress data using async/await.\n"
+  example: []
+  syntax:
+    content: public interface ICompressionUtilityAsync
+    content.vb: Public Interface ICompressionUtilityAsync
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Compress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Compress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  id: Compress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  parent: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync
+  langs:
+  - csharp
+  - vb
+  name: Compress(Byte[], CompressionSettings)
+  nameWithType: ICompressionUtilityAsync.Compress(Byte[], CompressionSettings)
+  fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Compress(System.Byte[], GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  type: Method
+  source:
+    remote:
+      path: src/ICompressionUtilityAsync.cs
+      branch: master
+      repo: git@github.com:GlitchedPolygons/CompressionUtility.git
+    id: Compress
+    path: ../../src/ICompressionUtilityAsync.cs
+    startLine: 17
+  assemblies:
+  - GlitchedPolygons.Services.CompressionUtility
+  namespace: GlitchedPolygons.Services.CompressionUtility
+  summary: "\nCompresses the specified bytes using the provided <xref href=\"GlitchedPolygons.Services.CompressionUtility.CompressionSettings\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: Task<byte[]> Compress(byte[] bytes, CompressionSettings compressionSettings)
+    parameters:
+    - id: bytes
+      type: System.Byte[]
+      description: The <code>byte[]</code> array to compress.
+    - id: compressionSettings
+      type: GlitchedPolygons.Services.CompressionUtility.CompressionSettings
+      description: The desired compression settings.
+    return:
+      type: System.Threading.Tasks.Task{System.Byte[]}
+      description: The compressed <code>byte[]</code> array.
+    content.vb: Function Compress(bytes As Byte(), compressionSettings As CompressionSettings) As Task(Of Byte())
+  overload: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Compress*
+  nameWithType.vb: ICompressionUtilityAsync.Compress(Byte(), CompressionSettings)
+  fullName.vb: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Compress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  name.vb: Compress(Byte(), CompressionSettings)
+- uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Compress(System.String,System.Text.Encoding)
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Compress(System.String,System.Text.Encoding)
+  id: Compress(System.String,System.Text.Encoding)
+  parent: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync
+  langs:
+  - csharp
+  - vb
+  name: Compress(String, Encoding)
+  nameWithType: ICompressionUtilityAsync.Compress(String, Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Compress(System.String, System.Text.Encoding)
+  type: Method
+  source:
+    remote:
+      path: src/ICompressionUtilityAsync.cs
+      branch: master
+      repo: git@github.com:GlitchedPolygons/CompressionUtility.git
+    id: Compress
+    path: ../../src/ICompressionUtilityAsync.cs
+    startLine: 25
+  assemblies:
+  - GlitchedPolygons.Services.CompressionUtility
+  namespace: GlitchedPolygons.Services.CompressionUtility
+  summary: "\nCompresses the specified <code>string</code>.\n"
+  example: []
+  syntax:
+    content: Task<string> Compress(string text, Encoding encoding = null)
+    parameters:
+    - id: text
+      type: System.String
+      description: The <code>string</code> to compress.
+    - id: encoding
+      type: System.Text.Encoding
+      description: The encoding to use. Can be <code>null</code>; UTF8 will be used in that case.
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: The compressed <code>string</code>.
+    content.vb: Function Compress(text As String, encoding As Encoding = Nothing) As Task(Of String)
+  overload: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Compress*
+- uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Decompress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Decompress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  id: Decompress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  parent: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync
+  langs:
+  - csharp
+  - vb
+  name: Decompress(Byte[], CompressionSettings)
+  nameWithType: ICompressionUtilityAsync.Decompress(Byte[], CompressionSettings)
+  fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Decompress(System.Byte[], GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  type: Method
+  source:
+    remote:
+      path: src/ICompressionUtilityAsync.cs
+      branch: master
+      repo: git@github.com:GlitchedPolygons/CompressionUtility.git
+    id: Decompress
+    path: ../../src/ICompressionUtilityAsync.cs
+    startLine: 35
+  assemblies:
+  - GlitchedPolygons.Services.CompressionUtility
+  namespace: GlitchedPolygons.Services.CompressionUtility
+  summary: "\nDecompresses the specified bytes using the\n<xref href=\"GlitchedPolygons.Services.CompressionUtility.CompressionSettings\" data-throw-if-not-resolved=\"false\"></xref> that have been used to originally compress the bytes..\n"
+  example: []
+  syntax:
+    content: Task<byte[]> Decompress(byte[] compressedBytes, CompressionSettings compressionSettings)
+    parameters:
+    - id: compressedBytes
+      type: System.Byte[]
+      description: The compressed <code>byte[]</code> array that you want to decompress.
+    - id: compressionSettings
+      type: GlitchedPolygons.Services.CompressionUtility.CompressionSettings
+      description: The <xref href="GlitchedPolygons.Services.CompressionUtility.CompressionSettings" data-throw-if-not-resolved="false"></xref> that have been used to compress the bytes.
+    return:
+      type: System.Threading.Tasks.Task{System.Byte[]}
+      description: The decompressed <code>bytes[]</code>.
+    content.vb: Function Decompress(compressedBytes As Byte(), compressionSettings As CompressionSettings) As Task(Of Byte())
+  overload: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Decompress*
+  exceptions:
+  - type: System.IO.InvalidDataException
+    commentId: T:System.IO.InvalidDataException
+    description: Thrown when the passed bytes are invalid in any way (e.g. corrupt/incomplete data, wrong format, etc...).
+  nameWithType.vb: ICompressionUtilityAsync.Decompress(Byte(), CompressionSettings)
+  fullName.vb: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Decompress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  name.vb: Decompress(Byte(), CompressionSettings)
+- uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Decompress(System.String,System.Text.Encoding)
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Decompress(System.String,System.Text.Encoding)
+  id: Decompress(System.String,System.Text.Encoding)
+  parent: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync
+  langs:
+  - csharp
+  - vb
+  name: Decompress(String, Encoding)
+  nameWithType: ICompressionUtilityAsync.Decompress(String, Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Decompress(System.String, System.Text.Encoding)
+  type: Method
+  source:
+    remote:
+      path: src/ICompressionUtilityAsync.cs
+      branch: master
+      repo: git@github.com:GlitchedPolygons/CompressionUtility.git
+    id: Decompress
+    path: ../../src/ICompressionUtilityAsync.cs
+    startLine: 43
+  assemblies:
+  - GlitchedPolygons.Services.CompressionUtility
+  namespace: GlitchedPolygons.Services.CompressionUtility
+  summary: "\nDecompresses the specified compressed <code>string</code>.\n"
+  example: []
+  syntax:
+    content: Task<string> Decompress(string compressedString, Encoding encoding = null)
+    parameters:
+    - id: compressedString
+      type: System.String
+      description: The compressed <code>string</code> to decompress.
+    - id: encoding
+      type: System.Text.Encoding
+      description: The encoding to use. Can be <code>null</code>; UTF8 will be used in that case.
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: The decompressed <code>string</code>
+    content.vb: Function Decompress(compressedString As String, encoding As Encoding = Nothing) As Task(Of String)
+  overload: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Decompress*
+references:
+- uid: GlitchedPolygons.Services.CompressionUtility
+  commentId: N:GlitchedPolygons.Services.CompressionUtility
+  name: GlitchedPolygons.Services.CompressionUtility
+  nameWithType: GlitchedPolygons.Services.CompressionUtility
+  fullName: GlitchedPolygons.Services.CompressionUtility
+- uid: GlitchedPolygons.Services.CompressionUtility.CompressionSettings
+  commentId: T:GlitchedPolygons.Services.CompressionUtility.CompressionSettings
+  parent: GlitchedPolygons.Services.CompressionUtility
+  name: CompressionSettings
+  nameWithType: CompressionSettings
+  fullName: GlitchedPolygons.Services.CompressionUtility.CompressionSettings
+- uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Compress*
+  commentId: Overload:GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Compress
+  name: Compress
+  nameWithType: ICompressionUtilityAsync.Compress
+  fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Compress
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Threading.Tasks.Task{System.Byte[]}
+  commentId: T:System.Threading.Tasks.Task{System.Byte[]}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Byte[]>
+  nameWithType: Task<Byte[]>
+  fullName: System.Threading.Tasks.Task<System.Byte[]>
+  nameWithType.vb: Task(Of Byte())
+  fullName.vb: System.Threading.Tasks.Task(Of System.Byte())
+  name.vb: Task(Of Byte())
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Text.Encoding
+  commentId: T:System.Text.Encoding
+  parent: System.Text
+  isExternal: true
+  name: Encoding
+  nameWithType: Encoding
+  fullName: System.Text.Encoding
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<String>
+  nameWithType: Task<String>
+  fullName: System.Threading.Tasks.Task<System.String>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of System.String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+- uid: System.IO.InvalidDataException
+  commentId: T:System.IO.InvalidDataException
+  isExternal: true
+- uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Decompress*
+  commentId: Overload:GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Decompress
+  name: Decompress
+  nameWithType: ICompressionUtilityAsync.Decompress
+  fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Decompress

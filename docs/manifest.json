@@ -15,7 +15,7 @@
           "hash": "ZrpOcZ8b2zXFATyaTKHGFw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -30,7 +30,7 @@
           "hash": "7+e0DVoR1EVeyqsX3LG9tQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -45,7 +45,7 @@
           "hash": "MrdREN4vvbYITiEA2web1w=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -60,7 +60,7 @@
           "hash": "saWDC0B4KmR8dmzTxSTQ2g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -75,7 +75,7 @@
           "hash": "ijsRbxT7G38vKgQ59nNoGw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -90,7 +90,7 @@
           "hash": "NwZmM8nbFMYtsaWr2QbpPg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -105,7 +105,7 @@
           "hash": "JehFhMUsS95S153BQkH33g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -117,7 +117,7 @@
           "hash": "zVrVOe5lgnIbTBrKnCejUQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -129,7 +129,7 @@
           "hash": "vjrwpuuqBQoyZ4751ZnDsw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -141,301 +141,7 @@
           "hash": "LVQyLJxbFfvld7NoI/In6A=="
         }
       },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SevenZip.Buffer.InBuffer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SevenZip.Buffer.InBuffer.html",
-          "hash": "Ufys6jZnYZhq9kzXxeX6eg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SevenZip.Buffer.OutBuffer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SevenZip.Buffer.OutBuffer.html",
-          "hash": "MJ+VDQUAR4mlrmrvHomsFA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SevenZip.Buffer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SevenZip.Buffer.html",
-          "hash": "S94y3oEF0pKVMXYw1N4xpA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SevenZip.CoderPropID.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SevenZip.CoderPropID.html",
-          "hash": "myXkHu6jeHp0ELtJABcHlA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SevenZip.CommandLineParser.CommandForm.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SevenZip.CommandLineParser.CommandForm.html",
-          "hash": "WPqSCRnlNEK1Ay9xO5usdg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SevenZip.CommandLineParser.Parser.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SevenZip.CommandLineParser.Parser.html",
-          "hash": "hoGzqe60GQbcnmEkts2gNQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SevenZip.CommandLineParser.SwitchForm.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SevenZip.CommandLineParser.SwitchForm.html",
-          "hash": "THeDuBoIpWjRA+dKfqbTGw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SevenZip.CommandLineParser.SwitchResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SevenZip.CommandLineParser.SwitchResult.html",
-          "hash": "szJ+7OL6A+X4G8T7kWhttw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SevenZip.CommandLineParser.SwitchType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SevenZip.CommandLineParser.SwitchType.html",
-          "hash": "ursPd/d9VnXlarqa7UMzgA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SevenZip.CommandLineParser.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SevenZip.CommandLineParser.html",
-          "hash": "B4PDlHQTba5/qIoeK4dr2A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SevenZip.Compression.LZ.BinTree.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SevenZip.Compression.LZ.BinTree.html",
-          "hash": "oYjIk2kAVq+FZ+Gj6gpC+A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SevenZip.Compression.LZ.InWindow.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SevenZip.Compression.LZ.InWindow.html",
-          "hash": "hsk2lPOoyh+TcvE2zO4qkw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SevenZip.Compression.LZ.OutWindow.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SevenZip.Compression.LZ.OutWindow.html",
-          "hash": "jbyzl//EWsdfXGqjXforqw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SevenZip.Compression.LZ.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SevenZip.Compression.LZ.html",
-          "hash": "x7tNNhIEL02NSfEu+U//qQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SevenZip.Compression.LZMA.Decoder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SevenZip.Compression.LZMA.Decoder.html",
-          "hash": "rmU7k48TrbMDJ8CXUogdLg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SevenZip.Compression.LZMA.Encoder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SevenZip.Compression.LZMA.Encoder.html",
-          "hash": "5Ne2Ub8XAzRHPUNTOJXfDg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SevenZip.Compression.LZMA.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SevenZip.Compression.LZMA.html",
-          "hash": "XvlaJkE/UW27mrCao/RvpA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SevenZip.ICodeProgress.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SevenZip.ICodeProgress.html",
-          "hash": "nVM3s4fOXF3/LcZaWuYUpw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "ReferencedXrefPropertyNotString"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/SevenZip.ICoder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SevenZip.ICoder.html",
-          "hash": "5v1CbYh92gaL8NHl4olEzA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SevenZip.ISetCoderProperties.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SevenZip.ISetCoderProperties.html",
-          "hash": "pMcm+MwEKL2uXGGiZawBmA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SevenZip.ISetDecoderProperties.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SevenZip.ISetDecoderProperties.html",
-          "hash": "y2+wZ8d3yHpVuDDBubXmFg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SevenZip.IWriteCoderProperties.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SevenZip.IWriteCoderProperties.html",
-          "hash": "CFgxzK/ohcVAPF3osdeAhQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/SevenZip.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SevenZip.html",
-          "hash": "KxyR5slFRD6RMiB5hDOe5Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
-      "type": "Conceptual",
-      "source_relative_path": "api/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/index.html",
-          "hash": "cZDJMVMm0sfX1uYEH7asUw=="
-        }
-      },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -444,7 +150,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "VRCttU1b1iCi8mULkUvgTg=="
+          "hash": "JGc66csbyIdBuh0rSAFVUg=="
         }
       },
       "is_incremental": false,
@@ -459,7 +165,7 @@
           "hash": "30/cQNX/3hP2fkjpUCbrlA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -486,16 +192,19 @@
           "hash": "HvJ/wGm1IKrawv39Tl6bNw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "CTRBtwqjkNOufjixN6uYcg=="
+          "hash": "qllSq9khTNO9EMO7dE2voQ=="
         }
       },
       "is_incremental": false,
@@ -505,12 +214,10 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because last build info is missing.",
+        "can_incremental": true,
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "NoAvailableBuildCache"
+        "skipped_file_count": 0
       },
       "processors": {
         "TocDocumentProcessor": {
@@ -520,24 +227,24 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 3,
-          "skipped_file_count": 0
-        },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 33,
-          "skipped_file_count": 0
+          "total_file_count": 10,
+          "skipped_file_count": 10
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 2,
+          "skipped_file_count": 2
         }
       }
     },
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0

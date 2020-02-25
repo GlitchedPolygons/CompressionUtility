@@ -6,10 +6,16 @@
           "src":"../..",
           "files": [
             "src/**.csproj"
+          ],
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**",
+            "**/LZMA/**"
           ]
         }
       ],
       "dest": "api",
+      "filter": "filter.yml",
       "disableGitFeatures": false,
       "disableDefaultFilter": false
     }

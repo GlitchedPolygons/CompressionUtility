@@ -1,0 +1,4 @@
+apiRules:
+- exclude:
+    uidRegex: ^SevenZip.*
+    type: Namespace

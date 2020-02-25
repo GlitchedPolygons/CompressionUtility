@@ -1,0 +1,22 @@
+### YamlMime:TableOfContent
+- uid: GlitchedPolygons.Services.CompressionUtility
+  name: GlitchedPolygons.Services.CompressionUtility
+  items:
+  - uid: GlitchedPolygons.Services.CompressionUtility.BrotliUtility
+    name: BrotliUtility
+  - uid: GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync
+    name: BrotliUtilityAsync
+  - uid: GlitchedPolygons.Services.CompressionUtility.CompressionSettings
+    name: CompressionSettings
+  - uid: GlitchedPolygons.Services.CompressionUtility.GZipUtility
+    name: GZipUtility
+  - uid: GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync
+    name: GZipUtilityAsync
+  - uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility
+    name: ICompressionUtility
+  - uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync
+    name: ICompressionUtilityAsync
+  - uid: GlitchedPolygons.Services.CompressionUtility.LzmaUtility
+    name: LzmaUtility
+  - uid: GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync
+    name: LzmaUtilityAsync
