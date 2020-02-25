@@ -34,7 +34,7 @@ namespace GlitchedPolygons.Services.CompressionUtility
         }
 
         /// <summary>
-        /// Compresses the specified <c>string</c>.
+        /// Compresses the specified <c>string</c> using LZMA and <c>CompressionSettings.Default</c>.
         /// </summary>
         /// <param name="text">The <c>string</c> to compress.</param>
         /// <param name="encoding">The encoding to use. Can be <c>null</c>; UTF8 will be used in that case.</param>
@@ -58,7 +58,7 @@ namespace GlitchedPolygons.Services.CompressionUtility
         }
 
         /// <summary>
-        /// Decompresses the specified compressed <c>string</c>.
+        /// Decompresses the specified compressed <c>string</c> using LZMA and <c>CompressionSettings.Default</c>.
         /// </summary>
         /// <param name="compressedString">The compressed <c>string</c> to decompress.</param>
         /// <param name="encoding">The encoding to use. Can be <c>null</c>; UTF8 will be used in that case.</param>
