@@ -78,7 +78,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.Tests
                 data[i] = (byte)(new Random().NextDouble() > 0.5d ? 5 : 75);
             }
 
-            byte[] result = impl.Compress(data, new CompressionSettings { BufferSize = 1024 });
+            byte[] result = impl.Compress(data, new CompressionSettings { bufferSize = 1024 });
             Assert.True(result.Length < data.Length);
         }
 
@@ -109,7 +109,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.Tests
                 data[i] = (byte)(new Random().NextDouble() > 0.5d ? 5 : 75);
             }
 
-            var compressionSettings = new CompressionSettings { BufferSize = 1024 };
+            var compressionSettings = new CompressionSettings { bufferSize = 1024 };
 
             byte[] compressed = impl.Compress(data, compressionSettings);
             byte[] decompressed = impl.Decompress(compressed, compressionSettings);

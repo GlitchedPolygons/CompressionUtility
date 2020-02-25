@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace GlitchedPolygons.Services.CompressionUtility
@@ -20,8 +21,9 @@ namespace GlitchedPolygons.Services.CompressionUtility
         /// Compresses the specified <c>string</c>.
         /// </summary>
         /// <param name="text">The <c>string</c> to compress.</param>
+        /// <param name="encoding">The encoding to use. Can be <c>null</c>; UTF8 will be used in that case.</param>
         /// <returns>The compressed <c>string</c>.</returns>
-        Task<string> Compress(string text);
+        Task<string> Compress(string text, Encoding encoding = null);
 
         /// <summary>
         /// Decompresses the specified bytes using the
@@ -37,7 +39,8 @@ namespace GlitchedPolygons.Services.CompressionUtility
         /// Decompresses the specified compressed <c>string</c>.
         /// </summary>
         /// <param name="compressedString">The compressed <c>string</c> to decompress.</param>
+        /// <param name="encoding">The encoding to use. Can be <c>null</c>; UTF8 will be used in that case.</param>
         /// <returns>The decompressed <c>string</c></returns>.
-        Task<string> Decompress(string compressedString);
+        Task<string> Decompress(string compressedString, Encoding encoding = null);
     }
 }

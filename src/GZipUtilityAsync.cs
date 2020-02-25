@@ -18,22 +18,6 @@ namespace GlitchedPolygons.Services.CompressionUtility
     public class GZipUtilityAsync : ICompressionUtilityAsync
     {
         /// <summary>
-        /// The default <see cref="Encoding"/> to use for compressing/decompressing strings.
-        /// </summary>
-        static readonly Encoding DEFAULT_ENCODING = Encoding.UTF8;
-
-        /// <summary>
-        /// Default <see cref="CompressionSettings"/> to use for compressing/decompressing strings.
-        /// </summary>
-        static readonly CompressionSettings DEFAULT_COMPRESSION_SETTINGS = new CompressionSettings();
-
-        /// <summary>
-        /// Empty <c>byte[]</c> array for handling certain edge cases/failures
-        /// (e.g. compressing an empty array will result in an empty array).
-        /// </summary>
-        static readonly byte[] EMPTY_BYTE_ARRAY = new byte[0];
-
-        /// <summary>
         /// Compresses the specified bytes using <see cref="GZipStream"/> and the provided <see cref="CompressionSettings"/>.
         /// </summary>
         /// <returns>The gzipped <c>byte[]</c> array.</returns>
@@ -54,7 +38,7 @@ namespace GlitchedPolygons.Services.CompressionUtility
 #if UNITY_EDITOR
                 Debug.LogWarning($"{nameof(GZipUtilityAsync)}: You tried to compress an empty array; the resulting array will also be empty!");
 #endif
-                return EMPTY_BYTE_ARRAY;
+                return Array.Empty<byte>();
             }
 
             byte[] compressedBytes;
@@ -63,9 +47,9 @@ namespace GlitchedPolygons.Services.CompressionUtility
             {
                 using (var originalStream = new MemoryStream(bytes))
                 {
-                    using (var gzip = new GZipStream(compressedStream, compressionSettings?.CompressionLevel ?? DEFAULT_COMPRESSION_SETTINGS.CompressionLevel))
+                    using (var gzip = new GZipStream(compressedStream, compressionSettings.compressionLevel))
                     {
-                        await originalStream.CopyToAsync(gzip, compressionSettings?.BufferSize ?? DEFAULT_COMPRESSION_SETTINGS.BufferSize).ConfigureAwait(false);
+                        await originalStream.CopyToAsync(gzip, Math.Max(4096, compressionSettings.bufferSize)).ConfigureAwait(false);
                     }
                 }
                 compressedBytes = compressedStream.ToArray();
@@ -73,15 +57,17 @@ namespace GlitchedPolygons.Services.CompressionUtility
 
             return compressedBytes;
         }
-        
+
         /// <summary>
         /// Compresses ("gee-zips") the specified <c>string</c> using <see cref="GZipStream"/> and default <see cref="CompressionSettings"/>.
         /// </summary>
         /// <param name="text">The <c>string</c> to compress.</param>
+        /// <param name="encoding">The encoding to use. Can be <c>null</c>; UTF8 will be used in that case.</param>
         /// <returns>The gzipped <c>string</c>.</returns>
-        public async Task<string> Compress(string text)
+        public async Task<string> Compress(string text, Encoding encoding = null)
         {
-            return Convert.ToBase64String(await Compress(DEFAULT_ENCODING.GetBytes(text), DEFAULT_COMPRESSION_SETTINGS).ConfigureAwait(false));
+            byte[] compressedBytes = await Compress((encoding ?? Encoding.UTF8).GetBytes(text), CompressionSettings.Default).ConfigureAwait(false);
+            return Convert.ToBase64String(compressedBytes);
         }
 
         /// <summary>
@@ -106,7 +92,7 @@ namespace GlitchedPolygons.Services.CompressionUtility
 #if UNITY_EDITOR
                 Debug.LogWarning($"{nameof(GZipUtilityAsync)}: You tried to decompress an empty array; the resulting array will also be empty!");
 #endif
-                return EMPTY_BYTE_ARRAY;
+                return Array.Empty<byte>();
             }
 
             using (MemoryStream decompressedStream = new MemoryStream())
@@ -115,7 +101,7 @@ namespace GlitchedPolygons.Services.CompressionUtility
                 {
                     using (GZipStream gzip = new GZipStream(compressedStream, CompressionMode.Decompress))
                     {
-                        await gzip.CopyToAsync(decompressedStream, compressionSettings?.BufferSize ?? DEFAULT_COMPRESSION_SETTINGS.BufferSize).ConfigureAwait(false);
+                        await gzip.CopyToAsync(decompressedStream, Math.Max(4096, compressionSettings.bufferSize)).ConfigureAwait(false);
                     }
                 }
 
@@ -127,10 +113,12 @@ namespace GlitchedPolygons.Services.CompressionUtility
         /// Decompresses the specified gzipped <c>string</c> using the default <see cref="CompressionSettings"/>.
         /// </summary>
         /// <param name="gzippedString">The compressed <c>string</c> to decompress.</param>
+        /// <param name="encoding">The encoding to use. Can be <c>null</c>; UTF8 will be used in that case.</param>
         /// <returns>The decompressed <c>string</c></returns>.
-        public async Task<string> Decompress(string gzippedString)
+        public async Task<string> Decompress(string gzippedString, Encoding encoding = null)
         {
-            return DEFAULT_ENCODING.GetString(await Decompress(Convert.FromBase64String(gzippedString), DEFAULT_COMPRESSION_SETTINGS).ConfigureAwait(false));
+            byte[] decompressedBytes = await Decompress(Convert.FromBase64String(gzippedString), CompressionSettings.Default).ConfigureAwait(false);
+            return (encoding ?? Encoding.UTF8).GetString(decompressedBytes);
         }
     }
 }
