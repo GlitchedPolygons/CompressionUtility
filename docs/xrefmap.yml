@@ -1,0 +1,1741 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: GlitchedPolygons.Services.CompressionUtility
+  name: GlitchedPolygons.Services.CompressionUtility
+  href: api/GlitchedPolygons.Services.CompressionUtility.html
+  commentId: N:GlitchedPolygons.Services.CompressionUtility
+  fullName: GlitchedPolygons.Services.CompressionUtility
+  nameWithType: GlitchedPolygons.Services.CompressionUtility
+- uid: GlitchedPolygons.Services.CompressionUtility.BrotliUtility
+  name: BrotliUtility
+  href: api/GlitchedPolygons.Services.CompressionUtility.BrotliUtility.html
+  commentId: T:GlitchedPolygons.Services.CompressionUtility.BrotliUtility
+  fullName: GlitchedPolygons.Services.CompressionUtility.BrotliUtility
+  nameWithType: BrotliUtility
+- uid: GlitchedPolygons.Services.CompressionUtility.BrotliUtility.Compress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  name: Compress(Byte[], CompressionSettings)
+  href: api/GlitchedPolygons.Services.CompressionUtility.BrotliUtility.html#GlitchedPolygons_Services_CompressionUtility_BrotliUtility_Compress_System_Byte___GlitchedPolygons_Services_CompressionUtility_CompressionSettings_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.BrotliUtility.Compress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  name.vb: Compress(Byte(), CompressionSettings)
+  fullName: GlitchedPolygons.Services.CompressionUtility.BrotliUtility.Compress(System.Byte[], GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  fullName.vb: GlitchedPolygons.Services.CompressionUtility.BrotliUtility.Compress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  nameWithType: BrotliUtility.Compress(Byte[], CompressionSettings)
+  nameWithType.vb: BrotliUtility.Compress(Byte(), CompressionSettings)
+- uid: GlitchedPolygons.Services.CompressionUtility.BrotliUtility.Compress(System.String,System.Text.Encoding)
+  name: Compress(String, Encoding)
+  href: api/GlitchedPolygons.Services.CompressionUtility.BrotliUtility.html#GlitchedPolygons_Services_CompressionUtility_BrotliUtility_Compress_System_String_System_Text_Encoding_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.BrotliUtility.Compress(System.String,System.Text.Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.BrotliUtility.Compress(System.String, System.Text.Encoding)
+  nameWithType: BrotliUtility.Compress(String, Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.BrotliUtility.Compress*
+  name: Compress
+  href: api/GlitchedPolygons.Services.CompressionUtility.BrotliUtility.html#GlitchedPolygons_Services_CompressionUtility_BrotliUtility_Compress_
+  commentId: Overload:GlitchedPolygons.Services.CompressionUtility.BrotliUtility.Compress
+  isSpec: "True"
+  fullName: GlitchedPolygons.Services.CompressionUtility.BrotliUtility.Compress
+  nameWithType: BrotliUtility.Compress
+- uid: GlitchedPolygons.Services.CompressionUtility.BrotliUtility.Decompress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  name: Decompress(Byte[], CompressionSettings)
+  href: api/GlitchedPolygons.Services.CompressionUtility.BrotliUtility.html#GlitchedPolygons_Services_CompressionUtility_BrotliUtility_Decompress_System_Byte___GlitchedPolygons_Services_CompressionUtility_CompressionSettings_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.BrotliUtility.Decompress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  name.vb: Decompress(Byte(), CompressionSettings)
+  fullName: GlitchedPolygons.Services.CompressionUtility.BrotliUtility.Decompress(System.Byte[], GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  fullName.vb: GlitchedPolygons.Services.CompressionUtility.BrotliUtility.Decompress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  nameWithType: BrotliUtility.Decompress(Byte[], CompressionSettings)
+  nameWithType.vb: BrotliUtility.Decompress(Byte(), CompressionSettings)
+- uid: GlitchedPolygons.Services.CompressionUtility.BrotliUtility.Decompress(System.String,System.Text.Encoding)
+  name: Decompress(String, Encoding)
+  href: api/GlitchedPolygons.Services.CompressionUtility.BrotliUtility.html#GlitchedPolygons_Services_CompressionUtility_BrotliUtility_Decompress_System_String_System_Text_Encoding_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.BrotliUtility.Decompress(System.String,System.Text.Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.BrotliUtility.Decompress(System.String, System.Text.Encoding)
+  nameWithType: BrotliUtility.Decompress(String, Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.BrotliUtility.Decompress*
+  name: Decompress
+  href: api/GlitchedPolygons.Services.CompressionUtility.BrotliUtility.html#GlitchedPolygons_Services_CompressionUtility_BrotliUtility_Decompress_
+  commentId: Overload:GlitchedPolygons.Services.CompressionUtility.BrotliUtility.Decompress
+  isSpec: "True"
+  fullName: GlitchedPolygons.Services.CompressionUtility.BrotliUtility.Decompress
+  nameWithType: BrotliUtility.Decompress
+- uid: GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync
+  name: BrotliUtilityAsync
+  href: api/GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.html
+  commentId: T:GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync
+  fullName: GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync
+  nameWithType: BrotliUtilityAsync
+- uid: GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Compress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  name: Compress(Byte[], CompressionSettings)
+  href: api/GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_BrotliUtilityAsync_Compress_System_Byte___GlitchedPolygons_Services_CompressionUtility_CompressionSettings_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Compress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  name.vb: Compress(Byte(), CompressionSettings)
+  fullName: GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Compress(System.Byte[], GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  fullName.vb: GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Compress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  nameWithType: BrotliUtilityAsync.Compress(Byte[], CompressionSettings)
+  nameWithType.vb: BrotliUtilityAsync.Compress(Byte(), CompressionSettings)
+- uid: GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Compress(System.String,System.Text.Encoding)
+  name: Compress(String, Encoding)
+  href: api/GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_BrotliUtilityAsync_Compress_System_String_System_Text_Encoding_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Compress(System.String,System.Text.Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Compress(System.String, System.Text.Encoding)
+  nameWithType: BrotliUtilityAsync.Compress(String, Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Compress*
+  name: Compress
+  href: api/GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_BrotliUtilityAsync_Compress_
+  commentId: Overload:GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Compress
+  isSpec: "True"
+  fullName: GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Compress
+  nameWithType: BrotliUtilityAsync.Compress
+- uid: GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Decompress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  name: Decompress(Byte[], CompressionSettings)
+  href: api/GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_BrotliUtilityAsync_Decompress_System_Byte___GlitchedPolygons_Services_CompressionUtility_CompressionSettings_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Decompress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  name.vb: Decompress(Byte(), CompressionSettings)
+  fullName: GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Decompress(System.Byte[], GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  fullName.vb: GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Decompress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  nameWithType: BrotliUtilityAsync.Decompress(Byte[], CompressionSettings)
+  nameWithType.vb: BrotliUtilityAsync.Decompress(Byte(), CompressionSettings)
+- uid: GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Decompress(System.String,System.Text.Encoding)
+  name: Decompress(String, Encoding)
+  href: api/GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_BrotliUtilityAsync_Decompress_System_String_System_Text_Encoding_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Decompress(System.String,System.Text.Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Decompress(System.String, System.Text.Encoding)
+  nameWithType: BrotliUtilityAsync.Decompress(String, Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Decompress*
+  name: Decompress
+  href: api/GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_BrotliUtilityAsync_Decompress_
+  commentId: Overload:GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Decompress
+  isSpec: "True"
+  fullName: GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Decompress
+  nameWithType: BrotliUtilityAsync.Decompress
+- uid: GlitchedPolygons.Services.CompressionUtility.CompressionSettings
+  name: CompressionSettings
+  href: api/GlitchedPolygons.Services.CompressionUtility.CompressionSettings.html
+  commentId: T:GlitchedPolygons.Services.CompressionUtility.CompressionSettings
+  fullName: GlitchedPolygons.Services.CompressionUtility.CompressionSettings
+  nameWithType: CompressionSettings
+- uid: GlitchedPolygons.Services.CompressionUtility.CompressionSettings.bufferSize
+  name: bufferSize
+  href: api/GlitchedPolygons.Services.CompressionUtility.CompressionSettings.html#GlitchedPolygons_Services_CompressionUtility_CompressionSettings_bufferSize
+  commentId: F:GlitchedPolygons.Services.CompressionUtility.CompressionSettings.bufferSize
+  fullName: GlitchedPolygons.Services.CompressionUtility.CompressionSettings.bufferSize
+  nameWithType: CompressionSettings.bufferSize
+- uid: GlitchedPolygons.Services.CompressionUtility.CompressionSettings.compressionLevel
+  name: compressionLevel
+  href: api/GlitchedPolygons.Services.CompressionUtility.CompressionSettings.html#GlitchedPolygons_Services_CompressionUtility_CompressionSettings_compressionLevel
+  commentId: F:GlitchedPolygons.Services.CompressionUtility.CompressionSettings.compressionLevel
+  fullName: GlitchedPolygons.Services.CompressionUtility.CompressionSettings.compressionLevel
+  nameWithType: CompressionSettings.compressionLevel
+- uid: GlitchedPolygons.Services.CompressionUtility.CompressionSettings.Default
+  name: Default
+  href: api/GlitchedPolygons.Services.CompressionUtility.CompressionSettings.html#GlitchedPolygons_Services_CompressionUtility_CompressionSettings_Default
+  commentId: P:GlitchedPolygons.Services.CompressionUtility.CompressionSettings.Default
+  fullName: GlitchedPolygons.Services.CompressionUtility.CompressionSettings.Default
+  nameWithType: CompressionSettings.Default
+- uid: GlitchedPolygons.Services.CompressionUtility.CompressionSettings.Default*
+  name: Default
+  href: api/GlitchedPolygons.Services.CompressionUtility.CompressionSettings.html#GlitchedPolygons_Services_CompressionUtility_CompressionSettings_Default_
+  commentId: Overload:GlitchedPolygons.Services.CompressionUtility.CompressionSettings.Default
+  isSpec: "True"
+  fullName: GlitchedPolygons.Services.CompressionUtility.CompressionSettings.Default
+  nameWithType: CompressionSettings.Default
+- uid: GlitchedPolygons.Services.CompressionUtility.GZipUtility
+  name: GZipUtility
+  href: api/GlitchedPolygons.Services.CompressionUtility.GZipUtility.html
+  commentId: T:GlitchedPolygons.Services.CompressionUtility.GZipUtility
+  fullName: GlitchedPolygons.Services.CompressionUtility.GZipUtility
+  nameWithType: GZipUtility
+- uid: GlitchedPolygons.Services.CompressionUtility.GZipUtility.Compress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  name: Compress(Byte[], CompressionSettings)
+  href: api/GlitchedPolygons.Services.CompressionUtility.GZipUtility.html#GlitchedPolygons_Services_CompressionUtility_GZipUtility_Compress_System_Byte___GlitchedPolygons_Services_CompressionUtility_CompressionSettings_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.GZipUtility.Compress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  name.vb: Compress(Byte(), CompressionSettings)
+  fullName: GlitchedPolygons.Services.CompressionUtility.GZipUtility.Compress(System.Byte[], GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  fullName.vb: GlitchedPolygons.Services.CompressionUtility.GZipUtility.Compress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  nameWithType: GZipUtility.Compress(Byte[], CompressionSettings)
+  nameWithType.vb: GZipUtility.Compress(Byte(), CompressionSettings)
+- uid: GlitchedPolygons.Services.CompressionUtility.GZipUtility.Compress(System.String,System.Text.Encoding)
+  name: Compress(String, Encoding)
+  href: api/GlitchedPolygons.Services.CompressionUtility.GZipUtility.html#GlitchedPolygons_Services_CompressionUtility_GZipUtility_Compress_System_String_System_Text_Encoding_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.GZipUtility.Compress(System.String,System.Text.Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.GZipUtility.Compress(System.String, System.Text.Encoding)
+  nameWithType: GZipUtility.Compress(String, Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.GZipUtility.Compress*
+  name: Compress
+  href: api/GlitchedPolygons.Services.CompressionUtility.GZipUtility.html#GlitchedPolygons_Services_CompressionUtility_GZipUtility_Compress_
+  commentId: Overload:GlitchedPolygons.Services.CompressionUtility.GZipUtility.Compress
+  isSpec: "True"
+  fullName: GlitchedPolygons.Services.CompressionUtility.GZipUtility.Compress
+  nameWithType: GZipUtility.Compress
+- uid: GlitchedPolygons.Services.CompressionUtility.GZipUtility.Decompress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  name: Decompress(Byte[], CompressionSettings)
+  href: api/GlitchedPolygons.Services.CompressionUtility.GZipUtility.html#GlitchedPolygons_Services_CompressionUtility_GZipUtility_Decompress_System_Byte___GlitchedPolygons_Services_CompressionUtility_CompressionSettings_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.GZipUtility.Decompress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  name.vb: Decompress(Byte(), CompressionSettings)
+  fullName: GlitchedPolygons.Services.CompressionUtility.GZipUtility.Decompress(System.Byte[], GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  fullName.vb: GlitchedPolygons.Services.CompressionUtility.GZipUtility.Decompress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  nameWithType: GZipUtility.Decompress(Byte[], CompressionSettings)
+  nameWithType.vb: GZipUtility.Decompress(Byte(), CompressionSettings)
+- uid: GlitchedPolygons.Services.CompressionUtility.GZipUtility.Decompress(System.String,System.Text.Encoding)
+  name: Decompress(String, Encoding)
+  href: api/GlitchedPolygons.Services.CompressionUtility.GZipUtility.html#GlitchedPolygons_Services_CompressionUtility_GZipUtility_Decompress_System_String_System_Text_Encoding_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.GZipUtility.Decompress(System.String,System.Text.Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.GZipUtility.Decompress(System.String, System.Text.Encoding)
+  nameWithType: GZipUtility.Decompress(String, Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.GZipUtility.Decompress*
+  name: Decompress
+  href: api/GlitchedPolygons.Services.CompressionUtility.GZipUtility.html#GlitchedPolygons_Services_CompressionUtility_GZipUtility_Decompress_
+  commentId: Overload:GlitchedPolygons.Services.CompressionUtility.GZipUtility.Decompress
+  isSpec: "True"
+  fullName: GlitchedPolygons.Services.CompressionUtility.GZipUtility.Decompress
+  nameWithType: GZipUtility.Decompress
+- uid: GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync
+  name: GZipUtilityAsync
+  href: api/GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.html
+  commentId: T:GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync
+  fullName: GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync
+  nameWithType: GZipUtilityAsync
+- uid: GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.Compress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  name: Compress(Byte[], CompressionSettings)
+  href: api/GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_GZipUtilityAsync_Compress_System_Byte___GlitchedPolygons_Services_CompressionUtility_CompressionSettings_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.Compress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  name.vb: Compress(Byte(), CompressionSettings)
+  fullName: GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.Compress(System.Byte[], GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  fullName.vb: GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.Compress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  nameWithType: GZipUtilityAsync.Compress(Byte[], CompressionSettings)
+  nameWithType.vb: GZipUtilityAsync.Compress(Byte(), CompressionSettings)
+- uid: GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.Compress(System.String,System.Text.Encoding)
+  name: Compress(String, Encoding)
+  href: api/GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_GZipUtilityAsync_Compress_System_String_System_Text_Encoding_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.Compress(System.String,System.Text.Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.Compress(System.String, System.Text.Encoding)
+  nameWithType: GZipUtilityAsync.Compress(String, Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.Compress*
+  name: Compress
+  href: api/GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_GZipUtilityAsync_Compress_
+  commentId: Overload:GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.Compress
+  isSpec: "True"
+  fullName: GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.Compress
+  nameWithType: GZipUtilityAsync.Compress
+- uid: GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.Decompress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  name: Decompress(Byte[], CompressionSettings)
+  href: api/GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_GZipUtilityAsync_Decompress_System_Byte___GlitchedPolygons_Services_CompressionUtility_CompressionSettings_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.Decompress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  name.vb: Decompress(Byte(), CompressionSettings)
+  fullName: GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.Decompress(System.Byte[], GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  fullName.vb: GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.Decompress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  nameWithType: GZipUtilityAsync.Decompress(Byte[], CompressionSettings)
+  nameWithType.vb: GZipUtilityAsync.Decompress(Byte(), CompressionSettings)
+- uid: GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.Decompress(System.String,System.Text.Encoding)
+  name: Decompress(String, Encoding)
+  href: api/GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_GZipUtilityAsync_Decompress_System_String_System_Text_Encoding_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.Decompress(System.String,System.Text.Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.Decompress(System.String, System.Text.Encoding)
+  nameWithType: GZipUtilityAsync.Decompress(String, Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.Decompress*
+  name: Decompress
+  href: api/GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_GZipUtilityAsync_Decompress_
+  commentId: Overload:GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.Decompress
+  isSpec: "True"
+  fullName: GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.Decompress
+  nameWithType: GZipUtilityAsync.Decompress
+- uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility
+  name: ICompressionUtility
+  href: api/GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.html
+  commentId: T:GlitchedPolygons.Services.CompressionUtility.ICompressionUtility
+  fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility
+  nameWithType: ICompressionUtility
+- uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  name: Compress(Byte[], CompressionSettings)
+  href: api/GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.html#GlitchedPolygons_Services_CompressionUtility_ICompressionUtility_Compress_System_Byte___GlitchedPolygons_Services_CompressionUtility_CompressionSettings_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  name.vb: Compress(Byte(), CompressionSettings)
+  fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress(System.Byte[], GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  fullName.vb: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  nameWithType: ICompressionUtility.Compress(Byte[], CompressionSettings)
+  nameWithType.vb: ICompressionUtility.Compress(Byte(), CompressionSettings)
+- uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress(System.String,System.Text.Encoding)
+  name: Compress(String, Encoding)
+  href: api/GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.html#GlitchedPolygons_Services_CompressionUtility_ICompressionUtility_Compress_System_String_System_Text_Encoding_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress(System.String,System.Text.Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress(System.String, System.Text.Encoding)
+  nameWithType: ICompressionUtility.Compress(String, Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress*
+  name: Compress
+  href: api/GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.html#GlitchedPolygons_Services_CompressionUtility_ICompressionUtility_Compress_
+  commentId: Overload:GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress
+  isSpec: "True"
+  fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress
+  nameWithType: ICompressionUtility.Compress
+- uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  name: Decompress(Byte[], CompressionSettings)
+  href: api/GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.html#GlitchedPolygons_Services_CompressionUtility_ICompressionUtility_Decompress_System_Byte___GlitchedPolygons_Services_CompressionUtility_CompressionSettings_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  name.vb: Decompress(Byte(), CompressionSettings)
+  fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress(System.Byte[], GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  fullName.vb: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  nameWithType: ICompressionUtility.Decompress(Byte[], CompressionSettings)
+  nameWithType.vb: ICompressionUtility.Decompress(Byte(), CompressionSettings)
+- uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress(System.String,System.Text.Encoding)
+  name: Decompress(String, Encoding)
+  href: api/GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.html#GlitchedPolygons_Services_CompressionUtility_ICompressionUtility_Decompress_System_String_System_Text_Encoding_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress(System.String,System.Text.Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress(System.String, System.Text.Encoding)
+  nameWithType: ICompressionUtility.Decompress(String, Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress*
+  name: Decompress
+  href: api/GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.html#GlitchedPolygons_Services_CompressionUtility_ICompressionUtility_Decompress_
+  commentId: Overload:GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress
+  isSpec: "True"
+  fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress
+  nameWithType: ICompressionUtility.Decompress
+- uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync
+  name: ICompressionUtilityAsync
+  href: api/GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.html
+  commentId: T:GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync
+  fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync
+  nameWithType: ICompressionUtilityAsync
+- uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Compress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  name: Compress(Byte[], CompressionSettings)
+  href: api/GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_ICompressionUtilityAsync_Compress_System_Byte___GlitchedPolygons_Services_CompressionUtility_CompressionSettings_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Compress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  name.vb: Compress(Byte(), CompressionSettings)
+  fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Compress(System.Byte[], GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  fullName.vb: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Compress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  nameWithType: ICompressionUtilityAsync.Compress(Byte[], CompressionSettings)
+  nameWithType.vb: ICompressionUtilityAsync.Compress(Byte(), CompressionSettings)
+- uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Compress(System.String,System.Text.Encoding)
+  name: Compress(String, Encoding)
+  href: api/GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_ICompressionUtilityAsync_Compress_System_String_System_Text_Encoding_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Compress(System.String,System.Text.Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Compress(System.String, System.Text.Encoding)
+  nameWithType: ICompressionUtilityAsync.Compress(String, Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Compress*
+  name: Compress
+  href: api/GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_ICompressionUtilityAsync_Compress_
+  commentId: Overload:GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Compress
+  isSpec: "True"
+  fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Compress
+  nameWithType: ICompressionUtilityAsync.Compress
+- uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Decompress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  name: Decompress(Byte[], CompressionSettings)
+  href: api/GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_ICompressionUtilityAsync_Decompress_System_Byte___GlitchedPolygons_Services_CompressionUtility_CompressionSettings_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Decompress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  name.vb: Decompress(Byte(), CompressionSettings)
+  fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Decompress(System.Byte[], GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  fullName.vb: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Decompress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  nameWithType: ICompressionUtilityAsync.Decompress(Byte[], CompressionSettings)
+  nameWithType.vb: ICompressionUtilityAsync.Decompress(Byte(), CompressionSettings)
+- uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Decompress(System.String,System.Text.Encoding)
+  name: Decompress(String, Encoding)
+  href: api/GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_ICompressionUtilityAsync_Decompress_System_String_System_Text_Encoding_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Decompress(System.String,System.Text.Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Decompress(System.String, System.Text.Encoding)
+  nameWithType: ICompressionUtilityAsync.Decompress(String, Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Decompress*
+  name: Decompress
+  href: api/GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_ICompressionUtilityAsync_Decompress_
+  commentId: Overload:GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Decompress
+  isSpec: "True"
+  fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Decompress
+  nameWithType: ICompressionUtilityAsync.Decompress
+- uid: GlitchedPolygons.Services.CompressionUtility.LzmaUtility
+  name: LzmaUtility
+  href: api/GlitchedPolygons.Services.CompressionUtility.LzmaUtility.html
+  commentId: T:GlitchedPolygons.Services.CompressionUtility.LzmaUtility
+  fullName: GlitchedPolygons.Services.CompressionUtility.LzmaUtility
+  nameWithType: LzmaUtility
+- uid: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Compress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  name: Compress(Byte[], CompressionSettings)
+  href: api/GlitchedPolygons.Services.CompressionUtility.LzmaUtility.html#GlitchedPolygons_Services_CompressionUtility_LzmaUtility_Compress_System_Byte___GlitchedPolygons_Services_CompressionUtility_CompressionSettings_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Compress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  name.vb: Compress(Byte(), CompressionSettings)
+  fullName: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Compress(System.Byte[], GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  fullName.vb: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Compress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  nameWithType: LzmaUtility.Compress(Byte[], CompressionSettings)
+  nameWithType.vb: LzmaUtility.Compress(Byte(), CompressionSettings)
+- uid: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Compress(System.String,System.Text.Encoding)
+  name: Compress(String, Encoding)
+  href: api/GlitchedPolygons.Services.CompressionUtility.LzmaUtility.html#GlitchedPolygons_Services_CompressionUtility_LzmaUtility_Compress_System_String_System_Text_Encoding_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Compress(System.String,System.Text.Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Compress(System.String, System.Text.Encoding)
+  nameWithType: LzmaUtility.Compress(String, Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Compress*
+  name: Compress
+  href: api/GlitchedPolygons.Services.CompressionUtility.LzmaUtility.html#GlitchedPolygons_Services_CompressionUtility_LzmaUtility_Compress_
+  commentId: Overload:GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Compress
+  isSpec: "True"
+  fullName: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Compress
+  nameWithType: LzmaUtility.Compress
+- uid: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Decompress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  name: Decompress(Byte[], CompressionSettings)
+  href: api/GlitchedPolygons.Services.CompressionUtility.LzmaUtility.html#GlitchedPolygons_Services_CompressionUtility_LzmaUtility_Decompress_System_Byte___GlitchedPolygons_Services_CompressionUtility_CompressionSettings_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Decompress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  name.vb: Decompress(Byte(), CompressionSettings)
+  fullName: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Decompress(System.Byte[], GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  fullName.vb: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Decompress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  nameWithType: LzmaUtility.Decompress(Byte[], CompressionSettings)
+  nameWithType.vb: LzmaUtility.Decompress(Byte(), CompressionSettings)
+- uid: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Decompress(System.String,System.Text.Encoding)
+  name: Decompress(String, Encoding)
+  href: api/GlitchedPolygons.Services.CompressionUtility.LzmaUtility.html#GlitchedPolygons_Services_CompressionUtility_LzmaUtility_Decompress_System_String_System_Text_Encoding_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Decompress(System.String,System.Text.Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Decompress(System.String, System.Text.Encoding)
+  nameWithType: LzmaUtility.Decompress(String, Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Decompress*
+  name: Decompress
+  href: api/GlitchedPolygons.Services.CompressionUtility.LzmaUtility.html#GlitchedPolygons_Services_CompressionUtility_LzmaUtility_Decompress_
+  commentId: Overload:GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Decompress
+  isSpec: "True"
+  fullName: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Decompress
+  nameWithType: LzmaUtility.Decompress
+- uid: GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync
+  name: LzmaUtilityAsync
+  href: api/GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.html
+  commentId: T:GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync
+  fullName: GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync
+  nameWithType: LzmaUtilityAsync
+- uid: GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.Compress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  name: Compress(Byte[], CompressionSettings)
+  href: api/GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_LzmaUtilityAsync_Compress_System_Byte___GlitchedPolygons_Services_CompressionUtility_CompressionSettings_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.Compress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  name.vb: Compress(Byte(), CompressionSettings)
+  fullName: GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.Compress(System.Byte[], GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  fullName.vb: GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.Compress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  nameWithType: LzmaUtilityAsync.Compress(Byte[], CompressionSettings)
+  nameWithType.vb: LzmaUtilityAsync.Compress(Byte(), CompressionSettings)
+- uid: GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.Compress(System.String,System.Text.Encoding)
+  name: Compress(String, Encoding)
+  href: api/GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_LzmaUtilityAsync_Compress_System_String_System_Text_Encoding_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.Compress(System.String,System.Text.Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.Compress(System.String, System.Text.Encoding)
+  nameWithType: LzmaUtilityAsync.Compress(String, Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.Compress*
+  name: Compress
+  href: api/GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_LzmaUtilityAsync_Compress_
+  commentId: Overload:GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.Compress
+  isSpec: "True"
+  fullName: GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.Compress
+  nameWithType: LzmaUtilityAsync.Compress
+- uid: GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.Decompress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  name: Decompress(Byte[], CompressionSettings)
+  href: api/GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_LzmaUtilityAsync_Decompress_System_Byte___GlitchedPolygons_Services_CompressionUtility_CompressionSettings_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.Decompress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  name.vb: Decompress(Byte(), CompressionSettings)
+  fullName: GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.Decompress(System.Byte[], GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  fullName.vb: GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.Decompress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
+  nameWithType: LzmaUtilityAsync.Decompress(Byte[], CompressionSettings)
+  nameWithType.vb: LzmaUtilityAsync.Decompress(Byte(), CompressionSettings)
+- uid: GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.Decompress(System.String,System.Text.Encoding)
+  name: Decompress(String, Encoding)
+  href: api/GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_LzmaUtilityAsync_Decompress_System_String_System_Text_Encoding_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.Decompress(System.String,System.Text.Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.Decompress(System.String, System.Text.Encoding)
+  nameWithType: LzmaUtilityAsync.Decompress(String, Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.Decompress*
+  name: Decompress
+  href: api/GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_LzmaUtilityAsync_Decompress_
+  commentId: Overload:GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.Decompress
+  isSpec: "True"
+  fullName: GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.Decompress
+  nameWithType: LzmaUtilityAsync.Decompress
+- uid: SevenZip
+  name: SevenZip
+  href: api/SevenZip.html
+  commentId: N:SevenZip
+  fullName: SevenZip
+  nameWithType: SevenZip
+- uid: SevenZip.Buffer
+  name: SevenZip.Buffer
+  href: api/SevenZip.Buffer.html
+  commentId: N:SevenZip.Buffer
+  fullName: SevenZip.Buffer
+  nameWithType: SevenZip.Buffer
+- uid: SevenZip.Buffer.InBuffer
+  name: InBuffer
+  href: api/SevenZip.Buffer.InBuffer.html
+  commentId: T:SevenZip.Buffer.InBuffer
+  fullName: SevenZip.Buffer.InBuffer
+  nameWithType: InBuffer
+- uid: SevenZip.Buffer.InBuffer.#ctor(System.UInt32)
+  name: InBuffer(UInt32)
+  href: api/SevenZip.Buffer.InBuffer.html#SevenZip_Buffer_InBuffer__ctor_System_UInt32_
+  commentId: M:SevenZip.Buffer.InBuffer.#ctor(System.UInt32)
+  fullName: SevenZip.Buffer.InBuffer.InBuffer(System.UInt32)
+  nameWithType: InBuffer.InBuffer(UInt32)
+- uid: SevenZip.Buffer.InBuffer.#ctor*
+  name: InBuffer
+  href: api/SevenZip.Buffer.InBuffer.html#SevenZip_Buffer_InBuffer__ctor_
+  commentId: Overload:SevenZip.Buffer.InBuffer.#ctor
+  isSpec: "True"
+  fullName: SevenZip.Buffer.InBuffer.InBuffer
+  nameWithType: InBuffer.InBuffer
+- uid: SevenZip.Buffer.InBuffer.GetProcessedSize
+  name: GetProcessedSize()
+  href: api/SevenZip.Buffer.InBuffer.html#SevenZip_Buffer_InBuffer_GetProcessedSize
+  commentId: M:SevenZip.Buffer.InBuffer.GetProcessedSize
+  fullName: SevenZip.Buffer.InBuffer.GetProcessedSize()
+  nameWithType: InBuffer.GetProcessedSize()
+- uid: SevenZip.Buffer.InBuffer.GetProcessedSize*
+  name: GetProcessedSize
+  href: api/SevenZip.Buffer.InBuffer.html#SevenZip_Buffer_InBuffer_GetProcessedSize_
+  commentId: Overload:SevenZip.Buffer.InBuffer.GetProcessedSize
+  isSpec: "True"
+  fullName: SevenZip.Buffer.InBuffer.GetProcessedSize
+  nameWithType: InBuffer.GetProcessedSize
+- uid: SevenZip.Buffer.InBuffer.Init(System.IO.Stream)
+  name: Init(Stream)
+  href: api/SevenZip.Buffer.InBuffer.html#SevenZip_Buffer_InBuffer_Init_System_IO_Stream_
+  commentId: M:SevenZip.Buffer.InBuffer.Init(System.IO.Stream)
+  fullName: SevenZip.Buffer.InBuffer.Init(System.IO.Stream)
+  nameWithType: InBuffer.Init(Stream)
+- uid: SevenZip.Buffer.InBuffer.Init*
+  name: Init
+  href: api/SevenZip.Buffer.InBuffer.html#SevenZip_Buffer_InBuffer_Init_
+  commentId: Overload:SevenZip.Buffer.InBuffer.Init
+  isSpec: "True"
+  fullName: SevenZip.Buffer.InBuffer.Init
+  nameWithType: InBuffer.Init
+- uid: SevenZip.Buffer.InBuffer.ReadBlock
+  name: ReadBlock()
+  href: api/SevenZip.Buffer.InBuffer.html#SevenZip_Buffer_InBuffer_ReadBlock
+  commentId: M:SevenZip.Buffer.InBuffer.ReadBlock
+  fullName: SevenZip.Buffer.InBuffer.ReadBlock()
+  nameWithType: InBuffer.ReadBlock()
+- uid: SevenZip.Buffer.InBuffer.ReadBlock*
+  name: ReadBlock
+  href: api/SevenZip.Buffer.InBuffer.html#SevenZip_Buffer_InBuffer_ReadBlock_
+  commentId: Overload:SevenZip.Buffer.InBuffer.ReadBlock
+  isSpec: "True"
+  fullName: SevenZip.Buffer.InBuffer.ReadBlock
+  nameWithType: InBuffer.ReadBlock
+- uid: SevenZip.Buffer.InBuffer.ReadByte
+  name: ReadByte()
+  href: api/SevenZip.Buffer.InBuffer.html#SevenZip_Buffer_InBuffer_ReadByte
+  commentId: M:SevenZip.Buffer.InBuffer.ReadByte
+  fullName: SevenZip.Buffer.InBuffer.ReadByte()
+  nameWithType: InBuffer.ReadByte()
+- uid: SevenZip.Buffer.InBuffer.ReadByte(System.Byte)
+  name: ReadByte(Byte)
+  href: api/SevenZip.Buffer.InBuffer.html#SevenZip_Buffer_InBuffer_ReadByte_System_Byte_
+  commentId: M:SevenZip.Buffer.InBuffer.ReadByte(System.Byte)
+  fullName: SevenZip.Buffer.InBuffer.ReadByte(System.Byte)
+  nameWithType: InBuffer.ReadByte(Byte)
+- uid: SevenZip.Buffer.InBuffer.ReadByte*
+  name: ReadByte
+  href: api/SevenZip.Buffer.InBuffer.html#SevenZip_Buffer_InBuffer_ReadByte_
+  commentId: Overload:SevenZip.Buffer.InBuffer.ReadByte
+  isSpec: "True"
+  fullName: SevenZip.Buffer.InBuffer.ReadByte
+  nameWithType: InBuffer.ReadByte
+- uid: SevenZip.Buffer.InBuffer.ReleaseStream
+  name: ReleaseStream()
+  href: api/SevenZip.Buffer.InBuffer.html#SevenZip_Buffer_InBuffer_ReleaseStream
+  commentId: M:SevenZip.Buffer.InBuffer.ReleaseStream
+  fullName: SevenZip.Buffer.InBuffer.ReleaseStream()
+  nameWithType: InBuffer.ReleaseStream()
+- uid: SevenZip.Buffer.InBuffer.ReleaseStream*
+  name: ReleaseStream
+  href: api/SevenZip.Buffer.InBuffer.html#SevenZip_Buffer_InBuffer_ReleaseStream_
+  commentId: Overload:SevenZip.Buffer.InBuffer.ReleaseStream
+  isSpec: "True"
+  fullName: SevenZip.Buffer.InBuffer.ReleaseStream
+  nameWithType: InBuffer.ReleaseStream
+- uid: SevenZip.Buffer.OutBuffer
+  name: OutBuffer
+  href: api/SevenZip.Buffer.OutBuffer.html
+  commentId: T:SevenZip.Buffer.OutBuffer
+  fullName: SevenZip.Buffer.OutBuffer
+  nameWithType: OutBuffer
+- uid: SevenZip.Buffer.OutBuffer.#ctor(System.UInt32)
+  name: OutBuffer(UInt32)
+  href: api/SevenZip.Buffer.OutBuffer.html#SevenZip_Buffer_OutBuffer__ctor_System_UInt32_
+  commentId: M:SevenZip.Buffer.OutBuffer.#ctor(System.UInt32)
+  fullName: SevenZip.Buffer.OutBuffer.OutBuffer(System.UInt32)
+  nameWithType: OutBuffer.OutBuffer(UInt32)
+- uid: SevenZip.Buffer.OutBuffer.#ctor*
+  name: OutBuffer
+  href: api/SevenZip.Buffer.OutBuffer.html#SevenZip_Buffer_OutBuffer__ctor_
+  commentId: Overload:SevenZip.Buffer.OutBuffer.#ctor
+  isSpec: "True"
+  fullName: SevenZip.Buffer.OutBuffer.OutBuffer
+  nameWithType: OutBuffer.OutBuffer
+- uid: SevenZip.Buffer.OutBuffer.CloseStream
+  name: CloseStream()
+  href: api/SevenZip.Buffer.OutBuffer.html#SevenZip_Buffer_OutBuffer_CloseStream
+  commentId: M:SevenZip.Buffer.OutBuffer.CloseStream
+  fullName: SevenZip.Buffer.OutBuffer.CloseStream()
+  nameWithType: OutBuffer.CloseStream()
+- uid: SevenZip.Buffer.OutBuffer.CloseStream*
+  name: CloseStream
+  href: api/SevenZip.Buffer.OutBuffer.html#SevenZip_Buffer_OutBuffer_CloseStream_
+  commentId: Overload:SevenZip.Buffer.OutBuffer.CloseStream
+  isSpec: "True"
+  fullName: SevenZip.Buffer.OutBuffer.CloseStream
+  nameWithType: OutBuffer.CloseStream
+- uid: SevenZip.Buffer.OutBuffer.FlushData
+  name: FlushData()
+  href: api/SevenZip.Buffer.OutBuffer.html#SevenZip_Buffer_OutBuffer_FlushData
+  commentId: M:SevenZip.Buffer.OutBuffer.FlushData
+  fullName: SevenZip.Buffer.OutBuffer.FlushData()
+  nameWithType: OutBuffer.FlushData()
+- uid: SevenZip.Buffer.OutBuffer.FlushData*
+  name: FlushData
+  href: api/SevenZip.Buffer.OutBuffer.html#SevenZip_Buffer_OutBuffer_FlushData_
+  commentId: Overload:SevenZip.Buffer.OutBuffer.FlushData
+  isSpec: "True"
+  fullName: SevenZip.Buffer.OutBuffer.FlushData
+  nameWithType: OutBuffer.FlushData
+- uid: SevenZip.Buffer.OutBuffer.FlushStream
+  name: FlushStream()
+  href: api/SevenZip.Buffer.OutBuffer.html#SevenZip_Buffer_OutBuffer_FlushStream
+  commentId: M:SevenZip.Buffer.OutBuffer.FlushStream
+  fullName: SevenZip.Buffer.OutBuffer.FlushStream()
+  nameWithType: OutBuffer.FlushStream()
+- uid: SevenZip.Buffer.OutBuffer.FlushStream*
+  name: FlushStream
+  href: api/SevenZip.Buffer.OutBuffer.html#SevenZip_Buffer_OutBuffer_FlushStream_
+  commentId: Overload:SevenZip.Buffer.OutBuffer.FlushStream
+  isSpec: "True"
+  fullName: SevenZip.Buffer.OutBuffer.FlushStream
+  nameWithType: OutBuffer.FlushStream
+- uid: SevenZip.Buffer.OutBuffer.GetProcessedSize
+  name: GetProcessedSize()
+  href: api/SevenZip.Buffer.OutBuffer.html#SevenZip_Buffer_OutBuffer_GetProcessedSize
+  commentId: M:SevenZip.Buffer.OutBuffer.GetProcessedSize
+  fullName: SevenZip.Buffer.OutBuffer.GetProcessedSize()
+  nameWithType: OutBuffer.GetProcessedSize()
+- uid: SevenZip.Buffer.OutBuffer.GetProcessedSize*
+  name: GetProcessedSize
+  href: api/SevenZip.Buffer.OutBuffer.html#SevenZip_Buffer_OutBuffer_GetProcessedSize_
+  commentId: Overload:SevenZip.Buffer.OutBuffer.GetProcessedSize
+  isSpec: "True"
+  fullName: SevenZip.Buffer.OutBuffer.GetProcessedSize
+  nameWithType: OutBuffer.GetProcessedSize
+- uid: SevenZip.Buffer.OutBuffer.Init
+  name: Init()
+  href: api/SevenZip.Buffer.OutBuffer.html#SevenZip_Buffer_OutBuffer_Init
+  commentId: M:SevenZip.Buffer.OutBuffer.Init
+  fullName: SevenZip.Buffer.OutBuffer.Init()
+  nameWithType: OutBuffer.Init()
+- uid: SevenZip.Buffer.OutBuffer.Init*
+  name: Init
+  href: api/SevenZip.Buffer.OutBuffer.html#SevenZip_Buffer_OutBuffer_Init_
+  commentId: Overload:SevenZip.Buffer.OutBuffer.Init
+  isSpec: "True"
+  fullName: SevenZip.Buffer.OutBuffer.Init
+  nameWithType: OutBuffer.Init
+- uid: SevenZip.Buffer.OutBuffer.ReleaseStream
+  name: ReleaseStream()
+  href: api/SevenZip.Buffer.OutBuffer.html#SevenZip_Buffer_OutBuffer_ReleaseStream
+  commentId: M:SevenZip.Buffer.OutBuffer.ReleaseStream
+  fullName: SevenZip.Buffer.OutBuffer.ReleaseStream()
+  nameWithType: OutBuffer.ReleaseStream()
+- uid: SevenZip.Buffer.OutBuffer.ReleaseStream*
+  name: ReleaseStream
+  href: api/SevenZip.Buffer.OutBuffer.html#SevenZip_Buffer_OutBuffer_ReleaseStream_
+  commentId: Overload:SevenZip.Buffer.OutBuffer.ReleaseStream
+  isSpec: "True"
+  fullName: SevenZip.Buffer.OutBuffer.ReleaseStream
+  nameWithType: OutBuffer.ReleaseStream
+- uid: SevenZip.Buffer.OutBuffer.SetStream(System.IO.Stream)
+  name: SetStream(Stream)
+  href: api/SevenZip.Buffer.OutBuffer.html#SevenZip_Buffer_OutBuffer_SetStream_System_IO_Stream_
+  commentId: M:SevenZip.Buffer.OutBuffer.SetStream(System.IO.Stream)
+  fullName: SevenZip.Buffer.OutBuffer.SetStream(System.IO.Stream)
+  nameWithType: OutBuffer.SetStream(Stream)
+- uid: SevenZip.Buffer.OutBuffer.SetStream*
+  name: SetStream
+  href: api/SevenZip.Buffer.OutBuffer.html#SevenZip_Buffer_OutBuffer_SetStream_
+  commentId: Overload:SevenZip.Buffer.OutBuffer.SetStream
+  isSpec: "True"
+  fullName: SevenZip.Buffer.OutBuffer.SetStream
+  nameWithType: OutBuffer.SetStream
+- uid: SevenZip.Buffer.OutBuffer.WriteByte(System.Byte)
+  name: WriteByte(Byte)
+  href: api/SevenZip.Buffer.OutBuffer.html#SevenZip_Buffer_OutBuffer_WriteByte_System_Byte_
+  commentId: M:SevenZip.Buffer.OutBuffer.WriteByte(System.Byte)
+  fullName: SevenZip.Buffer.OutBuffer.WriteByte(System.Byte)
+  nameWithType: OutBuffer.WriteByte(Byte)
+- uid: SevenZip.Buffer.OutBuffer.WriteByte*
+  name: WriteByte
+  href: api/SevenZip.Buffer.OutBuffer.html#SevenZip_Buffer_OutBuffer_WriteByte_
+  commentId: Overload:SevenZip.Buffer.OutBuffer.WriteByte
+  isSpec: "True"
+  fullName: SevenZip.Buffer.OutBuffer.WriteByte
+  nameWithType: OutBuffer.WriteByte
+- uid: SevenZip.CoderPropID
+  name: CoderPropID
+  href: api/SevenZip.CoderPropID.html
+  commentId: T:SevenZip.CoderPropID
+  fullName: SevenZip.CoderPropID
+  nameWithType: CoderPropID
+- uid: SevenZip.CoderPropID.Algorithm
+  name: Algorithm
+  href: api/SevenZip.CoderPropID.html#SevenZip_CoderPropID_Algorithm
+  commentId: F:SevenZip.CoderPropID.Algorithm
+  fullName: SevenZip.CoderPropID.Algorithm
+  nameWithType: CoderPropID.Algorithm
+- uid: SevenZip.CoderPropID.BlockSize
+  name: BlockSize
+  href: api/SevenZip.CoderPropID.html#SevenZip_CoderPropID_BlockSize
+  commentId: F:SevenZip.CoderPropID.BlockSize
+  fullName: SevenZip.CoderPropID.BlockSize
+  nameWithType: CoderPropID.BlockSize
+- uid: SevenZip.CoderPropID.DefaultProp
+  name: DefaultProp
+  href: api/SevenZip.CoderPropID.html#SevenZip_CoderPropID_DefaultProp
+  commentId: F:SevenZip.CoderPropID.DefaultProp
+  fullName: SevenZip.CoderPropID.DefaultProp
+  nameWithType: CoderPropID.DefaultProp
+- uid: SevenZip.CoderPropID.DictionarySize
+  name: DictionarySize
+  href: api/SevenZip.CoderPropID.html#SevenZip_CoderPropID_DictionarySize
+  commentId: F:SevenZip.CoderPropID.DictionarySize
+  fullName: SevenZip.CoderPropID.DictionarySize
+  nameWithType: CoderPropID.DictionarySize
+- uid: SevenZip.CoderPropID.EndMarker
+  name: EndMarker
+  href: api/SevenZip.CoderPropID.html#SevenZip_CoderPropID_EndMarker
+  commentId: F:SevenZip.CoderPropID.EndMarker
+  fullName: SevenZip.CoderPropID.EndMarker
+  nameWithType: CoderPropID.EndMarker
+- uid: SevenZip.CoderPropID.LitContextBits
+  name: LitContextBits
+  href: api/SevenZip.CoderPropID.html#SevenZip_CoderPropID_LitContextBits
+  commentId: F:SevenZip.CoderPropID.LitContextBits
+  fullName: SevenZip.CoderPropID.LitContextBits
+  nameWithType: CoderPropID.LitContextBits
+- uid: SevenZip.CoderPropID.LitPosBits
+  name: LitPosBits
+  href: api/SevenZip.CoderPropID.html#SevenZip_CoderPropID_LitPosBits
+  commentId: F:SevenZip.CoderPropID.LitPosBits
+  fullName: SevenZip.CoderPropID.LitPosBits
+  nameWithType: CoderPropID.LitPosBits
+- uid: SevenZip.CoderPropID.MatchFinder
+  name: MatchFinder
+  href: api/SevenZip.CoderPropID.html#SevenZip_CoderPropID_MatchFinder
+  commentId: F:SevenZip.CoderPropID.MatchFinder
+  fullName: SevenZip.CoderPropID.MatchFinder
+  nameWithType: CoderPropID.MatchFinder
+- uid: SevenZip.CoderPropID.MatchFinderCycles
+  name: MatchFinderCycles
+  href: api/SevenZip.CoderPropID.html#SevenZip_CoderPropID_MatchFinderCycles
+  commentId: F:SevenZip.CoderPropID.MatchFinderCycles
+  fullName: SevenZip.CoderPropID.MatchFinderCycles
+  nameWithType: CoderPropID.MatchFinderCycles
+- uid: SevenZip.CoderPropID.NumFastBytes
+  name: NumFastBytes
+  href: api/SevenZip.CoderPropID.html#SevenZip_CoderPropID_NumFastBytes
+  commentId: F:SevenZip.CoderPropID.NumFastBytes
+  fullName: SevenZip.CoderPropID.NumFastBytes
+  nameWithType: CoderPropID.NumFastBytes
+- uid: SevenZip.CoderPropID.NumPasses
+  name: NumPasses
+  href: api/SevenZip.CoderPropID.html#SevenZip_CoderPropID_NumPasses
+  commentId: F:SevenZip.CoderPropID.NumPasses
+  fullName: SevenZip.CoderPropID.NumPasses
+  nameWithType: CoderPropID.NumPasses
+- uid: SevenZip.CoderPropID.NumThreads
+  name: NumThreads
+  href: api/SevenZip.CoderPropID.html#SevenZip_CoderPropID_NumThreads
+  commentId: F:SevenZip.CoderPropID.NumThreads
+  fullName: SevenZip.CoderPropID.NumThreads
+  nameWithType: CoderPropID.NumThreads
+- uid: SevenZip.CoderPropID.Order
+  name: Order
+  href: api/SevenZip.CoderPropID.html#SevenZip_CoderPropID_Order
+  commentId: F:SevenZip.CoderPropID.Order
+  fullName: SevenZip.CoderPropID.Order
+  nameWithType: CoderPropID.Order
+- uid: SevenZip.CoderPropID.PosStateBits
+  name: PosStateBits
+  href: api/SevenZip.CoderPropID.html#SevenZip_CoderPropID_PosStateBits
+  commentId: F:SevenZip.CoderPropID.PosStateBits
+  fullName: SevenZip.CoderPropID.PosStateBits
+  nameWithType: CoderPropID.PosStateBits
+- uid: SevenZip.CoderPropID.UsedMemorySize
+  name: UsedMemorySize
+  href: api/SevenZip.CoderPropID.html#SevenZip_CoderPropID_UsedMemorySize
+  commentId: F:SevenZip.CoderPropID.UsedMemorySize
+  fullName: SevenZip.CoderPropID.UsedMemorySize
+  nameWithType: CoderPropID.UsedMemorySize
+- uid: SevenZip.CommandLineParser
+  name: SevenZip.CommandLineParser
+  href: api/SevenZip.CommandLineParser.html
+  commentId: N:SevenZip.CommandLineParser
+  fullName: SevenZip.CommandLineParser
+  nameWithType: SevenZip.CommandLineParser
+- uid: SevenZip.CommandLineParser.CommandForm
+  name: CommandForm
+  href: api/SevenZip.CommandLineParser.CommandForm.html
+  commentId: T:SevenZip.CommandLineParser.CommandForm
+  fullName: SevenZip.CommandLineParser.CommandForm
+  nameWithType: CommandForm
+- uid: SevenZip.CommandLineParser.CommandForm.#ctor(System.String,System.Boolean)
+  name: CommandForm(String, Boolean)
+  href: api/SevenZip.CommandLineParser.CommandForm.html#SevenZip_CommandLineParser_CommandForm__ctor_System_String_System_Boolean_
+  commentId: M:SevenZip.CommandLineParser.CommandForm.#ctor(System.String,System.Boolean)
+  fullName: SevenZip.CommandLineParser.CommandForm.CommandForm(System.String, System.Boolean)
+  nameWithType: CommandForm.CommandForm(String, Boolean)
+- uid: SevenZip.CommandLineParser.CommandForm.#ctor*
+  name: CommandForm
+  href: api/SevenZip.CommandLineParser.CommandForm.html#SevenZip_CommandLineParser_CommandForm__ctor_
+  commentId: Overload:SevenZip.CommandLineParser.CommandForm.#ctor
+  isSpec: "True"
+  fullName: SevenZip.CommandLineParser.CommandForm.CommandForm
+  nameWithType: CommandForm.CommandForm
+- uid: SevenZip.CommandLineParser.CommandForm.IDString
+  name: IDString
+  href: api/SevenZip.CommandLineParser.CommandForm.html#SevenZip_CommandLineParser_CommandForm_IDString
+  commentId: F:SevenZip.CommandLineParser.CommandForm.IDString
+  fullName: SevenZip.CommandLineParser.CommandForm.IDString
+  nameWithType: CommandForm.IDString
+- uid: SevenZip.CommandLineParser.CommandForm.PostStringMode
+  name: PostStringMode
+  href: api/SevenZip.CommandLineParser.CommandForm.html#SevenZip_CommandLineParser_CommandForm_PostStringMode
+  commentId: F:SevenZip.CommandLineParser.CommandForm.PostStringMode
+  fullName: SevenZip.CommandLineParser.CommandForm.PostStringMode
+  nameWithType: CommandForm.PostStringMode
+- uid: SevenZip.CommandLineParser.Parser
+  name: Parser
+  href: api/SevenZip.CommandLineParser.Parser.html
+  commentId: T:SevenZip.CommandLineParser.Parser
+  fullName: SevenZip.CommandLineParser.Parser
+  nameWithType: Parser
+- uid: SevenZip.CommandLineParser.Parser.#ctor(System.Int32)
+  name: Parser(Int32)
+  href: api/SevenZip.CommandLineParser.Parser.html#SevenZip_CommandLineParser_Parser__ctor_System_Int32_
+  commentId: M:SevenZip.CommandLineParser.Parser.#ctor(System.Int32)
+  fullName: SevenZip.CommandLineParser.Parser.Parser(System.Int32)
+  nameWithType: Parser.Parser(Int32)
+- uid: SevenZip.CommandLineParser.Parser.#ctor*
+  name: Parser
+  href: api/SevenZip.CommandLineParser.Parser.html#SevenZip_CommandLineParser_Parser__ctor_
+  commentId: Overload:SevenZip.CommandLineParser.Parser.#ctor
+  isSpec: "True"
+  fullName: SevenZip.CommandLineParser.Parser.Parser
+  nameWithType: Parser.Parser
+- uid: SevenZip.CommandLineParser.Parser.Item(System.Int32)
+  name: Item[Int32]
+  href: api/SevenZip.CommandLineParser.Parser.html#SevenZip_CommandLineParser_Parser_Item_System_Int32_
+  commentId: P:SevenZip.CommandLineParser.Parser.Item(System.Int32)
+  name.vb: Item(Int32)
+  fullName: SevenZip.CommandLineParser.Parser.Item[System.Int32]
+  fullName.vb: SevenZip.CommandLineParser.Parser.Item(System.Int32)
+  nameWithType: Parser.Item[Int32]
+  nameWithType.vb: Parser.Item(Int32)
+- uid: SevenZip.CommandLineParser.Parser.Item*
+  name: Item
+  href: api/SevenZip.CommandLineParser.Parser.html#SevenZip_CommandLineParser_Parser_Item_
+  commentId: Overload:SevenZip.CommandLineParser.Parser.Item
+  isSpec: "True"
+  fullName: SevenZip.CommandLineParser.Parser.Item
+  nameWithType: Parser.Item
+- uid: SevenZip.CommandLineParser.Parser.NonSwitchStrings
+  name: NonSwitchStrings
+  href: api/SevenZip.CommandLineParser.Parser.html#SevenZip_CommandLineParser_Parser_NonSwitchStrings
+  commentId: F:SevenZip.CommandLineParser.Parser.NonSwitchStrings
+  fullName: SevenZip.CommandLineParser.Parser.NonSwitchStrings
+  nameWithType: Parser.NonSwitchStrings
+- uid: SevenZip.CommandLineParser.Parser.ParseCommand(SevenZip.CommandLineParser.CommandForm[],System.String,System.String@)
+  name: ParseCommand(CommandForm[], String, out String)
+  href: api/SevenZip.CommandLineParser.Parser.html#SevenZip_CommandLineParser_Parser_ParseCommand_SevenZip_CommandLineParser_CommandForm___System_String_System_String__
+  commentId: M:SevenZip.CommandLineParser.Parser.ParseCommand(SevenZip.CommandLineParser.CommandForm[],System.String,System.String@)
+  name.vb: ParseCommand(CommandForm(), String, ByRef String)
+  fullName: SevenZip.CommandLineParser.Parser.ParseCommand(SevenZip.CommandLineParser.CommandForm[], System.String, out System.String)
+  fullName.vb: SevenZip.CommandLineParser.Parser.ParseCommand(SevenZip.CommandLineParser.CommandForm(), System.String, ByRef System.String)
+  nameWithType: Parser.ParseCommand(CommandForm[], String, out String)
+  nameWithType.vb: Parser.ParseCommand(CommandForm(), String, ByRef String)
+- uid: SevenZip.CommandLineParser.Parser.ParseCommand*
+  name: ParseCommand
+  href: api/SevenZip.CommandLineParser.Parser.html#SevenZip_CommandLineParser_Parser_ParseCommand_
+  commentId: Overload:SevenZip.CommandLineParser.Parser.ParseCommand
+  isSpec: "True"
+  fullName: SevenZip.CommandLineParser.Parser.ParseCommand
+  nameWithType: Parser.ParseCommand
+- uid: SevenZip.CommandLineParser.Parser.ParseStrings(SevenZip.CommandLineParser.SwitchForm[],System.String[])
+  name: ParseStrings(SwitchForm[], String[])
+  href: api/SevenZip.CommandLineParser.Parser.html#SevenZip_CommandLineParser_Parser_ParseStrings_SevenZip_CommandLineParser_SwitchForm___System_String___
+  commentId: M:SevenZip.CommandLineParser.Parser.ParseStrings(SevenZip.CommandLineParser.SwitchForm[],System.String[])
+  name.vb: ParseStrings(SwitchForm(), String())
+  fullName: SevenZip.CommandLineParser.Parser.ParseStrings(SevenZip.CommandLineParser.SwitchForm[], System.String[])
+  fullName.vb: SevenZip.CommandLineParser.Parser.ParseStrings(SevenZip.CommandLineParser.SwitchForm(), System.String())
+  nameWithType: Parser.ParseStrings(SwitchForm[], String[])
+  nameWithType.vb: Parser.ParseStrings(SwitchForm(), String())
+- uid: SevenZip.CommandLineParser.Parser.ParseStrings*
+  name: ParseStrings
+  href: api/SevenZip.CommandLineParser.Parser.html#SevenZip_CommandLineParser_Parser_ParseStrings_
+  commentId: Overload:SevenZip.CommandLineParser.Parser.ParseStrings
+  isSpec: "True"
+  fullName: SevenZip.CommandLineParser.Parser.ParseStrings
+  nameWithType: Parser.ParseStrings
+- uid: SevenZip.CommandLineParser.SwitchForm
+  name: SwitchForm
+  href: api/SevenZip.CommandLineParser.SwitchForm.html
+  commentId: T:SevenZip.CommandLineParser.SwitchForm
+  fullName: SevenZip.CommandLineParser.SwitchForm
+  nameWithType: SwitchForm
+- uid: SevenZip.CommandLineParser.SwitchForm.#ctor(System.String,SevenZip.CommandLineParser.SwitchType,System.Boolean)
+  name: SwitchForm(String, SwitchType, Boolean)
+  href: api/SevenZip.CommandLineParser.SwitchForm.html#SevenZip_CommandLineParser_SwitchForm__ctor_System_String_SevenZip_CommandLineParser_SwitchType_System_Boolean_
+  commentId: M:SevenZip.CommandLineParser.SwitchForm.#ctor(System.String,SevenZip.CommandLineParser.SwitchType,System.Boolean)
+  fullName: SevenZip.CommandLineParser.SwitchForm.SwitchForm(System.String, SevenZip.CommandLineParser.SwitchType, System.Boolean)
+  nameWithType: SwitchForm.SwitchForm(String, SwitchType, Boolean)
+- uid: SevenZip.CommandLineParser.SwitchForm.#ctor(System.String,SevenZip.CommandLineParser.SwitchType,System.Boolean,System.Int32)
+  name: SwitchForm(String, SwitchType, Boolean, Int32)
+  href: api/SevenZip.CommandLineParser.SwitchForm.html#SevenZip_CommandLineParser_SwitchForm__ctor_System_String_SevenZip_CommandLineParser_SwitchType_System_Boolean_System_Int32_
+  commentId: M:SevenZip.CommandLineParser.SwitchForm.#ctor(System.String,SevenZip.CommandLineParser.SwitchType,System.Boolean,System.Int32)
+  fullName: SevenZip.CommandLineParser.SwitchForm.SwitchForm(System.String, SevenZip.CommandLineParser.SwitchType, System.Boolean, System.Int32)
+  nameWithType: SwitchForm.SwitchForm(String, SwitchType, Boolean, Int32)
+- uid: SevenZip.CommandLineParser.SwitchForm.#ctor(System.String,SevenZip.CommandLineParser.SwitchType,System.Boolean,System.Int32,System.Int32,System.String)
+  name: SwitchForm(String, SwitchType, Boolean, Int32, Int32, String)
+  href: api/SevenZip.CommandLineParser.SwitchForm.html#SevenZip_CommandLineParser_SwitchForm__ctor_System_String_SevenZip_CommandLineParser_SwitchType_System_Boolean_System_Int32_System_Int32_System_String_
+  commentId: M:SevenZip.CommandLineParser.SwitchForm.#ctor(System.String,SevenZip.CommandLineParser.SwitchType,System.Boolean,System.Int32,System.Int32,System.String)
+  fullName: SevenZip.CommandLineParser.SwitchForm.SwitchForm(System.String, SevenZip.CommandLineParser.SwitchType, System.Boolean, System.Int32, System.Int32, System.String)
+  nameWithType: SwitchForm.SwitchForm(String, SwitchType, Boolean, Int32, Int32, String)
+- uid: SevenZip.CommandLineParser.SwitchForm.#ctor*
+  name: SwitchForm
+  href: api/SevenZip.CommandLineParser.SwitchForm.html#SevenZip_CommandLineParser_SwitchForm__ctor_
+  commentId: Overload:SevenZip.CommandLineParser.SwitchForm.#ctor
+  isSpec: "True"
+  fullName: SevenZip.CommandLineParser.SwitchForm.SwitchForm
+  nameWithType: SwitchForm.SwitchForm
+- uid: SevenZip.CommandLineParser.SwitchForm.IDString
+  name: IDString
+  href: api/SevenZip.CommandLineParser.SwitchForm.html#SevenZip_CommandLineParser_SwitchForm_IDString
+  commentId: F:SevenZip.CommandLineParser.SwitchForm.IDString
+  fullName: SevenZip.CommandLineParser.SwitchForm.IDString
+  nameWithType: SwitchForm.IDString
+- uid: SevenZip.CommandLineParser.SwitchForm.MaxLen
+  name: MaxLen
+  href: api/SevenZip.CommandLineParser.SwitchForm.html#SevenZip_CommandLineParser_SwitchForm_MaxLen
+  commentId: F:SevenZip.CommandLineParser.SwitchForm.MaxLen
+  fullName: SevenZip.CommandLineParser.SwitchForm.MaxLen
+  nameWithType: SwitchForm.MaxLen
+- uid: SevenZip.CommandLineParser.SwitchForm.MinLen
+  name: MinLen
+  href: api/SevenZip.CommandLineParser.SwitchForm.html#SevenZip_CommandLineParser_SwitchForm_MinLen
+  commentId: F:SevenZip.CommandLineParser.SwitchForm.MinLen
+  fullName: SevenZip.CommandLineParser.SwitchForm.MinLen
+  nameWithType: SwitchForm.MinLen
+- uid: SevenZip.CommandLineParser.SwitchForm.Multi
+  name: Multi
+  href: api/SevenZip.CommandLineParser.SwitchForm.html#SevenZip_CommandLineParser_SwitchForm_Multi
+  commentId: F:SevenZip.CommandLineParser.SwitchForm.Multi
+  fullName: SevenZip.CommandLineParser.SwitchForm.Multi
+  nameWithType: SwitchForm.Multi
+- uid: SevenZip.CommandLineParser.SwitchForm.PostCharSet
+  name: PostCharSet
+  href: api/SevenZip.CommandLineParser.SwitchForm.html#SevenZip_CommandLineParser_SwitchForm_PostCharSet
+  commentId: F:SevenZip.CommandLineParser.SwitchForm.PostCharSet
+  fullName: SevenZip.CommandLineParser.SwitchForm.PostCharSet
+  nameWithType: SwitchForm.PostCharSet
+- uid: SevenZip.CommandLineParser.SwitchForm.Type
+  name: Type
+  href: api/SevenZip.CommandLineParser.SwitchForm.html#SevenZip_CommandLineParser_SwitchForm_Type
+  commentId: F:SevenZip.CommandLineParser.SwitchForm.Type
+  fullName: SevenZip.CommandLineParser.SwitchForm.Type
+  nameWithType: SwitchForm.Type
+- uid: SevenZip.CommandLineParser.SwitchResult
+  name: SwitchResult
+  href: api/SevenZip.CommandLineParser.SwitchResult.html
+  commentId: T:SevenZip.CommandLineParser.SwitchResult
+  fullName: SevenZip.CommandLineParser.SwitchResult
+  nameWithType: SwitchResult
+- uid: SevenZip.CommandLineParser.SwitchResult.#ctor
+  name: SwitchResult()
+  href: api/SevenZip.CommandLineParser.SwitchResult.html#SevenZip_CommandLineParser_SwitchResult__ctor
+  commentId: M:SevenZip.CommandLineParser.SwitchResult.#ctor
+  fullName: SevenZip.CommandLineParser.SwitchResult.SwitchResult()
+  nameWithType: SwitchResult.SwitchResult()
+- uid: SevenZip.CommandLineParser.SwitchResult.#ctor*
+  name: SwitchResult
+  href: api/SevenZip.CommandLineParser.SwitchResult.html#SevenZip_CommandLineParser_SwitchResult__ctor_
+  commentId: Overload:SevenZip.CommandLineParser.SwitchResult.#ctor
+  isSpec: "True"
+  fullName: SevenZip.CommandLineParser.SwitchResult.SwitchResult
+  nameWithType: SwitchResult.SwitchResult
+- uid: SevenZip.CommandLineParser.SwitchResult.PostCharIndex
+  name: PostCharIndex
+  href: api/SevenZip.CommandLineParser.SwitchResult.html#SevenZip_CommandLineParser_SwitchResult_PostCharIndex
+  commentId: F:SevenZip.CommandLineParser.SwitchResult.PostCharIndex
+  fullName: SevenZip.CommandLineParser.SwitchResult.PostCharIndex
+  nameWithType: SwitchResult.PostCharIndex
+- uid: SevenZip.CommandLineParser.SwitchResult.PostStrings
+  name: PostStrings
+  href: api/SevenZip.CommandLineParser.SwitchResult.html#SevenZip_CommandLineParser_SwitchResult_PostStrings
+  commentId: F:SevenZip.CommandLineParser.SwitchResult.PostStrings
+  fullName: SevenZip.CommandLineParser.SwitchResult.PostStrings
+  nameWithType: SwitchResult.PostStrings
+- uid: SevenZip.CommandLineParser.SwitchResult.ThereIs
+  name: ThereIs
+  href: api/SevenZip.CommandLineParser.SwitchResult.html#SevenZip_CommandLineParser_SwitchResult_ThereIs
+  commentId: F:SevenZip.CommandLineParser.SwitchResult.ThereIs
+  fullName: SevenZip.CommandLineParser.SwitchResult.ThereIs
+  nameWithType: SwitchResult.ThereIs
+- uid: SevenZip.CommandLineParser.SwitchResult.WithMinus
+  name: WithMinus
+  href: api/SevenZip.CommandLineParser.SwitchResult.html#SevenZip_CommandLineParser_SwitchResult_WithMinus
+  commentId: F:SevenZip.CommandLineParser.SwitchResult.WithMinus
+  fullName: SevenZip.CommandLineParser.SwitchResult.WithMinus
+  nameWithType: SwitchResult.WithMinus
+- uid: SevenZip.CommandLineParser.SwitchType
+  name: SwitchType
+  href: api/SevenZip.CommandLineParser.SwitchType.html
+  commentId: T:SevenZip.CommandLineParser.SwitchType
+  fullName: SevenZip.CommandLineParser.SwitchType
+  nameWithType: SwitchType
+- uid: SevenZip.CommandLineParser.SwitchType.LimitedPostString
+  name: LimitedPostString
+  href: api/SevenZip.CommandLineParser.SwitchType.html#SevenZip_CommandLineParser_SwitchType_LimitedPostString
+  commentId: F:SevenZip.CommandLineParser.SwitchType.LimitedPostString
+  fullName: SevenZip.CommandLineParser.SwitchType.LimitedPostString
+  nameWithType: SwitchType.LimitedPostString
+- uid: SevenZip.CommandLineParser.SwitchType.PostChar
+  name: PostChar
+  href: api/SevenZip.CommandLineParser.SwitchType.html#SevenZip_CommandLineParser_SwitchType_PostChar
+  commentId: F:SevenZip.CommandLineParser.SwitchType.PostChar
+  fullName: SevenZip.CommandLineParser.SwitchType.PostChar
+  nameWithType: SwitchType.PostChar
+- uid: SevenZip.CommandLineParser.SwitchType.PostMinus
+  name: PostMinus
+  href: api/SevenZip.CommandLineParser.SwitchType.html#SevenZip_CommandLineParser_SwitchType_PostMinus
+  commentId: F:SevenZip.CommandLineParser.SwitchType.PostMinus
+  fullName: SevenZip.CommandLineParser.SwitchType.PostMinus
+  nameWithType: SwitchType.PostMinus
+- uid: SevenZip.CommandLineParser.SwitchType.Simple
+  name: Simple
+  href: api/SevenZip.CommandLineParser.SwitchType.html#SevenZip_CommandLineParser_SwitchType_Simple
+  commentId: F:SevenZip.CommandLineParser.SwitchType.Simple
+  fullName: SevenZip.CommandLineParser.SwitchType.Simple
+  nameWithType: SwitchType.Simple
+- uid: SevenZip.CommandLineParser.SwitchType.UnLimitedPostString
+  name: UnLimitedPostString
+  href: api/SevenZip.CommandLineParser.SwitchType.html#SevenZip_CommandLineParser_SwitchType_UnLimitedPostString
+  commentId: F:SevenZip.CommandLineParser.SwitchType.UnLimitedPostString
+  fullName: SevenZip.CommandLineParser.SwitchType.UnLimitedPostString
+  nameWithType: SwitchType.UnLimitedPostString
+- uid: SevenZip.Compression.LZ
+  name: SevenZip.Compression.LZ
+  href: api/SevenZip.Compression.LZ.html
+  commentId: N:SevenZip.Compression.LZ
+  fullName: SevenZip.Compression.LZ
+  nameWithType: SevenZip.Compression.LZ
+- uid: SevenZip.Compression.LZ.BinTree
+  name: BinTree
+  href: api/SevenZip.Compression.LZ.BinTree.html
+  commentId: T:SevenZip.Compression.LZ.BinTree
+  fullName: SevenZip.Compression.LZ.BinTree
+  nameWithType: BinTree
+- uid: SevenZip.Compression.LZ.BinTree.Create(System.UInt32,System.UInt32,System.UInt32,System.UInt32)
+  name: Create(UInt32, UInt32, UInt32, UInt32)
+  href: api/SevenZip.Compression.LZ.BinTree.html#SevenZip_Compression_LZ_BinTree_Create_System_UInt32_System_UInt32_System_UInt32_System_UInt32_
+  commentId: M:SevenZip.Compression.LZ.BinTree.Create(System.UInt32,System.UInt32,System.UInt32,System.UInt32)
+  fullName: SevenZip.Compression.LZ.BinTree.Create(System.UInt32, System.UInt32, System.UInt32, System.UInt32)
+  nameWithType: BinTree.Create(UInt32, UInt32, UInt32, UInt32)
+- uid: SevenZip.Compression.LZ.BinTree.Create*
+  name: Create
+  href: api/SevenZip.Compression.LZ.BinTree.html#SevenZip_Compression_LZ_BinTree_Create_
+  commentId: Overload:SevenZip.Compression.LZ.BinTree.Create
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZ.BinTree.Create
+  nameWithType: BinTree.Create
+- uid: SevenZip.Compression.LZ.BinTree.GetIndexByte(System.Int32)
+  name: GetIndexByte(Int32)
+  href: api/SevenZip.Compression.LZ.BinTree.html#SevenZip_Compression_LZ_BinTree_GetIndexByte_System_Int32_
+  commentId: M:SevenZip.Compression.LZ.BinTree.GetIndexByte(System.Int32)
+  fullName: SevenZip.Compression.LZ.BinTree.GetIndexByte(System.Int32)
+  nameWithType: BinTree.GetIndexByte(Int32)
+- uid: SevenZip.Compression.LZ.BinTree.GetIndexByte*
+  name: GetIndexByte
+  href: api/SevenZip.Compression.LZ.BinTree.html#SevenZip_Compression_LZ_BinTree_GetIndexByte_
+  commentId: Overload:SevenZip.Compression.LZ.BinTree.GetIndexByte
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZ.BinTree.GetIndexByte
+  nameWithType: BinTree.GetIndexByte
+- uid: SevenZip.Compression.LZ.BinTree.GetMatches(System.UInt32[])
+  name: GetMatches(UInt32[])
+  href: api/SevenZip.Compression.LZ.BinTree.html#SevenZip_Compression_LZ_BinTree_GetMatches_System_UInt32___
+  commentId: M:SevenZip.Compression.LZ.BinTree.GetMatches(System.UInt32[])
+  name.vb: GetMatches(UInt32())
+  fullName: SevenZip.Compression.LZ.BinTree.GetMatches(System.UInt32[])
+  fullName.vb: SevenZip.Compression.LZ.BinTree.GetMatches(System.UInt32())
+  nameWithType: BinTree.GetMatches(UInt32[])
+  nameWithType.vb: BinTree.GetMatches(UInt32())
+- uid: SevenZip.Compression.LZ.BinTree.GetMatches*
+  name: GetMatches
+  href: api/SevenZip.Compression.LZ.BinTree.html#SevenZip_Compression_LZ_BinTree_GetMatches_
+  commentId: Overload:SevenZip.Compression.LZ.BinTree.GetMatches
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZ.BinTree.GetMatches
+  nameWithType: BinTree.GetMatches
+- uid: SevenZip.Compression.LZ.BinTree.GetMatchLen(System.Int32,System.UInt32,System.UInt32)
+  name: GetMatchLen(Int32, UInt32, UInt32)
+  href: api/SevenZip.Compression.LZ.BinTree.html#SevenZip_Compression_LZ_BinTree_GetMatchLen_System_Int32_System_UInt32_System_UInt32_
+  commentId: M:SevenZip.Compression.LZ.BinTree.GetMatchLen(System.Int32,System.UInt32,System.UInt32)
+  fullName: SevenZip.Compression.LZ.BinTree.GetMatchLen(System.Int32, System.UInt32, System.UInt32)
+  nameWithType: BinTree.GetMatchLen(Int32, UInt32, UInt32)
+- uid: SevenZip.Compression.LZ.BinTree.GetMatchLen*
+  name: GetMatchLen
+  href: api/SevenZip.Compression.LZ.BinTree.html#SevenZip_Compression_LZ_BinTree_GetMatchLen_
+  commentId: Overload:SevenZip.Compression.LZ.BinTree.GetMatchLen
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZ.BinTree.GetMatchLen
+  nameWithType: BinTree.GetMatchLen
+- uid: SevenZip.Compression.LZ.BinTree.GetNumAvailableBytes
+  name: GetNumAvailableBytes()
+  href: api/SevenZip.Compression.LZ.BinTree.html#SevenZip_Compression_LZ_BinTree_GetNumAvailableBytes
+  commentId: M:SevenZip.Compression.LZ.BinTree.GetNumAvailableBytes
+  fullName: SevenZip.Compression.LZ.BinTree.GetNumAvailableBytes()
+  nameWithType: BinTree.GetNumAvailableBytes()
+- uid: SevenZip.Compression.LZ.BinTree.GetNumAvailableBytes*
+  name: GetNumAvailableBytes
+  href: api/SevenZip.Compression.LZ.BinTree.html#SevenZip_Compression_LZ_BinTree_GetNumAvailableBytes_
+  commentId: Overload:SevenZip.Compression.LZ.BinTree.GetNumAvailableBytes
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZ.BinTree.GetNumAvailableBytes
+  nameWithType: BinTree.GetNumAvailableBytes
+- uid: SevenZip.Compression.LZ.BinTree.Init
+  name: Init()
+  href: api/SevenZip.Compression.LZ.BinTree.html#SevenZip_Compression_LZ_BinTree_Init
+  commentId: M:SevenZip.Compression.LZ.BinTree.Init
+  fullName: SevenZip.Compression.LZ.BinTree.Init()
+  nameWithType: BinTree.Init()
+- uid: SevenZip.Compression.LZ.BinTree.Init*
+  name: Init
+  href: api/SevenZip.Compression.LZ.BinTree.html#SevenZip_Compression_LZ_BinTree_Init_
+  commentId: Overload:SevenZip.Compression.LZ.BinTree.Init
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZ.BinTree.Init
+  nameWithType: BinTree.Init
+- uid: SevenZip.Compression.LZ.BinTree.MovePos
+  name: MovePos()
+  href: api/SevenZip.Compression.LZ.BinTree.html#SevenZip_Compression_LZ_BinTree_MovePos
+  commentId: M:SevenZip.Compression.LZ.BinTree.MovePos
+  fullName: SevenZip.Compression.LZ.BinTree.MovePos()
+  nameWithType: BinTree.MovePos()
+- uid: SevenZip.Compression.LZ.BinTree.MovePos*
+  name: MovePos
+  href: api/SevenZip.Compression.LZ.BinTree.html#SevenZip_Compression_LZ_BinTree_MovePos_
+  commentId: Overload:SevenZip.Compression.LZ.BinTree.MovePos
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZ.BinTree.MovePos
+  nameWithType: BinTree.MovePos
+- uid: SevenZip.Compression.LZ.BinTree.ReleaseStream
+  name: ReleaseStream()
+  href: api/SevenZip.Compression.LZ.BinTree.html#SevenZip_Compression_LZ_BinTree_ReleaseStream
+  commentId: M:SevenZip.Compression.LZ.BinTree.ReleaseStream
+  fullName: SevenZip.Compression.LZ.BinTree.ReleaseStream()
+  nameWithType: BinTree.ReleaseStream()
+- uid: SevenZip.Compression.LZ.BinTree.ReleaseStream*
+  name: ReleaseStream
+  href: api/SevenZip.Compression.LZ.BinTree.html#SevenZip_Compression_LZ_BinTree_ReleaseStream_
+  commentId: Overload:SevenZip.Compression.LZ.BinTree.ReleaseStream
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZ.BinTree.ReleaseStream
+  nameWithType: BinTree.ReleaseStream
+- uid: SevenZip.Compression.LZ.BinTree.SetCutValue(System.UInt32)
+  name: SetCutValue(UInt32)
+  href: api/SevenZip.Compression.LZ.BinTree.html#SevenZip_Compression_LZ_BinTree_SetCutValue_System_UInt32_
+  commentId: M:SevenZip.Compression.LZ.BinTree.SetCutValue(System.UInt32)
+  fullName: SevenZip.Compression.LZ.BinTree.SetCutValue(System.UInt32)
+  nameWithType: BinTree.SetCutValue(UInt32)
+- uid: SevenZip.Compression.LZ.BinTree.SetCutValue*
+  name: SetCutValue
+  href: api/SevenZip.Compression.LZ.BinTree.html#SevenZip_Compression_LZ_BinTree_SetCutValue_
+  commentId: Overload:SevenZip.Compression.LZ.BinTree.SetCutValue
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZ.BinTree.SetCutValue
+  nameWithType: BinTree.SetCutValue
+- uid: SevenZip.Compression.LZ.BinTree.SetStream(System.IO.Stream)
+  name: SetStream(Stream)
+  href: api/SevenZip.Compression.LZ.BinTree.html#SevenZip_Compression_LZ_BinTree_SetStream_System_IO_Stream_
+  commentId: M:SevenZip.Compression.LZ.BinTree.SetStream(System.IO.Stream)
+  fullName: SevenZip.Compression.LZ.BinTree.SetStream(System.IO.Stream)
+  nameWithType: BinTree.SetStream(Stream)
+- uid: SevenZip.Compression.LZ.BinTree.SetStream*
+  name: SetStream
+  href: api/SevenZip.Compression.LZ.BinTree.html#SevenZip_Compression_LZ_BinTree_SetStream_
+  commentId: Overload:SevenZip.Compression.LZ.BinTree.SetStream
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZ.BinTree.SetStream
+  nameWithType: BinTree.SetStream
+- uid: SevenZip.Compression.LZ.BinTree.SetType(System.Int32)
+  name: SetType(Int32)
+  href: api/SevenZip.Compression.LZ.BinTree.html#SevenZip_Compression_LZ_BinTree_SetType_System_Int32_
+  commentId: M:SevenZip.Compression.LZ.BinTree.SetType(System.Int32)
+  fullName: SevenZip.Compression.LZ.BinTree.SetType(System.Int32)
+  nameWithType: BinTree.SetType(Int32)
+- uid: SevenZip.Compression.LZ.BinTree.SetType*
+  name: SetType
+  href: api/SevenZip.Compression.LZ.BinTree.html#SevenZip_Compression_LZ_BinTree_SetType_
+  commentId: Overload:SevenZip.Compression.LZ.BinTree.SetType
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZ.BinTree.SetType
+  nameWithType: BinTree.SetType
+- uid: SevenZip.Compression.LZ.BinTree.Skip(System.UInt32)
+  name: Skip(UInt32)
+  href: api/SevenZip.Compression.LZ.BinTree.html#SevenZip_Compression_LZ_BinTree_Skip_System_UInt32_
+  commentId: M:SevenZip.Compression.LZ.BinTree.Skip(System.UInt32)
+  fullName: SevenZip.Compression.LZ.BinTree.Skip(System.UInt32)
+  nameWithType: BinTree.Skip(UInt32)
+- uid: SevenZip.Compression.LZ.BinTree.Skip*
+  name: Skip
+  href: api/SevenZip.Compression.LZ.BinTree.html#SevenZip_Compression_LZ_BinTree_Skip_
+  commentId: Overload:SevenZip.Compression.LZ.BinTree.Skip
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZ.BinTree.Skip
+  nameWithType: BinTree.Skip
+- uid: SevenZip.Compression.LZ.InWindow
+  name: InWindow
+  href: api/SevenZip.Compression.LZ.InWindow.html
+  commentId: T:SevenZip.Compression.LZ.InWindow
+  fullName: SevenZip.Compression.LZ.InWindow
+  nameWithType: InWindow
+- uid: SevenZip.Compression.LZ.InWindow._blockSize
+  name: _blockSize
+  href: api/SevenZip.Compression.LZ.InWindow.html#SevenZip_Compression_LZ_InWindow__blockSize
+  commentId: F:SevenZip.Compression.LZ.InWindow._blockSize
+  fullName: SevenZip.Compression.LZ.InWindow._blockSize
+  nameWithType: InWindow._blockSize
+- uid: SevenZip.Compression.LZ.InWindow._bufferBase
+  name: _bufferBase
+  href: api/SevenZip.Compression.LZ.InWindow.html#SevenZip_Compression_LZ_InWindow__bufferBase
+  commentId: F:SevenZip.Compression.LZ.InWindow._bufferBase
+  fullName: SevenZip.Compression.LZ.InWindow._bufferBase
+  nameWithType: InWindow._bufferBase
+- uid: SevenZip.Compression.LZ.InWindow._bufferOffset
+  name: _bufferOffset
+  href: api/SevenZip.Compression.LZ.InWindow.html#SevenZip_Compression_LZ_InWindow__bufferOffset
+  commentId: F:SevenZip.Compression.LZ.InWindow._bufferOffset
+  fullName: SevenZip.Compression.LZ.InWindow._bufferOffset
+  nameWithType: InWindow._bufferOffset
+- uid: SevenZip.Compression.LZ.InWindow._pos
+  name: _pos
+  href: api/SevenZip.Compression.LZ.InWindow.html#SevenZip_Compression_LZ_InWindow__pos
+  commentId: F:SevenZip.Compression.LZ.InWindow._pos
+  fullName: SevenZip.Compression.LZ.InWindow._pos
+  nameWithType: InWindow._pos
+- uid: SevenZip.Compression.LZ.InWindow._streamPos
+  name: _streamPos
+  href: api/SevenZip.Compression.LZ.InWindow.html#SevenZip_Compression_LZ_InWindow__streamPos
+  commentId: F:SevenZip.Compression.LZ.InWindow._streamPos
+  fullName: SevenZip.Compression.LZ.InWindow._streamPos
+  nameWithType: InWindow._streamPos
+- uid: SevenZip.Compression.LZ.InWindow.Create(System.UInt32,System.UInt32,System.UInt32)
+  name: Create(UInt32, UInt32, UInt32)
+  href: api/SevenZip.Compression.LZ.InWindow.html#SevenZip_Compression_LZ_InWindow_Create_System_UInt32_System_UInt32_System_UInt32_
+  commentId: M:SevenZip.Compression.LZ.InWindow.Create(System.UInt32,System.UInt32,System.UInt32)
+  fullName: SevenZip.Compression.LZ.InWindow.Create(System.UInt32, System.UInt32, System.UInt32)
+  nameWithType: InWindow.Create(UInt32, UInt32, UInt32)
+- uid: SevenZip.Compression.LZ.InWindow.Create*
+  name: Create
+  href: api/SevenZip.Compression.LZ.InWindow.html#SevenZip_Compression_LZ_InWindow_Create_
+  commentId: Overload:SevenZip.Compression.LZ.InWindow.Create
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZ.InWindow.Create
+  nameWithType: InWindow.Create
+- uid: SevenZip.Compression.LZ.InWindow.GetIndexByte(System.Int32)
+  name: GetIndexByte(Int32)
+  href: api/SevenZip.Compression.LZ.InWindow.html#SevenZip_Compression_LZ_InWindow_GetIndexByte_System_Int32_
+  commentId: M:SevenZip.Compression.LZ.InWindow.GetIndexByte(System.Int32)
+  fullName: SevenZip.Compression.LZ.InWindow.GetIndexByte(System.Int32)
+  nameWithType: InWindow.GetIndexByte(Int32)
+- uid: SevenZip.Compression.LZ.InWindow.GetIndexByte*
+  name: GetIndexByte
+  href: api/SevenZip.Compression.LZ.InWindow.html#SevenZip_Compression_LZ_InWindow_GetIndexByte_
+  commentId: Overload:SevenZip.Compression.LZ.InWindow.GetIndexByte
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZ.InWindow.GetIndexByte
+  nameWithType: InWindow.GetIndexByte
+- uid: SevenZip.Compression.LZ.InWindow.GetMatchLen(System.Int32,System.UInt32,System.UInt32)
+  name: GetMatchLen(Int32, UInt32, UInt32)
+  href: api/SevenZip.Compression.LZ.InWindow.html#SevenZip_Compression_LZ_InWindow_GetMatchLen_System_Int32_System_UInt32_System_UInt32_
+  commentId: M:SevenZip.Compression.LZ.InWindow.GetMatchLen(System.Int32,System.UInt32,System.UInt32)
+  fullName: SevenZip.Compression.LZ.InWindow.GetMatchLen(System.Int32, System.UInt32, System.UInt32)
+  nameWithType: InWindow.GetMatchLen(Int32, UInt32, UInt32)
+- uid: SevenZip.Compression.LZ.InWindow.GetMatchLen*
+  name: GetMatchLen
+  href: api/SevenZip.Compression.LZ.InWindow.html#SevenZip_Compression_LZ_InWindow_GetMatchLen_
+  commentId: Overload:SevenZip.Compression.LZ.InWindow.GetMatchLen
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZ.InWindow.GetMatchLen
+  nameWithType: InWindow.GetMatchLen
+- uid: SevenZip.Compression.LZ.InWindow.GetNumAvailableBytes
+  name: GetNumAvailableBytes()
+  href: api/SevenZip.Compression.LZ.InWindow.html#SevenZip_Compression_LZ_InWindow_GetNumAvailableBytes
+  commentId: M:SevenZip.Compression.LZ.InWindow.GetNumAvailableBytes
+  fullName: SevenZip.Compression.LZ.InWindow.GetNumAvailableBytes()
+  nameWithType: InWindow.GetNumAvailableBytes()
+- uid: SevenZip.Compression.LZ.InWindow.GetNumAvailableBytes*
+  name: GetNumAvailableBytes
+  href: api/SevenZip.Compression.LZ.InWindow.html#SevenZip_Compression_LZ_InWindow_GetNumAvailableBytes_
+  commentId: Overload:SevenZip.Compression.LZ.InWindow.GetNumAvailableBytes
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZ.InWindow.GetNumAvailableBytes
+  nameWithType: InWindow.GetNumAvailableBytes
+- uid: SevenZip.Compression.LZ.InWindow.Init
+  name: Init()
+  href: api/SevenZip.Compression.LZ.InWindow.html#SevenZip_Compression_LZ_InWindow_Init
+  commentId: M:SevenZip.Compression.LZ.InWindow.Init
+  fullName: SevenZip.Compression.LZ.InWindow.Init()
+  nameWithType: InWindow.Init()
+- uid: SevenZip.Compression.LZ.InWindow.Init*
+  name: Init
+  href: api/SevenZip.Compression.LZ.InWindow.html#SevenZip_Compression_LZ_InWindow_Init_
+  commentId: Overload:SevenZip.Compression.LZ.InWindow.Init
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZ.InWindow.Init
+  nameWithType: InWindow.Init
+- uid: SevenZip.Compression.LZ.InWindow.MoveBlock
+  name: MoveBlock()
+  href: api/SevenZip.Compression.LZ.InWindow.html#SevenZip_Compression_LZ_InWindow_MoveBlock
+  commentId: M:SevenZip.Compression.LZ.InWindow.MoveBlock
+  fullName: SevenZip.Compression.LZ.InWindow.MoveBlock()
+  nameWithType: InWindow.MoveBlock()
+- uid: SevenZip.Compression.LZ.InWindow.MoveBlock*
+  name: MoveBlock
+  href: api/SevenZip.Compression.LZ.InWindow.html#SevenZip_Compression_LZ_InWindow_MoveBlock_
+  commentId: Overload:SevenZip.Compression.LZ.InWindow.MoveBlock
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZ.InWindow.MoveBlock
+  nameWithType: InWindow.MoveBlock
+- uid: SevenZip.Compression.LZ.InWindow.MovePos
+  name: MovePos()
+  href: api/SevenZip.Compression.LZ.InWindow.html#SevenZip_Compression_LZ_InWindow_MovePos
+  commentId: M:SevenZip.Compression.LZ.InWindow.MovePos
+  fullName: SevenZip.Compression.LZ.InWindow.MovePos()
+  nameWithType: InWindow.MovePos()
+- uid: SevenZip.Compression.LZ.InWindow.MovePos*
+  name: MovePos
+  href: api/SevenZip.Compression.LZ.InWindow.html#SevenZip_Compression_LZ_InWindow_MovePos_
+  commentId: Overload:SevenZip.Compression.LZ.InWindow.MovePos
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZ.InWindow.MovePos
+  nameWithType: InWindow.MovePos
+- uid: SevenZip.Compression.LZ.InWindow.ReadBlock
+  name: ReadBlock()
+  href: api/SevenZip.Compression.LZ.InWindow.html#SevenZip_Compression_LZ_InWindow_ReadBlock
+  commentId: M:SevenZip.Compression.LZ.InWindow.ReadBlock
+  fullName: SevenZip.Compression.LZ.InWindow.ReadBlock()
+  nameWithType: InWindow.ReadBlock()
+- uid: SevenZip.Compression.LZ.InWindow.ReadBlock*
+  name: ReadBlock
+  href: api/SevenZip.Compression.LZ.InWindow.html#SevenZip_Compression_LZ_InWindow_ReadBlock_
+  commentId: Overload:SevenZip.Compression.LZ.InWindow.ReadBlock
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZ.InWindow.ReadBlock
+  nameWithType: InWindow.ReadBlock
+- uid: SevenZip.Compression.LZ.InWindow.ReduceOffsets(System.Int32)
+  name: ReduceOffsets(Int32)
+  href: api/SevenZip.Compression.LZ.InWindow.html#SevenZip_Compression_LZ_InWindow_ReduceOffsets_System_Int32_
+  commentId: M:SevenZip.Compression.LZ.InWindow.ReduceOffsets(System.Int32)
+  fullName: SevenZip.Compression.LZ.InWindow.ReduceOffsets(System.Int32)
+  nameWithType: InWindow.ReduceOffsets(Int32)
+- uid: SevenZip.Compression.LZ.InWindow.ReduceOffsets*
+  name: ReduceOffsets
+  href: api/SevenZip.Compression.LZ.InWindow.html#SevenZip_Compression_LZ_InWindow_ReduceOffsets_
+  commentId: Overload:SevenZip.Compression.LZ.InWindow.ReduceOffsets
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZ.InWindow.ReduceOffsets
+  nameWithType: InWindow.ReduceOffsets
+- uid: SevenZip.Compression.LZ.InWindow.ReleaseStream
+  name: ReleaseStream()
+  href: api/SevenZip.Compression.LZ.InWindow.html#SevenZip_Compression_LZ_InWindow_ReleaseStream
+  commentId: M:SevenZip.Compression.LZ.InWindow.ReleaseStream
+  fullName: SevenZip.Compression.LZ.InWindow.ReleaseStream()
+  nameWithType: InWindow.ReleaseStream()
+- uid: SevenZip.Compression.LZ.InWindow.ReleaseStream*
+  name: ReleaseStream
+  href: api/SevenZip.Compression.LZ.InWindow.html#SevenZip_Compression_LZ_InWindow_ReleaseStream_
+  commentId: Overload:SevenZip.Compression.LZ.InWindow.ReleaseStream
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZ.InWindow.ReleaseStream
+  nameWithType: InWindow.ReleaseStream
+- uid: SevenZip.Compression.LZ.InWindow.SetStream(System.IO.Stream)
+  name: SetStream(Stream)
+  href: api/SevenZip.Compression.LZ.InWindow.html#SevenZip_Compression_LZ_InWindow_SetStream_System_IO_Stream_
+  commentId: M:SevenZip.Compression.LZ.InWindow.SetStream(System.IO.Stream)
+  fullName: SevenZip.Compression.LZ.InWindow.SetStream(System.IO.Stream)
+  nameWithType: InWindow.SetStream(Stream)
+- uid: SevenZip.Compression.LZ.InWindow.SetStream*
+  name: SetStream
+  href: api/SevenZip.Compression.LZ.InWindow.html#SevenZip_Compression_LZ_InWindow_SetStream_
+  commentId: Overload:SevenZip.Compression.LZ.InWindow.SetStream
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZ.InWindow.SetStream
+  nameWithType: InWindow.SetStream
+- uid: SevenZip.Compression.LZ.OutWindow
+  name: OutWindow
+  href: api/SevenZip.Compression.LZ.OutWindow.html
+  commentId: T:SevenZip.Compression.LZ.OutWindow
+  fullName: SevenZip.Compression.LZ.OutWindow
+  nameWithType: OutWindow
+- uid: SevenZip.Compression.LZ.OutWindow.CopyBlock(System.UInt32,System.UInt32)
+  name: CopyBlock(UInt32, UInt32)
+  href: api/SevenZip.Compression.LZ.OutWindow.html#SevenZip_Compression_LZ_OutWindow_CopyBlock_System_UInt32_System_UInt32_
+  commentId: M:SevenZip.Compression.LZ.OutWindow.CopyBlock(System.UInt32,System.UInt32)
+  fullName: SevenZip.Compression.LZ.OutWindow.CopyBlock(System.UInt32, System.UInt32)
+  nameWithType: OutWindow.CopyBlock(UInt32, UInt32)
+- uid: SevenZip.Compression.LZ.OutWindow.CopyBlock*
+  name: CopyBlock
+  href: api/SevenZip.Compression.LZ.OutWindow.html#SevenZip_Compression_LZ_OutWindow_CopyBlock_
+  commentId: Overload:SevenZip.Compression.LZ.OutWindow.CopyBlock
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZ.OutWindow.CopyBlock
+  nameWithType: OutWindow.CopyBlock
+- uid: SevenZip.Compression.LZ.OutWindow.Create(System.UInt32)
+  name: Create(UInt32)
+  href: api/SevenZip.Compression.LZ.OutWindow.html#SevenZip_Compression_LZ_OutWindow_Create_System_UInt32_
+  commentId: M:SevenZip.Compression.LZ.OutWindow.Create(System.UInt32)
+  fullName: SevenZip.Compression.LZ.OutWindow.Create(System.UInt32)
+  nameWithType: OutWindow.Create(UInt32)
+- uid: SevenZip.Compression.LZ.OutWindow.Create*
+  name: Create
+  href: api/SevenZip.Compression.LZ.OutWindow.html#SevenZip_Compression_LZ_OutWindow_Create_
+  commentId: Overload:SevenZip.Compression.LZ.OutWindow.Create
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZ.OutWindow.Create
+  nameWithType: OutWindow.Create
+- uid: SevenZip.Compression.LZ.OutWindow.Flush
+  name: Flush()
+  href: api/SevenZip.Compression.LZ.OutWindow.html#SevenZip_Compression_LZ_OutWindow_Flush
+  commentId: M:SevenZip.Compression.LZ.OutWindow.Flush
+  fullName: SevenZip.Compression.LZ.OutWindow.Flush()
+  nameWithType: OutWindow.Flush()
+- uid: SevenZip.Compression.LZ.OutWindow.Flush*
+  name: Flush
+  href: api/SevenZip.Compression.LZ.OutWindow.html#SevenZip_Compression_LZ_OutWindow_Flush_
+  commentId: Overload:SevenZip.Compression.LZ.OutWindow.Flush
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZ.OutWindow.Flush
+  nameWithType: OutWindow.Flush
+- uid: SevenZip.Compression.LZ.OutWindow.GetByte(System.UInt32)
+  name: GetByte(UInt32)
+  href: api/SevenZip.Compression.LZ.OutWindow.html#SevenZip_Compression_LZ_OutWindow_GetByte_System_UInt32_
+  commentId: M:SevenZip.Compression.LZ.OutWindow.GetByte(System.UInt32)
+  fullName: SevenZip.Compression.LZ.OutWindow.GetByte(System.UInt32)
+  nameWithType: OutWindow.GetByte(UInt32)
+- uid: SevenZip.Compression.LZ.OutWindow.GetByte*
+  name: GetByte
+  href: api/SevenZip.Compression.LZ.OutWindow.html#SevenZip_Compression_LZ_OutWindow_GetByte_
+  commentId: Overload:SevenZip.Compression.LZ.OutWindow.GetByte
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZ.OutWindow.GetByte
+  nameWithType: OutWindow.GetByte
+- uid: SevenZip.Compression.LZ.OutWindow.Init(System.IO.Stream,System.Boolean)
+  name: Init(Stream, Boolean)
+  href: api/SevenZip.Compression.LZ.OutWindow.html#SevenZip_Compression_LZ_OutWindow_Init_System_IO_Stream_System_Boolean_
+  commentId: M:SevenZip.Compression.LZ.OutWindow.Init(System.IO.Stream,System.Boolean)
+  fullName: SevenZip.Compression.LZ.OutWindow.Init(System.IO.Stream, System.Boolean)
+  nameWithType: OutWindow.Init(Stream, Boolean)
+- uid: SevenZip.Compression.LZ.OutWindow.Init*
+  name: Init
+  href: api/SevenZip.Compression.LZ.OutWindow.html#SevenZip_Compression_LZ_OutWindow_Init_
+  commentId: Overload:SevenZip.Compression.LZ.OutWindow.Init
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZ.OutWindow.Init
+  nameWithType: OutWindow.Init
+- uid: SevenZip.Compression.LZ.OutWindow.PutByte(System.Byte)
+  name: PutByte(Byte)
+  href: api/SevenZip.Compression.LZ.OutWindow.html#SevenZip_Compression_LZ_OutWindow_PutByte_System_Byte_
+  commentId: M:SevenZip.Compression.LZ.OutWindow.PutByte(System.Byte)
+  fullName: SevenZip.Compression.LZ.OutWindow.PutByte(System.Byte)
+  nameWithType: OutWindow.PutByte(Byte)
+- uid: SevenZip.Compression.LZ.OutWindow.PutByte*
+  name: PutByte
+  href: api/SevenZip.Compression.LZ.OutWindow.html#SevenZip_Compression_LZ_OutWindow_PutByte_
+  commentId: Overload:SevenZip.Compression.LZ.OutWindow.PutByte
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZ.OutWindow.PutByte
+  nameWithType: OutWindow.PutByte
+- uid: SevenZip.Compression.LZ.OutWindow.ReleaseStream
+  name: ReleaseStream()
+  href: api/SevenZip.Compression.LZ.OutWindow.html#SevenZip_Compression_LZ_OutWindow_ReleaseStream
+  commentId: M:SevenZip.Compression.LZ.OutWindow.ReleaseStream
+  fullName: SevenZip.Compression.LZ.OutWindow.ReleaseStream()
+  nameWithType: OutWindow.ReleaseStream()
+- uid: SevenZip.Compression.LZ.OutWindow.ReleaseStream*
+  name: ReleaseStream
+  href: api/SevenZip.Compression.LZ.OutWindow.html#SevenZip_Compression_LZ_OutWindow_ReleaseStream_
+  commentId: Overload:SevenZip.Compression.LZ.OutWindow.ReleaseStream
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZ.OutWindow.ReleaseStream
+  nameWithType: OutWindow.ReleaseStream
+- uid: SevenZip.Compression.LZ.OutWindow.Train(System.IO.Stream)
+  name: Train(Stream)
+  href: api/SevenZip.Compression.LZ.OutWindow.html#SevenZip_Compression_LZ_OutWindow_Train_System_IO_Stream_
+  commentId: M:SevenZip.Compression.LZ.OutWindow.Train(System.IO.Stream)
+  fullName: SevenZip.Compression.LZ.OutWindow.Train(System.IO.Stream)
+  nameWithType: OutWindow.Train(Stream)
+- uid: SevenZip.Compression.LZ.OutWindow.Train*
+  name: Train
+  href: api/SevenZip.Compression.LZ.OutWindow.html#SevenZip_Compression_LZ_OutWindow_Train_
+  commentId: Overload:SevenZip.Compression.LZ.OutWindow.Train
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZ.OutWindow.Train
+  nameWithType: OutWindow.Train
+- uid: SevenZip.Compression.LZ.OutWindow.TrainSize
+  name: TrainSize
+  href: api/SevenZip.Compression.LZ.OutWindow.html#SevenZip_Compression_LZ_OutWindow_TrainSize
+  commentId: F:SevenZip.Compression.LZ.OutWindow.TrainSize
+  fullName: SevenZip.Compression.LZ.OutWindow.TrainSize
+  nameWithType: OutWindow.TrainSize
+- uid: SevenZip.Compression.LZMA
+  name: SevenZip.Compression.LZMA
+  href: api/SevenZip.Compression.LZMA.html
+  commentId: N:SevenZip.Compression.LZMA
+  fullName: SevenZip.Compression.LZMA
+  nameWithType: SevenZip.Compression.LZMA
+- uid: SevenZip.Compression.LZMA.Decoder
+  name: Decoder
+  href: api/SevenZip.Compression.LZMA.Decoder.html
+  commentId: T:SevenZip.Compression.LZMA.Decoder
+  fullName: SevenZip.Compression.LZMA.Decoder
+  nameWithType: Decoder
+- uid: SevenZip.Compression.LZMA.Decoder.#ctor
+  name: Decoder()
+  href: api/SevenZip.Compression.LZMA.Decoder.html#SevenZip_Compression_LZMA_Decoder__ctor
+  commentId: M:SevenZip.Compression.LZMA.Decoder.#ctor
+  fullName: SevenZip.Compression.LZMA.Decoder.Decoder()
+  nameWithType: Decoder.Decoder()
+- uid: SevenZip.Compression.LZMA.Decoder.#ctor*
+  name: Decoder
+  href: api/SevenZip.Compression.LZMA.Decoder.html#SevenZip_Compression_LZMA_Decoder__ctor_
+  commentId: Overload:SevenZip.Compression.LZMA.Decoder.#ctor
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZMA.Decoder.Decoder
+  nameWithType: Decoder.Decoder
+- uid: SevenZip.Compression.LZMA.Decoder.Code(System.IO.Stream,System.IO.Stream,System.Int64,System.Int64,SevenZip.ICodeProgress)
+  name: Code(Stream, Stream, Int64, Int64, ICodeProgress)
+  href: api/SevenZip.Compression.LZMA.Decoder.html#SevenZip_Compression_LZMA_Decoder_Code_System_IO_Stream_System_IO_Stream_System_Int64_System_Int64_SevenZip_ICodeProgress_
+  commentId: M:SevenZip.Compression.LZMA.Decoder.Code(System.IO.Stream,System.IO.Stream,System.Int64,System.Int64,SevenZip.ICodeProgress)
+  fullName: SevenZip.Compression.LZMA.Decoder.Code(System.IO.Stream, System.IO.Stream, System.Int64, System.Int64, SevenZip.ICodeProgress)
+  nameWithType: Decoder.Code(Stream, Stream, Int64, Int64, ICodeProgress)
+- uid: SevenZip.Compression.LZMA.Decoder.Code*
+  name: Code
+  href: api/SevenZip.Compression.LZMA.Decoder.html#SevenZip_Compression_LZMA_Decoder_Code_
+  commentId: Overload:SevenZip.Compression.LZMA.Decoder.Code
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZMA.Decoder.Code
+  nameWithType: Decoder.Code
+- uid: SevenZip.Compression.LZMA.Decoder.SetDecoderProperties(System.Byte[])
+  name: SetDecoderProperties(Byte[])
+  href: api/SevenZip.Compression.LZMA.Decoder.html#SevenZip_Compression_LZMA_Decoder_SetDecoderProperties_System_Byte___
+  commentId: M:SevenZip.Compression.LZMA.Decoder.SetDecoderProperties(System.Byte[])
+  name.vb: SetDecoderProperties(Byte())
+  fullName: SevenZip.Compression.LZMA.Decoder.SetDecoderProperties(System.Byte[])
+  fullName.vb: SevenZip.Compression.LZMA.Decoder.SetDecoderProperties(System.Byte())
+  nameWithType: Decoder.SetDecoderProperties(Byte[])
+  nameWithType.vb: Decoder.SetDecoderProperties(Byte())
+- uid: SevenZip.Compression.LZMA.Decoder.SetDecoderProperties*
+  name: SetDecoderProperties
+  href: api/SevenZip.Compression.LZMA.Decoder.html#SevenZip_Compression_LZMA_Decoder_SetDecoderProperties_
+  commentId: Overload:SevenZip.Compression.LZMA.Decoder.SetDecoderProperties
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZMA.Decoder.SetDecoderProperties
+  nameWithType: Decoder.SetDecoderProperties
+- uid: SevenZip.Compression.LZMA.Decoder.Train(System.IO.Stream)
+  name: Train(Stream)
+  href: api/SevenZip.Compression.LZMA.Decoder.html#SevenZip_Compression_LZMA_Decoder_Train_System_IO_Stream_
+  commentId: M:SevenZip.Compression.LZMA.Decoder.Train(System.IO.Stream)
+  fullName: SevenZip.Compression.LZMA.Decoder.Train(System.IO.Stream)
+  nameWithType: Decoder.Train(Stream)
+- uid: SevenZip.Compression.LZMA.Decoder.Train*
+  name: Train
+  href: api/SevenZip.Compression.LZMA.Decoder.html#SevenZip_Compression_LZMA_Decoder_Train_
+  commentId: Overload:SevenZip.Compression.LZMA.Decoder.Train
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZMA.Decoder.Train
+  nameWithType: Decoder.Train
+- uid: SevenZip.Compression.LZMA.Encoder
+  name: Encoder
+  href: api/SevenZip.Compression.LZMA.Encoder.html
+  commentId: T:SevenZip.Compression.LZMA.Encoder
+  fullName: SevenZip.Compression.LZMA.Encoder
+  nameWithType: Encoder
+- uid: SevenZip.Compression.LZMA.Encoder.#ctor
+  name: Encoder()
+  href: api/SevenZip.Compression.LZMA.Encoder.html#SevenZip_Compression_LZMA_Encoder__ctor
+  commentId: M:SevenZip.Compression.LZMA.Encoder.#ctor
+  fullName: SevenZip.Compression.LZMA.Encoder.Encoder()
+  nameWithType: Encoder.Encoder()
+- uid: SevenZip.Compression.LZMA.Encoder.#ctor*
+  name: Encoder
+  href: api/SevenZip.Compression.LZMA.Encoder.html#SevenZip_Compression_LZMA_Encoder__ctor_
+  commentId: Overload:SevenZip.Compression.LZMA.Encoder.#ctor
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZMA.Encoder.Encoder
+  nameWithType: Encoder.Encoder
+- uid: SevenZip.Compression.LZMA.Encoder.Code(System.IO.Stream,System.IO.Stream,System.Int64,System.Int64,SevenZip.ICodeProgress)
+  name: Code(Stream, Stream, Int64, Int64, ICodeProgress)
+  href: api/SevenZip.Compression.LZMA.Encoder.html#SevenZip_Compression_LZMA_Encoder_Code_System_IO_Stream_System_IO_Stream_System_Int64_System_Int64_SevenZip_ICodeProgress_
+  commentId: M:SevenZip.Compression.LZMA.Encoder.Code(System.IO.Stream,System.IO.Stream,System.Int64,System.Int64,SevenZip.ICodeProgress)
+  fullName: SevenZip.Compression.LZMA.Encoder.Code(System.IO.Stream, System.IO.Stream, System.Int64, System.Int64, SevenZip.ICodeProgress)
+  nameWithType: Encoder.Code(Stream, Stream, Int64, Int64, ICodeProgress)
+- uid: SevenZip.Compression.LZMA.Encoder.Code*
+  name: Code
+  href: api/SevenZip.Compression.LZMA.Encoder.html#SevenZip_Compression_LZMA_Encoder_Code_
+  commentId: Overload:SevenZip.Compression.LZMA.Encoder.Code
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZMA.Encoder.Code
+  nameWithType: Encoder.Code
+- uid: SevenZip.Compression.LZMA.Encoder.CodeOneBlock(System.Int64@,System.Int64@,System.Boolean@)
+  name: CodeOneBlock(out Int64, out Int64, out Boolean)
+  href: api/SevenZip.Compression.LZMA.Encoder.html#SevenZip_Compression_LZMA_Encoder_CodeOneBlock_System_Int64__System_Int64__System_Boolean__
+  commentId: M:SevenZip.Compression.LZMA.Encoder.CodeOneBlock(System.Int64@,System.Int64@,System.Boolean@)
+  name.vb: CodeOneBlock(ByRef Int64, ByRef Int64, ByRef Boolean)
+  fullName: SevenZip.Compression.LZMA.Encoder.CodeOneBlock(out System.Int64, out System.Int64, out System.Boolean)
+  fullName.vb: SevenZip.Compression.LZMA.Encoder.CodeOneBlock(ByRef System.Int64, ByRef System.Int64, ByRef System.Boolean)
+  nameWithType: Encoder.CodeOneBlock(out Int64, out Int64, out Boolean)
+  nameWithType.vb: Encoder.CodeOneBlock(ByRef Int64, ByRef Int64, ByRef Boolean)
+- uid: SevenZip.Compression.LZMA.Encoder.CodeOneBlock*
+  name: CodeOneBlock
+  href: api/SevenZip.Compression.LZMA.Encoder.html#SevenZip_Compression_LZMA_Encoder_CodeOneBlock_
+  commentId: Overload:SevenZip.Compression.LZMA.Encoder.CodeOneBlock
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZMA.Encoder.CodeOneBlock
+  nameWithType: Encoder.CodeOneBlock
+- uid: SevenZip.Compression.LZMA.Encoder.SetCoderProperties(SevenZip.CoderPropID[],System.Object[])
+  name: SetCoderProperties(CoderPropID[], Object[])
+  href: api/SevenZip.Compression.LZMA.Encoder.html#SevenZip_Compression_LZMA_Encoder_SetCoderProperties_SevenZip_CoderPropID___System_Object___
+  commentId: M:SevenZip.Compression.LZMA.Encoder.SetCoderProperties(SevenZip.CoderPropID[],System.Object[])
+  name.vb: SetCoderProperties(CoderPropID(), Object())
+  fullName: SevenZip.Compression.LZMA.Encoder.SetCoderProperties(SevenZip.CoderPropID[], System.Object[])
+  fullName.vb: SevenZip.Compression.LZMA.Encoder.SetCoderProperties(SevenZip.CoderPropID(), System.Object())
+  nameWithType: Encoder.SetCoderProperties(CoderPropID[], Object[])
+  nameWithType.vb: Encoder.SetCoderProperties(CoderPropID(), Object())
+- uid: SevenZip.Compression.LZMA.Encoder.SetCoderProperties*
+  name: SetCoderProperties
+  href: api/SevenZip.Compression.LZMA.Encoder.html#SevenZip_Compression_LZMA_Encoder_SetCoderProperties_
+  commentId: Overload:SevenZip.Compression.LZMA.Encoder.SetCoderProperties
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZMA.Encoder.SetCoderProperties
+  nameWithType: Encoder.SetCoderProperties
+- uid: SevenZip.Compression.LZMA.Encoder.SetTrainSize(System.UInt32)
+  name: SetTrainSize(UInt32)
+  href: api/SevenZip.Compression.LZMA.Encoder.html#SevenZip_Compression_LZMA_Encoder_SetTrainSize_System_UInt32_
+  commentId: M:SevenZip.Compression.LZMA.Encoder.SetTrainSize(System.UInt32)
+  fullName: SevenZip.Compression.LZMA.Encoder.SetTrainSize(System.UInt32)
+  nameWithType: Encoder.SetTrainSize(UInt32)
+- uid: SevenZip.Compression.LZMA.Encoder.SetTrainSize*
+  name: SetTrainSize
+  href: api/SevenZip.Compression.LZMA.Encoder.html#SevenZip_Compression_LZMA_Encoder_SetTrainSize_
+  commentId: Overload:SevenZip.Compression.LZMA.Encoder.SetTrainSize
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZMA.Encoder.SetTrainSize
+  nameWithType: Encoder.SetTrainSize
+- uid: SevenZip.Compression.LZMA.Encoder.WriteCoderProperties(System.IO.Stream)
+  name: WriteCoderProperties(Stream)
+  href: api/SevenZip.Compression.LZMA.Encoder.html#SevenZip_Compression_LZMA_Encoder_WriteCoderProperties_System_IO_Stream_
+  commentId: M:SevenZip.Compression.LZMA.Encoder.WriteCoderProperties(System.IO.Stream)
+  fullName: SevenZip.Compression.LZMA.Encoder.WriteCoderProperties(System.IO.Stream)
+  nameWithType: Encoder.WriteCoderProperties(Stream)
+- uid: SevenZip.Compression.LZMA.Encoder.WriteCoderProperties*
+  name: WriteCoderProperties
+  href: api/SevenZip.Compression.LZMA.Encoder.html#SevenZip_Compression_LZMA_Encoder_WriteCoderProperties_
+  commentId: Overload:SevenZip.Compression.LZMA.Encoder.WriteCoderProperties
+  isSpec: "True"
+  fullName: SevenZip.Compression.LZMA.Encoder.WriteCoderProperties
+  nameWithType: Encoder.WriteCoderProperties
+- uid: SevenZip.ICodeProgress
+  name: ICodeProgress
+  href: api/SevenZip.ICodeProgress.html
+  commentId: T:SevenZip.ICodeProgress
+  fullName: SevenZip.ICodeProgress
+  nameWithType: ICodeProgress
+- uid: SevenZip.ICodeProgress.SetProgress(System.Int64,System.Int64)
+  name: SetProgress(Int64, Int64)
+  href: api/SevenZip.ICodeProgress.html#SevenZip_ICodeProgress_SetProgress_System_Int64_System_Int64_
+  commentId: M:SevenZip.ICodeProgress.SetProgress(System.Int64,System.Int64)
+  fullName: SevenZip.ICodeProgress.SetProgress(System.Int64, System.Int64)
+  nameWithType: ICodeProgress.SetProgress(Int64, Int64)
+- uid: SevenZip.ICodeProgress.SetProgress*
+  name: SetProgress
+  href: api/SevenZip.ICodeProgress.html#SevenZip_ICodeProgress_SetProgress_
+  commentId: Overload:SevenZip.ICodeProgress.SetProgress
+  isSpec: "True"
+  fullName: SevenZip.ICodeProgress.SetProgress
+  nameWithType: ICodeProgress.SetProgress
+- uid: SevenZip.ICoder
+  name: ICoder
+  href: api/SevenZip.ICoder.html
+  commentId: T:SevenZip.ICoder
+  fullName: SevenZip.ICoder
+  nameWithType: ICoder
+- uid: SevenZip.ICoder.Code(System.IO.Stream,System.IO.Stream,System.Int64,System.Int64,SevenZip.ICodeProgress)
+  name: Code(Stream, Stream, Int64, Int64, ICodeProgress)
+  href: api/SevenZip.ICoder.html#SevenZip_ICoder_Code_System_IO_Stream_System_IO_Stream_System_Int64_System_Int64_SevenZip_ICodeProgress_
+  commentId: M:SevenZip.ICoder.Code(System.IO.Stream,System.IO.Stream,System.Int64,System.Int64,SevenZip.ICodeProgress)
+  fullName: SevenZip.ICoder.Code(System.IO.Stream, System.IO.Stream, System.Int64, System.Int64, SevenZip.ICodeProgress)
+  nameWithType: ICoder.Code(Stream, Stream, Int64, Int64, ICodeProgress)
+- uid: SevenZip.ICoder.Code*
+  name: Code
+  href: api/SevenZip.ICoder.html#SevenZip_ICoder_Code_
+  commentId: Overload:SevenZip.ICoder.Code
+  isSpec: "True"
+  fullName: SevenZip.ICoder.Code
+  nameWithType: ICoder.Code
+- uid: SevenZip.ISetCoderProperties
+  name: ISetCoderProperties
+  href: api/SevenZip.ISetCoderProperties.html
+  commentId: T:SevenZip.ISetCoderProperties
+  fullName: SevenZip.ISetCoderProperties
+  nameWithType: ISetCoderProperties
+- uid: SevenZip.ISetCoderProperties.SetCoderProperties(SevenZip.CoderPropID[],System.Object[])
+  name: SetCoderProperties(CoderPropID[], Object[])
+  href: api/SevenZip.ISetCoderProperties.html#SevenZip_ISetCoderProperties_SetCoderProperties_SevenZip_CoderPropID___System_Object___
+  commentId: M:SevenZip.ISetCoderProperties.SetCoderProperties(SevenZip.CoderPropID[],System.Object[])
+  name.vb: SetCoderProperties(CoderPropID(), Object())
+  fullName: SevenZip.ISetCoderProperties.SetCoderProperties(SevenZip.CoderPropID[], System.Object[])
+  fullName.vb: SevenZip.ISetCoderProperties.SetCoderProperties(SevenZip.CoderPropID(), System.Object())
+  nameWithType: ISetCoderProperties.SetCoderProperties(CoderPropID[], Object[])
+  nameWithType.vb: ISetCoderProperties.SetCoderProperties(CoderPropID(), Object())
+- uid: SevenZip.ISetCoderProperties.SetCoderProperties*
+  name: SetCoderProperties
+  href: api/SevenZip.ISetCoderProperties.html#SevenZip_ISetCoderProperties_SetCoderProperties_
+  commentId: Overload:SevenZip.ISetCoderProperties.SetCoderProperties
+  isSpec: "True"
+  fullName: SevenZip.ISetCoderProperties.SetCoderProperties
+  nameWithType: ISetCoderProperties.SetCoderProperties
+- uid: SevenZip.ISetDecoderProperties
+  name: ISetDecoderProperties
+  href: api/SevenZip.ISetDecoderProperties.html
+  commentId: T:SevenZip.ISetDecoderProperties
+  fullName: SevenZip.ISetDecoderProperties
+  nameWithType: ISetDecoderProperties
+- uid: SevenZip.ISetDecoderProperties.SetDecoderProperties(System.Byte[])
+  name: SetDecoderProperties(Byte[])
+  href: api/SevenZip.ISetDecoderProperties.html#SevenZip_ISetDecoderProperties_SetDecoderProperties_System_Byte___
+  commentId: M:SevenZip.ISetDecoderProperties.SetDecoderProperties(System.Byte[])
+  name.vb: SetDecoderProperties(Byte())
+  fullName: SevenZip.ISetDecoderProperties.SetDecoderProperties(System.Byte[])
+  fullName.vb: SevenZip.ISetDecoderProperties.SetDecoderProperties(System.Byte())
+  nameWithType: ISetDecoderProperties.SetDecoderProperties(Byte[])
+  nameWithType.vb: ISetDecoderProperties.SetDecoderProperties(Byte())
+- uid: SevenZip.ISetDecoderProperties.SetDecoderProperties*
+  name: SetDecoderProperties
+  href: api/SevenZip.ISetDecoderProperties.html#SevenZip_ISetDecoderProperties_SetDecoderProperties_
+  commentId: Overload:SevenZip.ISetDecoderProperties.SetDecoderProperties
+  isSpec: "True"
+  fullName: SevenZip.ISetDecoderProperties.SetDecoderProperties
+  nameWithType: ISetDecoderProperties.SetDecoderProperties
+- uid: SevenZip.IWriteCoderProperties
+  name: IWriteCoderProperties
+  href: api/SevenZip.IWriteCoderProperties.html
+  commentId: T:SevenZip.IWriteCoderProperties
+  fullName: SevenZip.IWriteCoderProperties
+  nameWithType: IWriteCoderProperties
+- uid: SevenZip.IWriteCoderProperties.WriteCoderProperties(System.IO.Stream)
+  name: WriteCoderProperties(Stream)
+  href: api/SevenZip.IWriteCoderProperties.html#SevenZip_IWriteCoderProperties_WriteCoderProperties_System_IO_Stream_
+  commentId: M:SevenZip.IWriteCoderProperties.WriteCoderProperties(System.IO.Stream)
+  fullName: SevenZip.IWriteCoderProperties.WriteCoderProperties(System.IO.Stream)
+  nameWithType: IWriteCoderProperties.WriteCoderProperties(Stream)
+- uid: SevenZip.IWriteCoderProperties.WriteCoderProperties*
+  name: WriteCoderProperties
+  href: api/SevenZip.IWriteCoderProperties.html#SevenZip_IWriteCoderProperties_WriteCoderProperties_
+  commentId: Overload:SevenZip.IWriteCoderProperties.WriteCoderProperties
+  isSpec: "True"
+  fullName: SevenZip.IWriteCoderProperties.WriteCoderProperties
+  nameWithType: IWriteCoderProperties.WriteCoderProperties

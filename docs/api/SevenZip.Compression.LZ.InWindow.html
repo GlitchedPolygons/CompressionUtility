@@ -1,0 +1,619 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class InWindow
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class InWindow
+   ">
+    <meta name="generator" content="docfx 2.43.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="SevenZip.Compression.LZ.InWindow">
+  
+  
+  <h1 id="SevenZip_Compression_LZ_InWindow" data-uid="SevenZip.Compression.LZ.InWindow" class="text-break">Class InWindow
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">InWindow</span></div>
+      <div class="level2"><a class="xref" href="SevenZip.Compression.LZ.BinTree.html">BinTree</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="SevenZip.Compression.LZ.html">SevenZip.Compression.LZ</a></h6>
+  <h6><strong>Assembly</strong>: GlitchedPolygons.Services.CompressionUtility.dll</h6>
+  <h5 id="SevenZip_Compression_LZ_InWindow_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class InWindow</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/new/master/apiSpec/new?filename=SevenZip_Compression_LZ_InWindow__blockSize.md&amp;value=---%0Auid%3A%20SevenZip.Compression.LZ.InWindow._blockSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/LZMA/Compress/LZ/LzInWindow.cs/#L18">View Source</a>
+  </span>
+  <h4 id="SevenZip_Compression_LZ_InWindow__blockSize" data-uid="SevenZip.Compression.LZ.InWindow._blockSize">_blockSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint _blockSize</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/new/master/apiSpec/new?filename=SevenZip_Compression_LZ_InWindow__bufferBase.md&amp;value=---%0Auid%3A%20SevenZip.Compression.LZ.InWindow._bufferBase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/LZMA/Compress/LZ/LzInWindow.cs/#L9">View Source</a>
+  </span>
+  <h4 id="SevenZip_Compression_LZ_InWindow__bufferBase" data-uid="SevenZip.Compression.LZ.InWindow._bufferBase">_bufferBase</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] _bufferBase</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/new/master/apiSpec/new?filename=SevenZip_Compression_LZ_InWindow__bufferOffset.md&amp;value=---%0Auid%3A%20SevenZip.Compression.LZ.InWindow._bufferOffset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/LZMA/Compress/LZ/LzInWindow.cs/#L16">View Source</a>
+  </span>
+  <h4 id="SevenZip_Compression_LZ_InWindow__bufferOffset" data-uid="SevenZip.Compression.LZ.InWindow._bufferOffset">_bufferOffset</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint _bufferOffset</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/new/master/apiSpec/new?filename=SevenZip_Compression_LZ_InWindow__pos.md&amp;value=---%0Auid%3A%20SevenZip.Compression.LZ.InWindow._pos%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/LZMA/Compress/LZ/LzInWindow.cs/#L19">View Source</a>
+  </span>
+  <h4 id="SevenZip_Compression_LZ_InWindow__pos" data-uid="SevenZip.Compression.LZ.InWindow._pos">_pos</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint _pos</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/new/master/apiSpec/new?filename=SevenZip_Compression_LZ_InWindow__streamPos.md&amp;value=---%0Auid%3A%20SevenZip.Compression.LZ.InWindow._streamPos%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/LZMA/Compress/LZ/LzInWindow.cs/#L22">View Source</a>
+  </span>
+  <h4 id="SevenZip_Compression_LZ_InWindow__streamPos" data-uid="SevenZip.Compression.LZ.InWindow._streamPos">_streamPos</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint _streamPos</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/new/master/apiSpec/new?filename=SevenZip_Compression_LZ_InWindow_Create_System_UInt32_System_UInt32_System_UInt32_.md&amp;value=---%0Auid%3A%20SevenZip.Compression.LZ.InWindow.Create(System.UInt32%2CSystem.UInt32%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/LZMA/Compress/LZ/LzInWindow.cs/#L67">View Source</a>
+  </span>
+  <a id="SevenZip_Compression_LZ_InWindow_Create_" data-uid="SevenZip.Compression.LZ.InWindow.Create*"></a>
+  <h4 id="SevenZip_Compression_LZ_InWindow_Create_System_UInt32_System_UInt32_System_UInt32_" data-uid="SevenZip.Compression.LZ.InWindow.Create(System.UInt32,System.UInt32,System.UInt32)">Create(UInt32, UInt32, UInt32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Create(uint keepSizeBefore, uint keepSizeAfter, uint keepSizeReserv)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">keepSizeBefore</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">keepSizeAfter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">keepSizeReserv</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/new/master/apiSpec/new?filename=SevenZip_Compression_LZ_InWindow_GetIndexByte_System_Int32_.md&amp;value=---%0Auid%3A%20SevenZip.Compression.LZ.InWindow.GetIndexByte(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/LZMA/Compress/LZ/LzInWindow.cs/#L105">View Source</a>
+  </span>
+  <a id="SevenZip_Compression_LZ_InWindow_GetIndexByte_" data-uid="SevenZip.Compression.LZ.InWindow.GetIndexByte*"></a>
+  <h4 id="SevenZip_Compression_LZ_InWindow_GetIndexByte_System_Int32_" data-uid="SevenZip.Compression.LZ.InWindow.GetIndexByte(System.Int32)">GetIndexByte(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte GetIndexByte(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/new/master/apiSpec/new?filename=SevenZip_Compression_LZ_InWindow_GetMatchLen_System_Int32_System_UInt32_System_UInt32_.md&amp;value=---%0Auid%3A%20SevenZip.Compression.LZ.InWindow.GetMatchLen(System.Int32%2CSystem.UInt32%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/LZMA/Compress/LZ/LzInWindow.cs/#L108">View Source</a>
+  </span>
+  <a id="SevenZip_Compression_LZ_InWindow_GetMatchLen_" data-uid="SevenZip.Compression.LZ.InWindow.GetMatchLen*"></a>
+  <h4 id="SevenZip_Compression_LZ_InWindow_GetMatchLen_System_Int32_System_UInt32_System_UInt32_" data-uid="SevenZip.Compression.LZ.InWindow.GetMatchLen(System.Int32,System.UInt32,System.UInt32)">GetMatchLen(Int32, UInt32, UInt32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetMatchLen(int index, uint distance, uint limit)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">distance</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">limit</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/new/master/apiSpec/new?filename=SevenZip_Compression_LZ_InWindow_GetNumAvailableBytes.md&amp;value=---%0Auid%3A%20SevenZip.Compression.LZ.InWindow.GetNumAvailableBytes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/LZMA/Compress/LZ/LzInWindow.cs/#L122">View Source</a>
+  </span>
+  <a id="SevenZip_Compression_LZ_InWindow_GetNumAvailableBytes_" data-uid="SevenZip.Compression.LZ.InWindow.GetNumAvailableBytes*"></a>
+  <h4 id="SevenZip_Compression_LZ_InWindow_GetNumAvailableBytes" data-uid="SevenZip.Compression.LZ.InWindow.GetNumAvailableBytes">GetNumAvailableBytes()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetNumAvailableBytes()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/new/master/apiSpec/new?filename=SevenZip_Compression_LZ_InWindow_Init.md&amp;value=---%0Auid%3A%20SevenZip.Compression.LZ.InWindow.Init%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/LZMA/Compress/LZ/LzInWindow.cs/#L84">View Source</a>
+  </span>
+  <a id="SevenZip_Compression_LZ_InWindow_Init_" data-uid="SevenZip.Compression.LZ.InWindow.Init*"></a>
+  <h4 id="SevenZip_Compression_LZ_InWindow_Init" data-uid="SevenZip.Compression.LZ.InWindow.Init">Init()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Init()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/new/master/apiSpec/new?filename=SevenZip_Compression_LZ_InWindow_MoveBlock.md&amp;value=---%0Auid%3A%20SevenZip.Compression.LZ.InWindow.MoveBlock%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/LZMA/Compress/LZ/LzInWindow.cs/#L24">View Source</a>
+  </span>
+  <a id="SevenZip_Compression_LZ_InWindow_MoveBlock_" data-uid="SevenZip.Compression.LZ.InWindow.MoveBlock*"></a>
+  <h4 id="SevenZip_Compression_LZ_InWindow_MoveBlock" data-uid="SevenZip.Compression.LZ.InWindow.MoveBlock">MoveBlock()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveBlock()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/new/master/apiSpec/new?filename=SevenZip_Compression_LZ_InWindow_MovePos.md&amp;value=---%0Auid%3A%20SevenZip.Compression.LZ.InWindow.MovePos%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/LZMA/Compress/LZ/LzInWindow.cs/#L93">View Source</a>
+  </span>
+  <a id="SevenZip_Compression_LZ_InWindow_MovePos_" data-uid="SevenZip.Compression.LZ.InWindow.MovePos*"></a>
+  <h4 id="SevenZip_Compression_LZ_InWindow_MovePos" data-uid="SevenZip.Compression.LZ.InWindow.MovePos">MovePos()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MovePos()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/new/master/apiSpec/new?filename=SevenZip_Compression_LZ_InWindow_ReadBlock.md&amp;value=---%0Auid%3A%20SevenZip.Compression.LZ.InWindow.ReadBlock%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/LZMA/Compress/LZ/LzInWindow.cs/#L39">View Source</a>
+  </span>
+  <a id="SevenZip_Compression_LZ_InWindow_ReadBlock_" data-uid="SevenZip.Compression.LZ.InWindow.ReadBlock*"></a>
+  <h4 id="SevenZip_Compression_LZ_InWindow_ReadBlock" data-uid="SevenZip.Compression.LZ.InWindow.ReadBlock">ReadBlock()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ReadBlock()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/new/master/apiSpec/new?filename=SevenZip_Compression_LZ_InWindow_ReduceOffsets_System_Int32_.md&amp;value=---%0Auid%3A%20SevenZip.Compression.LZ.InWindow.ReduceOffsets(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/LZMA/Compress/LZ/LzInWindow.cs/#L124">View Source</a>
+  </span>
+  <a id="SevenZip_Compression_LZ_InWindow_ReduceOffsets_" data-uid="SevenZip.Compression.LZ.InWindow.ReduceOffsets*"></a>
+  <h4 id="SevenZip_Compression_LZ_InWindow_ReduceOffsets_System_Int32_" data-uid="SevenZip.Compression.LZ.InWindow.ReduceOffsets(System.Int32)">ReduceOffsets(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReduceOffsets(int subValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">subValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/new/master/apiSpec/new?filename=SevenZip_Compression_LZ_InWindow_ReleaseStream.md&amp;value=---%0Auid%3A%20SevenZip.Compression.LZ.InWindow.ReleaseStream%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/LZMA/Compress/LZ/LzInWindow.cs/#L82">View Source</a>
+  </span>
+  <a id="SevenZip_Compression_LZ_InWindow_ReleaseStream_" data-uid="SevenZip.Compression.LZ.InWindow.ReleaseStream*"></a>
+  <h4 id="SevenZip_Compression_LZ_InWindow_ReleaseStream" data-uid="SevenZip.Compression.LZ.InWindow.ReleaseStream">ReleaseStream()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReleaseStream()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/new/master/apiSpec/new?filename=SevenZip_Compression_LZ_InWindow_SetStream_System_IO_Stream_.md&amp;value=---%0Auid%3A%20SevenZip.Compression.LZ.InWindow.SetStream(System.IO.Stream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/LZMA/Compress/LZ/LzInWindow.cs/#L81">View Source</a>
+  </span>
+  <a id="SevenZip_Compression_LZ_InWindow_SetStream_" data-uid="SevenZip.Compression.LZ.InWindow.SetStream*"></a>
+  <h4 id="SevenZip_Compression_LZ_InWindow_SetStream_System_IO_Stream_" data-uid="SevenZip.Compression.LZ.InWindow.SetStream(System.IO.Stream)">SetStream(Stream)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetStream(Stream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/GlitchedPolygons/CompressionUtility/new/master/apiSpec/new?filename=SevenZip_Compression_LZ_InWindow.md&amp;value=---%0Auid%3A%20SevenZip.Compression.LZ.InWindow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/LZMA/Compress/LZ/LzInWindow.cs/#L7" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
