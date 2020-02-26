@@ -8,7 +8,7 @@ namespace GlitchedPolygons.Services.CompressionUtility
     public struct CompressionSettings
     {
         /// <summary>
-        /// The size of the underlying stream buffer. Default value is <c>65536</c><para> </para>
+        /// The size of the underlying stream buffer. A reasonable value could be <c>65536</c><para> </para>
         /// </summary>
         public int bufferSize;
 
@@ -21,16 +21,11 @@ namespace GlitchedPolygons.Services.CompressionUtility
         /// <summary>
         /// General-purpose default settings for compressing and decompressing all kinds of data. When unsure, use this!
         /// </summary>
-        public static CompressionSettings Default
+        public static CompressionSettings Default => new CompressionSettings
         {
-            get
-            {
-                return new CompressionSettings
-                {
-                    bufferSize = 65536,
-                    compressionLevel = CompressionLevel.Fastest
-                };
-            }
-        }
+            bufferSize = 65536,
+            compressionLevel = CompressionLevel.Fastest
+        };
+        
     }
 }

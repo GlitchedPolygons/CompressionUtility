@@ -11,7 +11,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.Tests
 
         ICompressionUtility GetImpl(Type type)
         {
-            return impl ?? (impl = (ICompressionUtility)Activator.CreateInstance(type));
+            return impl ??= (ICompressionUtility)Activator.CreateInstance(type);
         }
 
         [Theory]
@@ -20,7 +20,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.Tests
         [InlineData(typeof(BrotliUtility))]
         public void SyncImpl_CompressEmptyArray_ReturnsEmptyArray(Type type)
         {
-            ICompressionUtility impl = GetImpl(type);
+            impl = GetImpl(type);
 
             byte[] empty = new byte[0];
             byte[] result = impl.Compress(empty, COMPRESSION_SETTINGS);
@@ -33,7 +33,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.Tests
         [InlineData(typeof(BrotliUtility))]
         public void SyncImpl_DecompressEmptyArray_ReturnsEmptyArray(Type type)
         {
-            ICompressionUtility impl = GetImpl(type);
+            impl = GetImpl(type);
 
             byte[] empty = new byte[0];
             byte[] result = impl.Decompress(empty, COMPRESSION_SETTINGS);
@@ -46,7 +46,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.Tests
         [InlineData(typeof(BrotliUtility))]
         public void SyncImpl_CompressNullArray_ReturnsNull(Type type)
         {
-            ICompressionUtility impl = GetImpl(type);
+            impl = GetImpl(type);
 
             byte[] result = impl.Compress(null, COMPRESSION_SETTINGS);
             Assert.Null(result);
@@ -58,7 +58,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.Tests
         [InlineData(typeof(BrotliUtility))]
         public void SyncImpl_DecompressNullArray_ReturnsNull(Type type)
         {
-            ICompressionUtility impl = GetImpl(type);
+            impl = GetImpl(type);
 
             byte[] result = impl.Decompress(null, COMPRESSION_SETTINGS);
             Assert.Null(result);
@@ -70,7 +70,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.Tests
         [InlineData(typeof(BrotliUtility))]
         public void SyncImpl_Compress5MB_ResultSmallerThanOriginal(Type type)
         {
-            ICompressionUtility impl = GetImpl(type);
+            impl = GetImpl(type);
 
             byte[] data = new byte[1024 * 1024 * 5];
             for (int i = data.Length - 1; i >= 0; i--)
@@ -88,7 +88,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.Tests
         [InlineData(typeof(BrotliUtility))]
         public void SyncImpl_CompressLongString_ReturnsSmallerString(Type type)
         {
-            ICompressionUtility impl = GetImpl(type);
+            impl = GetImpl(type);
 
             const string STRING = "mcvlmoqepoir4298DMKEKNKNEInofndogoidnoigorenoigniofoienoign983874389759835978465798469kdnfndiiudjfbniuigorenoigniofoienoign983874389759835978465798469kdnfndiiudjfbniuigorenoigniofoienoign983874389759835978465798469kdnfndiiudjfbniuigorenoigniofoienoign983874389759835978465798469kdnfndiiudjfbniuigorenoigniofoienoign983874389759835978465798469kdnfndiiudjfbniuigorenoigniofoienoign983874389759835978465798469kdnfndiiudjfbniuebujfneufsbunskjdfkje";
             string compressed = impl.Compress(STRING);
@@ -101,7 +101,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.Tests
         [InlineData(typeof(BrotliUtility))]
         public void SyncImpl_CompressDataAndThenDecompress_ResultIdenticalData(Type type)
         {
-            ICompressionUtility impl = GetImpl(type);
+            impl = GetImpl(type);
 
             byte[] data = new byte[1024 * 1024];
             for (int i = data.Length - 1; i >= 0; i--)
@@ -123,7 +123,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.Tests
         [InlineData(typeof(BrotliUtility))]
         public void SyncImpl_DecompressCompressedString_ReturnsOriginalString(Type type)
         {
-            ICompressionUtility impl = GetImpl(type);
+            impl = GetImpl(type);
 
             const string STRING = "mcvlmoqepoir4298DMKfgfgdKNEInofndogoidnoigorenoigniofoienoign983874389759835978465798469kdnfndiiudjfbniuigorenoigniofoienoign983874389759835978465798469kdnfndiiudjfbniuigorenoigniofoienoign983874389759835978465798469kdnfndiiudjfbniuigorenoigniofoienoign983874389759835978465798469kdnfndiiudjfbniuigorenoigniofoienoign983874389759835978465798469kdnfndiiudjfbniuigorenoigniofoienoign983874389759835978465798469kdnfndiiudjfbniuebujfneufsbunskjdfkje";
             string compressed = impl.Compress(STRING);
@@ -134,9 +134,9 @@ namespace GlitchedPolygons.Services.CompressionUtility.Tests
         [InlineData(typeof(LzmaUtility))]
         [InlineData(typeof(GZipUtility))]
         [InlineData(typeof(BrotliUtility))]
-        public void SyncImpl_DecompressNonCompressedArray_ReturnsNull(Type type)
+        public void SyncImpl_DecompressNonCompressedArray_ThrowsException(Type type)
         {
-            ICompressionUtility impl = GetImpl(type);
+            impl = GetImpl(type);
 
             byte[] data = new byte[1024 * 1024];
             for (int i = data.Length - 1; i >= 0; i--)
@@ -144,7 +144,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.Tests
                 data[i] = (byte)(new Random().NextDouble() > 0.5d ? 5 : 75);
             }
 
-            Assert.Throws<InvalidDataException>(() => impl.Decompress(data, COMPRESSION_SETTINGS));
+            Assert.ThrowsAny<Exception>(() => GetImpl(type).Decompress(data, COMPRESSION_SETTINGS));
         }
     }
 }

@@ -3,10 +3,6 @@ using System.Text;
 using System.IO;
 using System.IO.Compression;
 
-#if UNITY_EDITOR
-using UnityEngine;
-#endif
-
 namespace GlitchedPolygons.Services.CompressionUtility
 {
     /// <summary>
@@ -26,35 +22,22 @@ namespace GlitchedPolygons.Services.CompressionUtility
         {
             if (ReferenceEquals(bytes, null))
             {
-#if UNITY_EDITOR
-                Debug.LogError($"{nameof(GZipUtility)}: You tried to compress a null array; returning null...");
-#endif
                 return null;
             }
 
             if (bytes.Length == 0)
             {
-#if UNITY_EDITOR
-                Debug.LogWarning($"{nameof(GZipUtility)}: You tried to compress an empty array; the resulting array will also be empty!");
-#endif
                 return Array.Empty<byte>();
             }
 
-            byte[] compressedBytes;
-
-            using (var compressedStream = new MemoryStream())
-            {
-                using (var originalStream = new MemoryStream(bytes))
-                {
-                    using (var gzip = new GZipStream(compressedStream, compressionSettings.compressionLevel))
-                    {
-                        originalStream.CopyTo(gzip, Math.Max(4096, compressionSettings.bufferSize));
-                    }
-                }
-                compressedBytes = compressedStream.ToArray();
-            }
-
-            return compressedBytes;
+            using MemoryStream input = new MemoryStream(bytes);
+            using MemoryStream output = new MemoryStream(bytes.Length / 4 * 3);
+            using GZipStream compressionStream = new GZipStream(output, compressionSettings.compressionLevel);
+            
+            input.CopyTo(compressionStream, Math.Max(4096, compressionSettings.bufferSize));
+            compressionStream.Flush();
+            
+            return output.ToArray();
         }
 
 
@@ -67,13 +50,18 @@ namespace GlitchedPolygons.Services.CompressionUtility
         /// <returns>The gzipped <c>string</c>.</returns>
         public string Compress(string text, Encoding encoding = null)
         {
+            if (string.IsNullOrEmpty(text))
+            {
+                return null;
+            }
+            
             byte[] compressedBytes = Compress((encoding ?? Encoding.UTF8).GetBytes(text), CompressionSettings.Default);
             return Convert.ToBase64String(compressedBytes);
         }
 
         /// <summary>
         /// Decompresses the specified bytes using <see cref="GZipStream"/> and the
-        /// <see cref="CompressionSettings"/> that have been used to originally compress the bytes..
+        /// <see cref="CompressionSettings"/> that have been used to originally compress the bytes.
         /// </summary>
         /// <param name="gzippedBytes">The gzipped <c>byte[]</c> array that you want to decompress.</param>
         /// <param name="compressionSettings">The <see cref="CompressionSettings"/> that have been used to compress the bytes.</param>
@@ -82,32 +70,22 @@ namespace GlitchedPolygons.Services.CompressionUtility
         {
             if (ReferenceEquals(gzippedBytes, null))
             {
-#if UNITY_EDITOR
-                Debug.LogError($"{nameof(GZipUtility)}: You tried to decompress a null array; returning null...");
-#endif
                 return null;
             }
 
             if (gzippedBytes.Length == 0)
             {
-#if UNITY_EDITOR
-                Debug.LogWarning($"{nameof(GZipUtility)}: You tried to decompress an empty array; the resulting array will also be empty!");
-#endif
                 return Array.Empty<byte>();
             }
 
-            using (MemoryStream decompressedStream = new MemoryStream())
-            {
-                using (MemoryStream compressedStream = new MemoryStream(gzippedBytes))
-                {
-                    using (GZipStream gzip = new GZipStream(compressedStream, CompressionMode.Decompress))
-                    {
-                        gzip.CopyTo(decompressedStream, Math.Max(4096, compressionSettings.bufferSize));
-                    }
-                }
-
-                return decompressedStream.ToArray();
-            }
+            using MemoryStream input = new MemoryStream(gzippedBytes);
+            using MemoryStream output = new MemoryStream(gzippedBytes.Length / 2 * 3);
+            using GZipStream decompressionStream = new GZipStream(input, CompressionMode.Decompress);
+            
+            decompressionStream.CopyTo(output, Math.Max(4096, compressionSettings.bufferSize));
+            decompressionStream.Flush();
+            
+            return output.ToArray();
         }
 
         /// <summary>

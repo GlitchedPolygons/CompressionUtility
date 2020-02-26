@@ -12,7 +12,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.Tests
 
         ICompressionUtilityAsync GetImpl(Type type)
         {
-            return impl ?? (impl = (ICompressionUtilityAsync)Activator.CreateInstance(type));
+            return impl ??= (ICompressionUtilityAsync)Activator.CreateInstance(type);
         }
 
         [Theory]
@@ -119,7 +119,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.Tests
         [InlineData(typeof(GZipUtilityAsync))]
         [InlineData(typeof(LzmaUtilityAsync))]
         [InlineData(typeof(BrotliUtilityAsync))]
-        public async Task AsyncImpl_DecompressNonCompressedArray_ThrowsIOException(Type type)
+        public async Task AsyncImpl_DecompressNonCompressedArray_ThrowsException(Type type)
         {
             byte[] data = new byte[1024 * 1024];
             for (int i = data.Length - 1; i >= 0; i--)
@@ -127,7 +127,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.Tests
                 data[i] = (byte)(new Random().NextDouble() > 0.5d ? 5 : 75);
             }
 
-            await Assert.ThrowsAsync<InvalidDataException>(async () => await GetImpl(type).Decompress(data, COMPRESSION_SETTINGS));
+            await Assert.ThrowsAnyAsync<Exception>(async () => await GetImpl(type).Decompress(data, COMPRESSION_SETTINGS));
         }
     }
 }

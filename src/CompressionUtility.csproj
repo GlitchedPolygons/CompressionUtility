@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 <PropertyGroup>
-<TargetFramework>netstandard2.0</TargetFramework>
+<TargetFramework>netstandard2.1</TargetFramework>
 <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 <PackageId>GlitchedPolygons.Services.CompressionUtility</PackageId>
 <Product>GlitchedPolygons.Services.CompressionUtility</Product>
@@ -9,17 +9,18 @@
 <Company>Glitched Polygons</Company>
 <Authors>Glitched Polygons</Authors>
 <RepositoryUrl>https://github.com/GlitchedPolygons/CompressionUtility</RepositoryUrl>
-<PackageTags>zip gzip lzma brotli compression decompression c# asp.net core netstandard2.0 class library interface service</PackageTags>
+<PackageTags>zip gzip lzma brotli compression decompression c# asp.net core netstandard2.1 class library interface service</PackageTags>
 <Description>Useful compression utility for easily and quickly (de)compressing strings and byte[] arrays.
 Can be used in ASP.NET Core using the included dependency injection container (under Startup.cs call services.AddTransient and register the compression utility service there).
 </Description>
 <PackageProjectUrl>https://github.com/GlitchedPolygons/CompressionUtility</PackageProjectUrl>
-<PackageVersion>1.4.0</PackageVersion>
+<PackageVersion>2.0.0</PackageVersion>
 <PackageLicenseExpression>MIT</PackageLicenseExpression>
 <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
 <AssemblyName>GlitchedPolygons.Services.CompressionUtility</AssemblyName>
 <RootNamespace>GlitchedPolygons.Services.CompressionUtility</RootNamespace>
 <Version>1.4.0</Version>
+<LangVersion>8</LangVersion>
 </PropertyGroup>
 
 <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -35,11 +36,7 @@ Can be used in ASP.NET Core using the included dependency injection container (u
 </PropertyGroup>
 
 <ItemGroup>
-<None Include="icon.png" Pack="true" PackagePath="\"/>
-</ItemGroup>
-
-<ItemGroup>
-<PackageReference Include="Brotli.NET" Version="2.0.4.2" />
+<None Include="icon.png" Pack="true" PackagePath="\" />
 </ItemGroup>
 
 </Project>

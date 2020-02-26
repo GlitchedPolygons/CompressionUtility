@@ -2,10 +2,6 @@
 using System.Text;
 using System.Threading.Tasks;
 
-#if UNITY_EDITOR
-using UnityEngine;
-#endif
-
 namespace GlitchedPolygons.Services.CompressionUtility
 {
     /// <summary>
@@ -34,20 +30,28 @@ namespace GlitchedPolygons.Services.CompressionUtility
         }
 
         /// <summary>
-        /// Compresses the specified <c>string</c> using LZMA and <c>CompressionSettings.Default</c>.
+        /// Compresses the specified <c>string</c> using LZMA and <see cref="CompressionSettings.Default"/>.
         /// </summary>
         /// <param name="text">The <c>string</c> to compress.</param>
         /// <param name="encoding">The encoding to use. Can be <c>null</c>; UTF8 will be used in that case.</param>
         /// <returns>The compressed <c>string</c>.</returns>
-        public async Task<string> Compress(string text, Encoding encoding = null)
+        public Task<string> Compress(string text, Encoding encoding = null)
         {
-            byte[] compressedBytes = await Compress((encoding ?? Encoding.UTF8).GetBytes(text), CompressionSettings.Default).ConfigureAwait(false);
-            return Convert.ToBase64String(compressedBytes);
+            if (string.IsNullOrEmpty(text))
+            {
+                return Task.FromResult(string.Empty);
+            }
+
+            return Task.Run(() =>
+            {
+                byte[] compressedBytes = lzma.Compress((encoding ?? Encoding.UTF8).GetBytes(text), CompressionSettings.Default);
+                return Convert.ToBase64String(compressedBytes);
+            });
         }
 
         /// <summary>
         /// Decompresses the specified bytes using LZMA and the
-        /// <see cref="CompressionSettings"/> that have been used to originally compress the bytes..
+        /// <see cref="CompressionSettings"/> that have been used to originally compress the bytes.
         /// </summary>
         /// <param name="compressedBytes">The compressed <c>byte[]</c> array that you want to decompress.</param>
         /// <param name="compressionSettings">The <see cref="CompressionSettings"/> that have been used to compress the bytes.</param>
@@ -63,10 +67,13 @@ namespace GlitchedPolygons.Services.CompressionUtility
         /// <param name="compressedString">The compressed <c>string</c> to decompress.</param>
         /// <param name="encoding">The encoding to use. Can be <c>null</c>; UTF8 will be used in that case.</param>
         /// <returns>The decompressed <c>string</c></returns>.
-        public async Task<string> Decompress(string compressedString, Encoding encoding = null)
+        public Task<string> Decompress(string compressedString, Encoding encoding = null)
         {
-            byte[] decompressedBytes = await Decompress(Convert.FromBase64String(compressedString), CompressionSettings.Default).ConfigureAwait(false);
-            return (encoding ?? Encoding.UTF8).GetString(decompressedBytes);
+            return Task.Run(() =>
+            {
+                byte[] decompressedBytes = lzma.Decompress(Convert.FromBase64String(compressedString), CompressionSettings.Default);
+                return (encoding ?? Encoding.UTF8).GetString(decompressedBytes);
+            });
         }
     }
 }

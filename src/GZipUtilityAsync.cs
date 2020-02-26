@@ -4,10 +4,6 @@ using System.IO.Compression;
 using System.Threading.Tasks;
 using System.Text;
 
-#if UNITY_EDITOR
-using UnityEngine;
-#endif
-
 namespace GlitchedPolygons.Services.CompressionUtility
 {
     /// <summary>
@@ -27,35 +23,22 @@ namespace GlitchedPolygons.Services.CompressionUtility
         {
             if (ReferenceEquals(bytes, null))
             {
-#if UNITY_EDITOR
-                Debug.LogError($"{nameof(GZipUtilityAsync)}: You tried to compress a null array; returning null...");
-#endif
                 return null;
             }
 
             if (bytes.Length == 0)
             {
-#if UNITY_EDITOR
-                Debug.LogWarning($"{nameof(GZipUtilityAsync)}: You tried to compress an empty array; the resulting array will also be empty!");
-#endif
                 return Array.Empty<byte>();
             }
 
-            byte[] compressedBytes;
-
-            using (var compressedStream = new MemoryStream())
-            {
-                using (var originalStream = new MemoryStream(bytes))
-                {
-                    using (var gzip = new GZipStream(compressedStream, compressionSettings.compressionLevel))
-                    {
-                        await originalStream.CopyToAsync(gzip, Math.Max(4096, compressionSettings.bufferSize)).ConfigureAwait(false);
-                    }
-                }
-                compressedBytes = compressedStream.ToArray();
-            }
-
-            return compressedBytes;
+            await using MemoryStream input = new MemoryStream(bytes);
+            await using MemoryStream output = new MemoryStream(bytes.Length / 4 * 3);
+            await using GZipStream compressionStream = new GZipStream(output, compressionSettings.compressionLevel);
+            
+            await input.CopyToAsync(compressionStream, Math.Max(4096, compressionSettings.bufferSize)).ConfigureAwait(false);
+            await compressionStream.FlushAsync().ConfigureAwait(false);
+            
+            return output.ToArray();
         }
 
         /// <summary>
@@ -66,13 +49,17 @@ namespace GlitchedPolygons.Services.CompressionUtility
         /// <returns>The gzipped <c>string</c>.</returns>
         public async Task<string> Compress(string text, Encoding encoding = null)
         {
+            if (string.IsNullOrEmpty(text))
+            {
+                return null;
+            }
             byte[] compressedBytes = await Compress((encoding ?? Encoding.UTF8).GetBytes(text), CompressionSettings.Default).ConfigureAwait(false);
             return Convert.ToBase64String(compressedBytes);
         }
 
         /// <summary>
         /// Decompresses the specified bytes using <see cref="GZipStream"/> and the
-        /// <see cref="CompressionSettings"/> that have been used to originally compress the bytes..
+        /// <see cref="CompressionSettings"/> that have been used to originally compress the bytes.
         /// </summary>
         /// <param name="gzippedBytes">The gzipped <c>byte[]</c> array that you want to decompress.</param>
         /// <param name="compressionSettings">The <see cref="CompressionSettings"/> that have been used to compress the bytes.</param>
@@ -81,32 +68,22 @@ namespace GlitchedPolygons.Services.CompressionUtility
         {
             if (ReferenceEquals(gzippedBytes, null))
             {
-#if UNITY_EDITOR
-                Debug.LogError($"{nameof(GZipUtilityAsync)}: You tried to decompress a null array; returning null...");
-#endif
                 return null;
             }
 
             if (gzippedBytes.Length == 0)
             {
-#if UNITY_EDITOR
-                Debug.LogWarning($"{nameof(GZipUtilityAsync)}: You tried to decompress an empty array; the resulting array will also be empty!");
-#endif
                 return Array.Empty<byte>();
             }
 
-            using (MemoryStream decompressedStream = new MemoryStream())
-            {
-                using (MemoryStream compressedStream = new MemoryStream(gzippedBytes))
-                {
-                    using (GZipStream gzip = new GZipStream(compressedStream, CompressionMode.Decompress))
-                    {
-                        await gzip.CopyToAsync(decompressedStream, Math.Max(4096, compressionSettings.bufferSize)).ConfigureAwait(false);
-                    }
-                }
-
-                return decompressedStream.ToArray();
-            }
+            await using MemoryStream input = new MemoryStream(gzippedBytes);
+            await using MemoryStream output = new MemoryStream(gzippedBytes.Length / 2 * 3);
+            await using GZipStream decompressionStream = new GZipStream(input, CompressionMode.Decompress);
+            
+            await decompressionStream.CopyToAsync(output, Math.Max(4096, compressionSettings.bufferSize)).ConfigureAwait(false);
+            await decompressionStream.FlushAsync().ConfigureAwait(false);
+            
+            return output.ToArray();
         }
 
         /// <summary>

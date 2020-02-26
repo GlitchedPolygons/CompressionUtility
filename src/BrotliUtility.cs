@@ -1,12 +1,7 @@
-﻿using Brotli;
-using System;
+﻿using System;
 using System.IO;
 using System.IO.Compression;
 using System.Text;
-
-#if UNITY_EDITOR
-using UnityEngine;
-#endif
 
 namespace GlitchedPolygons.Services.CompressionUtility
 {
@@ -18,126 +13,85 @@ namespace GlitchedPolygons.Services.CompressionUtility
     public class BrotliUtility : ICompressionUtility
     {
         /// <summary>
-        /// Compresses an array of bytes using Brotli.NET
+        /// Compresses the specified bytes using <see cref="BrotliStream"/> and the provided <see cref="CompressionSettings"/>.
         /// </summary>
-        /// <param name="bytes">The bytes to compress.</param>
-        /// <param name="compressionSettings">The <see cref="CompressionLevel"/> IS IGNORED, only the <see cref="CompressionSettings.bufferSize"/> is used!</param>
-        /// <returns>The compressed bytes.</returns>
+        /// <returns>The compressed <c>byte[]</c> array; <c>null</c> if the input data was <c>null</c>; an empty array if the input array was also empty.</returns>
+        /// <param name="bytes">The <c>byte[]</c> array to compress.</param>
+        /// <param name="compressionSettings">The desired compression settings.</param>
         public byte[] Compress(byte[] bytes, CompressionSettings compressionSettings)
         {
-            if (bytes == null)
+            if (ReferenceEquals(bytes, null))
             {
-#if UNITY_EDITOR
-                Debug.LogError($"{nameof(BrotliUtility)}: You tried to compress a null array; returning null...");
-#endif
                 return null;
             }
 
             if (bytes.Length == 0)
             {
-#if UNITY_EDITOR
-                Debug.LogWarning($"{nameof(BrotliUtility)}: You tried to compress an empty array; the resulting array will also be empty!");
-#endif
                 return Array.Empty<byte>();
             }
 
-            BrotliStream brotliStream = null;
-            var outputStream = new MemoryStream();
-            var inputStream = new MemoryStream(bytes);
+            using MemoryStream input = new MemoryStream(bytes);
+            using MemoryStream output = new MemoryStream(bytes.Length / 4 * 3);
+            using BrotliStream compressionStream = new BrotliStream(output, compressionSettings.compressionLevel);
             
-            try
-            {
-                brotliStream = new BrotliStream(outputStream, CompressionMode.Compress);
-                brotliStream.SetQuality(11);
-                brotliStream.SetWindow(22);
-                inputStream.CopyTo(brotliStream, Math.Max(4096, compressionSettings.bufferSize));
-                brotliStream.Close();
-                return outputStream.ToArray();
-            }
-            catch (Exception e)
-            {
-#if UNITY_EDITOR
-                Debug.LogError($"{nameof(BrotliUtility)}: Compression failure; thrown error message: " + e.Message);
-#endif
-                throw;
-            }
-            finally
-            {
-                inputStream.Dispose();
-                outputStream.Dispose();
-                brotliStream?.Dispose();
-            }
+            input.CopyTo(compressionStream, Math.Max(4096, compressionSettings.bufferSize));
+            compressionStream.Flush();
+            
+            return output.ToArray();
         }
 
         /// <summary>
-        /// Compresses the specified <c>string</c> using <see cref="BrotliStream"/> and default <see cref="CompressionSettings"/>.
+        /// Compresses the specified <c>string</c> using <see cref="BrotliStream"/>.
         /// </summary>
         /// <param name="text">The <c>string</c> to compress.</param>
         /// <param name="encoding">The encoding to use. Can be <c>null</c>; UTF8 will be used in that case.</param>
-        /// <returns>The gzipped <c>string</c>.</returns>
+        /// <returns>The compressed <c>string</c>.</returns>
         public string Compress(string text, Encoding encoding = null)
         {
+            if (string.IsNullOrEmpty(text))
+            {
+                return null;
+            }
+            
             byte[] compressedBytes = Compress((encoding ?? Encoding.UTF8).GetBytes(text), CompressionSettings.Default);
             return Convert.ToBase64String(compressedBytes);
         }
 
         /// <summary>
-        /// Decompresses the specified bytes using a <see cref="BrotliStream"/>.
+        /// Decompresses the specified bytes using the
+        /// <see cref="CompressionSettings"/> that have been used to originally compress the bytes.
         /// </summary>
-        /// <param name="compressedBytes">The "brotlified" <c>byte[]</c> array that you want to decompress (the returned value from <see cref="Compress(byte[], CompressionSettings)"/>).</param>
+        /// <param name="compressedBytes">The compressed <c>byte[]</c> array that you want to decompress.</param>
         /// <param name="compressionSettings">The <see cref="CompressionSettings"/> that have been used to compress the bytes.</param>
-        /// <returns>The decompressed <c>bytes[]</c>.</returns>
+        /// <returns>The decompressed <c>bytes[]</c> - or <c>null</c> if the input array was also <c>null</c>; an empty array if the passed data was also empty.</returns>
         public byte[] Decompress(byte[] compressedBytes, CompressionSettings compressionSettings)
         {
             if (ReferenceEquals(compressedBytes, null))
             {
-#if UNITY_EDITOR
-                Debug.LogError($"{nameof(BrotliUtility)}: You tried to decompress a null array; returning null...");
-#endif
                 return null;
             }
 
             if (compressedBytes.Length == 0)
             {
-#if UNITY_EDITOR
-                Debug.LogWarning($"{nameof(BrotliUtility)}: You tried to decompress an empty array; the resulting array will also be empty!");
-#endif
                 return Array.Empty<byte>();
             }
 
-            BrotliStream brotliStream = null;
-            var outputStream = new MemoryStream();
-            var inputStream = new MemoryStream(compressedBytes);
+            using MemoryStream input = new MemoryStream(compressedBytes);
+            using MemoryStream output = new MemoryStream(compressedBytes.Length / 2 * 3);
+            using BrotliStream decompressionStream = new BrotliStream(input, CompressionMode.Decompress);
             
-            try
-            {
-                brotliStream = new BrotliStream(inputStream, CompressionMode.Decompress);
-                brotliStream.CopyTo(outputStream, Math.Max(4096, compressionSettings.bufferSize));
-                outputStream.Seek(0, SeekOrigin.Begin);
-                return outputStream.ToArray();
-            }
-            catch (BrotliDecodeException e)
-            {
-                string msg = $"{nameof(BrotliUtility)}: Decompression failure due to invalid data stream (e.g. corrupt, wrong format?). Thrown exception message: {e.Message}";
-#if UNITY_EDITOR
-                Debug.LogError(msg);
-#endif
-                throw new InvalidDataException(msg);
-            }
-            finally
-            {
-                inputStream.Dispose();
-                outputStream.Dispose();
-                brotliStream?.Dispose();
-            }
+            decompressionStream.CopyTo(output, Math.Max(4096, compressionSettings.bufferSize));
+            decompressionStream.Flush();
+            
+            return output.ToArray();
         }
 
         /// <summary>
-        /// Decompresses the specified brotli <c>string</c> using the default <see cref="CompressionSettings"/>.
+        /// Decompresses the specified compressed <c>string</c> with Brotli.
         /// </summary>
-        /// <param name="compressedString">The compressed <c>string</c> to debrotlify.</param>
+        /// <param name="compressedString">The compressed <c>string</c> to "debrotlify".</param>
         /// <param name="encoding">The encoding to use. Can be <c>null</c>; UTF8 will be used in that case.</param>
-        /// <returns>The decompressed <c>string</c></returns>.
+        /// <returns>The decompressed <c>string</c>.</returns>.
         public string Decompress(string compressedString, Encoding encoding = null)
         {
             byte[] decompressedBytes = Decompress(Convert.FromBase64String(compressedString), CompressionSettings.Default);
