@@ -4,108 +4,87 @@
   "xrefmap": "xrefmap.yml",
   "files": [
     {
-      "log_codes": [
-        "ReferencedXrefPropertyNotString"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/GlitchedPolygons.Services.CompressionUtility.BrotliUtility.yml",
       "output": {
         ".html": {
           "relative_path": "api/GlitchedPolygons.Services.CompressionUtility.BrotliUtility.html",
-          "hash": "ZrpOcZ8b2zXFATyaTKHGFw=="
+          "hash": "L/vsWlsQPn5mYVe6lbaspQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "ReferencedXrefPropertyNotString"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.yml",
       "output": {
         ".html": {
           "relative_path": "api/GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.html",
-          "hash": "7+e0DVoR1EVeyqsX3LG9tQ=="
+          "hash": "RK3HE+Ep8N8ZQ2Cw7r88Qg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "ReferencedXrefPropertyNotString"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/GlitchedPolygons.Services.CompressionUtility.CompressionSettings.yml",
       "output": {
         ".html": {
           "relative_path": "api/GlitchedPolygons.Services.CompressionUtility.CompressionSettings.html",
-          "hash": "MrdREN4vvbYITiEA2web1w=="
+          "hash": "YQltFGNwBdP8KBpfRqu63g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "ReferencedXrefPropertyNotString"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/GlitchedPolygons.Services.CompressionUtility.GZipUtility.yml",
       "output": {
         ".html": {
           "relative_path": "api/GlitchedPolygons.Services.CompressionUtility.GZipUtility.html",
-          "hash": "saWDC0B4KmR8dmzTxSTQ2g=="
+          "hash": "06jhfVH+7V5zNF0ZYjB+yQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "ReferencedXrefPropertyNotString"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.yml",
       "output": {
         ".html": {
           "relative_path": "api/GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.html",
-          "hash": "ijsRbxT7G38vKgQ59nNoGw=="
+          "hash": "zxWjxLxzx4jRRPHLY3O74w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "ReferencedXrefPropertyNotString"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.yml",
       "output": {
         ".html": {
           "relative_path": "api/GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.html",
-          "hash": "NwZmM8nbFMYtsaWr2QbpPg=="
+          "hash": "o9XHrG9if1oXLbQA9A/m7g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "ReferencedXrefPropertyNotString"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "api/GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.yml",
       "output": {
         ".html": {
           "relative_path": "api/GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.html",
-          "hash": "JehFhMUsS95S153BQkH33g=="
+          "hash": "j7lspRp2wzm3exSQybKvpg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -114,10 +93,10 @@
       "output": {
         ".html": {
           "relative_path": "api/GlitchedPolygons.Services.CompressionUtility.LzmaUtility.html",
-          "hash": "zVrVOe5lgnIbTBrKnCejUQ=="
+          "hash": "lnnMSsA+85L2CpUULMROoQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -126,10 +105,10 @@
       "output": {
         ".html": {
           "relative_path": "api/GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.html",
-          "hash": "vjrwpuuqBQoyZ4751ZnDsw=="
+          "hash": "ENVKm9+HMZI5zjzBo2xBSw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -138,10 +117,10 @@
       "output": {
         ".html": {
           "relative_path": "api/GlitchedPolygons.Services.CompressionUtility.html",
-          "hash": "LVQyLJxbFfvld7NoI/In6A=="
+          "hash": "xXMNaA98cPZmYOak18I/1w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -165,7 +144,7 @@
           "hash": "30/cQNX/3hP2fkjpUCbrlA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -192,7 +171,7 @@
           "hash": "HvJ/wGm1IKrawv39Tl6bNw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -214,10 +193,12 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
         "TocDocumentProcessor": {
@@ -228,23 +209,23 @@
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 10,
-          "skipped_file_count": 10
+          "skipped_file_count": 0
         },
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 2,
-          "skipped_file_count": 2
+          "skipped_file_count": 0
         }
       }
     },
     {
       "status": {
-        "can_incremental": true,
-        "details": "Can support incremental post processing.",
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0

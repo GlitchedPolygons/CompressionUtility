@@ -6,9 +6,9 @@ items:
   parent: GlitchedPolygons.Services.CompressionUtility
   children:
   - GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Compress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
-  - GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Compress(System.String,System.Text.Encoding)
+  - GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Compress(System.String,Encoding)
   - GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Decompress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
-  - GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Decompress(System.String,System.Text.Encoding)
+  - GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Decompress(System.String,Encoding)
   langs:
   - csharp
   - vb
@@ -23,16 +23,17 @@ items:
       repo: git@github.com:GlitchedPolygons/CompressionUtility.git
     id: LzmaUtility
     path: ../../src/LzmaUtility.cs
-    startLine: 21
+    startLine: 17
   assemblies:
   - GlitchedPolygons.Services.CompressionUtility
   namespace: GlitchedPolygons.Services.CompressionUtility
   summary: "\nCompression utility class for LZMAing data.\nImplements the <xref href=\"GlitchedPolygons.Services.CompressionUtility.ICompressionUtility\" data-throw-if-not-resolved=\"false\"></xref> interface.\n"
   example: []
   syntax:
-    content: 'public class LzmaUtility : ICompressionUtility'
+    content: 'public class LzmaUtility : object, ICompressionUtility'
     content.vb: >-
       Public Class LzmaUtility
+          Inherits Object
           Implements ICompressionUtility
   seealso:
   - linkId: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility
@@ -41,14 +42,6 @@ items:
   - System.Object
   implements:
   - GlitchedPolygons.Services.CompressionUtility.ICompressionUtility
-  inheritedMembers:
-  - System.Object.Equals(System.Object)
-  - System.Object.Equals(System.Object,System.Object)
-  - System.Object.GetHashCode
-  - System.Object.GetType
-  - System.Object.MemberwiseClone
-  - System.Object.ReferenceEquals(System.Object,System.Object)
-  - System.Object.ToString
   modifiers.csharp:
   - public
   - class
@@ -73,7 +66,7 @@ items:
       repo: git@github.com:GlitchedPolygons/CompressionUtility.git
     id: Compress
     path: ../../src/LzmaUtility.cs
-    startLine: 65
+    startLine: 61
   assemblies:
   - GlitchedPolygons.Services.CompressionUtility
   namespace: GlitchedPolygons.Services.CompressionUtility
@@ -102,16 +95,16 @@ items:
   - Public
   fullName.vb: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Compress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
   name.vb: Compress(Byte(), CompressionSettings)
-- uid: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Compress(System.String,System.Text.Encoding)
-  commentId: M:GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Compress(System.String,System.Text.Encoding)
-  id: Compress(System.String,System.Text.Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Compress(System.String,Encoding)
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Compress(System.String,Encoding)
+  id: Compress(System.String,Encoding)
   parent: GlitchedPolygons.Services.CompressionUtility.LzmaUtility
   langs:
   - csharp
   - vb
   name: Compress(String, Encoding)
   nameWithType: LzmaUtility.Compress(String, Encoding)
-  fullName: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Compress(System.String, System.Text.Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Compress(System.String, Encoding)
   type: Method
   source:
     remote:
@@ -120,11 +113,11 @@ items:
       repo: git@github.com:GlitchedPolygons/CompressionUtility.git
     id: Compress
     path: ../../src/LzmaUtility.cs
-    startLine: 126
+    startLine: 113
   assemblies:
   - GlitchedPolygons.Services.CompressionUtility
   namespace: GlitchedPolygons.Services.CompressionUtility
-  summary: "\nCompresses the specified <code>string</code> using LZMA and <code>CompressionSettings.Default</code>.\n"
+  summary: "\nCompresses the specified <code>string</code> using LZMA and <xref href=\"GlitchedPolygons.Services.CompressionUtility.CompressionSettings.Default\" data-throw-if-not-resolved=\"false\"></xref>.\n"
   example: []
   syntax:
     content: public string Compress(string text, Encoding encoding = null)
@@ -133,7 +126,7 @@ items:
       type: System.String
       description: The <code>string</code> to compress.
     - id: encoding
-      type: System.Text.Encoding
+      type: Encoding
       description: The encoding to use. Can be <code>null</code>; UTF8 will be used in that case.
     return:
       type: System.String
@@ -141,7 +134,7 @@ items:
     content.vb: Public Function Compress(text As String, encoding As Encoding = Nothing) As String
   overload: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Compress*
   implements:
-  - GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress(System.String,System.Text.Encoding)
+  - GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress(System.String,Encoding)
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -164,11 +157,11 @@ items:
       repo: git@github.com:GlitchedPolygons/CompressionUtility.git
     id: Decompress
     path: ../../src/LzmaUtility.cs
-    startLine: 139
+    startLine: 130
   assemblies:
   - GlitchedPolygons.Services.CompressionUtility
   namespace: GlitchedPolygons.Services.CompressionUtility
-  summary: "\nDecompresses the specified bytes using LZMA and the\n<xref href=\"GlitchedPolygons.Services.CompressionUtility.CompressionSettings\" data-throw-if-not-resolved=\"false\"></xref> that have been used to originally compress the bytes..\n"
+  summary: "\nDecompresses the specified bytes using LZMA and the\n<xref href=\"GlitchedPolygons.Services.CompressionUtility.CompressionSettings\" data-throw-if-not-resolved=\"false\"></xref> that have been used to originally compress the bytes.\n"
   example: []
   syntax:
     content: public byte[] Decompress(byte[] compressedBytes, CompressionSettings compressionSettings)
@@ -193,16 +186,16 @@ items:
   - Public
   fullName.vb: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Decompress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
   name.vb: Decompress(Byte(), CompressionSettings)
-- uid: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Decompress(System.String,System.Text.Encoding)
-  commentId: M:GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Decompress(System.String,System.Text.Encoding)
-  id: Decompress(System.String,System.Text.Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Decompress(System.String,Encoding)
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Decompress(System.String,Encoding)
+  id: Decompress(System.String,Encoding)
   parent: GlitchedPolygons.Services.CompressionUtility.LzmaUtility
   langs:
   - csharp
   - vb
   name: Decompress(String, Encoding)
   nameWithType: LzmaUtility.Decompress(String, Encoding)
-  fullName: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Decompress(System.String, System.Text.Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Decompress(System.String, Encoding)
   type: Method
   source:
     remote:
@@ -211,7 +204,7 @@ items:
       repo: git@github.com:GlitchedPolygons/CompressionUtility.git
     id: Decompress
     path: ../../src/LzmaUtility.cs
-    startLine: 215
+    startLine: 197
   assemblies:
   - GlitchedPolygons.Services.CompressionUtility
   namespace: GlitchedPolygons.Services.CompressionUtility
@@ -224,15 +217,15 @@ items:
       type: System.String
       description: The compressed <code>string</code> to decompress.
     - id: encoding
-      type: System.Text.Encoding
+      type: Encoding
       description: The encoding to use. Can be <code>null</code>; UTF8 will be used in that case.
     return:
       type: System.String
-      description: The decompressed <code>string</code>
+      description: The decompressed <code>string</code>.
     content.vb: Public Function Decompress(compressedString As String, encoding As Encoding = Nothing) As String
   overload: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Decompress*
   implements:
-  - GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress(System.String,System.Text.Encoding)
+  - GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress(System.String,Encoding)
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -249,298 +242,6 @@ references:
   name: GlitchedPolygons.Services.CompressionUtility
   nameWithType: GlitchedPolygons.Services.CompressionUtility
   fullName: GlitchedPolygons.Services.CompressionUtility
-- uid: System.Object
-  commentId: T:System.Object
-  parent: System
-  isExternal: true
-  name: Object
-  nameWithType: Object
-  fullName: System.Object
-- uid: System.Object.Equals(System.Object)
-  commentId: M:System.Object.Equals(System.Object)
-  parent: System.Object
-  isExternal: true
-  name: Equals(Object)
-  nameWithType: Object.Equals(Object)
-  fullName: System.Object.Equals(System.Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.Equals(System.Object,System.Object)
-  commentId: M:System.Object.Equals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: Equals(Object, Object)
-  nameWithType: Object.Equals(Object, Object)
-  fullName: System.Object.Equals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.GetHashCode
-  commentId: M:System.Object.GetHashCode
-  parent: System.Object
-  isExternal: true
-  name: GetHashCode()
-  nameWithType: Object.GetHashCode()
-  fullName: System.Object.GetHashCode()
-  spec.csharp:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.GetType
-  commentId: M:System.Object.GetType
-  parent: System.Object
-  isExternal: true
-  name: GetType()
-  nameWithType: Object.GetType()
-  fullName: System.Object.GetType()
-  spec.csharp:
-  - uid: System.Object.GetType
-    name: GetType
-    nameWithType: Object.GetType
-    fullName: System.Object.GetType
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.GetType
-    name: GetType
-    nameWithType: Object.GetType
-    fullName: System.Object.GetType
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.MemberwiseClone
-  commentId: M:System.Object.MemberwiseClone
-  parent: System.Object
-  isExternal: true
-  name: MemberwiseClone()
-  nameWithType: Object.MemberwiseClone()
-  fullName: System.Object.MemberwiseClone()
-  spec.csharp:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    nameWithType: Object.MemberwiseClone
-    fullName: System.Object.MemberwiseClone
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    nameWithType: Object.MemberwiseClone
-    fullName: System.Object.MemberwiseClone
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: ReferenceEquals(Object, Object)
-  nameWithType: Object.ReferenceEquals(Object, Object)
-  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    nameWithType: Object.ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    nameWithType: Object.ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  name: ToString()
-  nameWithType: Object.ToString()
-  fullName: System.Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System
-  commentId: N:System
-  isExternal: true
-  name: System
-  nameWithType: System
-  fullName: System
 - uid: GlitchedPolygons.Services.CompressionUtility.CompressionSettings
   commentId: T:GlitchedPolygons.Services.CompressionUtility.CompressionSettings
   parent: GlitchedPolygons.Services.CompressionUtility
@@ -640,15 +341,18 @@ references:
   - name: ()
     nameWithType: ()
     fullName: ()
-- uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress(System.String,System.Text.Encoding)
-  commentId: M:GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress(System.String,System.Text.Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.CompressionSettings.Default
+  commentId: P:GlitchedPolygons.Services.CompressionUtility.CompressionSettings.Default
+  isExternal: true
+- uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress(System.String,Encoding)
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress(System.String,Encoding)
   parent: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility
   isExternal: true
   name: Compress(String, Encoding)
   nameWithType: ICompressionUtility.Compress(String, Encoding)
-  fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress(System.String, System.Text.Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress(System.String, Encoding)
   spec.csharp:
-  - uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress(System.String,System.Text.Encoding)
+  - uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress(System.String,Encoding)
     name: Compress
     nameWithType: ICompressionUtility.Compress
     fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress
@@ -663,16 +367,16 @@ references:
   - name: ', '
     nameWithType: ', '
     fullName: ', '
-  - uid: System.Text.Encoding
+  - uid: Encoding
     name: Encoding
     nameWithType: Encoding
-    fullName: System.Text.Encoding
+    fullName: Encoding
     isExternal: true
   - name: )
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress(System.String,System.Text.Encoding)
+  - uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress(System.String,Encoding)
     name: Compress
     nameWithType: ICompressionUtility.Compress
     fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress
@@ -687,34 +391,24 @@ references:
   - name: ', '
     nameWithType: ', '
     fullName: ', '
-  - uid: System.Text.Encoding
+  - uid: Encoding
     name: Encoding
     nameWithType: Encoding
-    fullName: System.Text.Encoding
+    fullName: Encoding
     isExternal: true
   - name: )
     nameWithType: )
     fullName: )
 - uid: System.String
-  commentId: T:System.String
-  parent: System
   isExternal: true
   name: String
   nameWithType: String
   fullName: System.String
-- uid: System.Text.Encoding
-  commentId: T:System.Text.Encoding
-  parent: System.Text
+- uid: Encoding
   isExternal: true
   name: Encoding
   nameWithType: Encoding
-  fullName: System.Text.Encoding
-- uid: System.Text
-  commentId: N:System.Text
-  isExternal: true
-  name: System.Text
-  nameWithType: System.Text
-  fullName: System.Text
+  fullName: Encoding
 - uid: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Decompress*
   commentId: Overload:GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Decompress
   name: Decompress
@@ -782,15 +476,15 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress(System.String,System.Text.Encoding)
-  commentId: M:GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress(System.String,System.Text.Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress(System.String,Encoding)
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress(System.String,Encoding)
   parent: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility
   isExternal: true
   name: Decompress(String, Encoding)
   nameWithType: ICompressionUtility.Decompress(String, Encoding)
-  fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress(System.String, System.Text.Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress(System.String, Encoding)
   spec.csharp:
-  - uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress(System.String,System.Text.Encoding)
+  - uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress(System.String,Encoding)
     name: Decompress
     nameWithType: ICompressionUtility.Decompress
     fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress
@@ -805,16 +499,16 @@ references:
   - name: ', '
     nameWithType: ', '
     fullName: ', '
-  - uid: System.Text.Encoding
+  - uid: Encoding
     name: Encoding
     nameWithType: Encoding
-    fullName: System.Text.Encoding
+    fullName: Encoding
     isExternal: true
   - name: )
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress(System.String,System.Text.Encoding)
+  - uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress(System.String,Encoding)
     name: Decompress
     nameWithType: ICompressionUtility.Decompress
     fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress
@@ -829,10 +523,10 @@ references:
   - name: ', '
     nameWithType: ', '
     fullName: ', '
-  - uid: System.Text.Encoding
+  - uid: Encoding
     name: Encoding
     nameWithType: Encoding
-    fullName: System.Text.Encoding
+    fullName: Encoding
     isExternal: true
   - name: )
     nameWithType: )

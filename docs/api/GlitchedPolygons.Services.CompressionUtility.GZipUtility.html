@@ -86,35 +86,11 @@ Implements the <a class="xref" href="GlitchedPolygons.Services.CompressionUtilit
     <h5>Implements</h5>
     <div><a class="xref" href="GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.html">ICompressionUtility</a></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="GlitchedPolygons.Services.CompressionUtility.html">GlitchedPolygons.Services.CompressionUtility</a></h6>
   <h6><strong>Assembly</strong>: GlitchedPolygons.Services.CompressionUtility.dll</h6>
   <h5 id="GlitchedPolygons_Services_CompressionUtility_GZipUtility_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class GZipUtility : ICompressionUtility</code></pre>
+    <pre><code class="lang-csharp hljs">public class GZipUtility : object, ICompressionUtility</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
@@ -123,11 +99,11 @@ Implements the <a class="xref" href="GlitchedPolygons.Services.CompressionUtilit
     <a href="https://github.com/GlitchedPolygons/CompressionUtility/new/master/apiSpec/new?filename=GlitchedPolygons_Services_CompressionUtility_GZipUtility_Compress_System_Byte___GlitchedPolygons_Services_CompressionUtility_CompressionSettings_.md&amp;value=---%0Auid%3A%20GlitchedPolygons.Services.CompressionUtility.GZipUtility.Compress(System.Byte%5B%5D%2CGlitchedPolygons.Services.CompressionUtility.CompressionSettings)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/GZipUtility.cs/#L25">View Source</a>
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/GZipUtility.cs/#L21">View Source</a>
   </span>
   <a id="GlitchedPolygons_Services_CompressionUtility_GZipUtility_Compress_" data-uid="GlitchedPolygons.Services.CompressionUtility.GZipUtility.Compress*"></a>
   <h4 id="GlitchedPolygons_Services_CompressionUtility_GZipUtility_Compress_System_Byte___GlitchedPolygons_Services_CompressionUtility_CompressionSettings_" data-uid="GlitchedPolygons.Services.CompressionUtility.GZipUtility.Compress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)">Compress(Byte[], CompressionSettings)</h4>
-  <div class="markdown level1 summary"><p>Compresses the specified bytes using <span class="xref">System.IO.Compression.GZipStream</span> and the provided <a class="xref" href="GlitchedPolygons.Services.CompressionUtility.CompressionSettings.html">CompressionSettings</a>.</p>
+  <div class="markdown level1 summary"><p>Compresses the specified bytes using <see cref="!:GZipStream"></see> and the provided <a class="xref" href="GlitchedPolygons.Services.CompressionUtility.CompressionSettings.html">CompressionSettings</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -176,14 +152,14 @@ Implements the <a class="xref" href="GlitchedPolygons.Services.CompressionUtilit
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/GlitchedPolygons/CompressionUtility/new/master/apiSpec/new?filename=GlitchedPolygons_Services_CompressionUtility_GZipUtility_Compress_System_String_System_Text_Encoding_.md&amp;value=---%0Auid%3A%20GlitchedPolygons.Services.CompressionUtility.GZipUtility.Compress(System.String%2CSystem.Text.Encoding)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/new/master/apiSpec/new?filename=GlitchedPolygons_Services_CompressionUtility_GZipUtility_Compress_System_String_Encoding_.md&amp;value=---%0Auid%3A%20GlitchedPolygons.Services.CompressionUtility.GZipUtility.Compress(System.String%2CEncoding)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/GZipUtility.cs/#L68">View Source</a>
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/GZipUtility.cs/#L51">View Source</a>
   </span>
   <a id="GlitchedPolygons_Services_CompressionUtility_GZipUtility_Compress_" data-uid="GlitchedPolygons.Services.CompressionUtility.GZipUtility.Compress*"></a>
-  <h4 id="GlitchedPolygons_Services_CompressionUtility_GZipUtility_Compress_System_String_System_Text_Encoding_" data-uid="GlitchedPolygons.Services.CompressionUtility.GZipUtility.Compress(System.String,System.Text.Encoding)">Compress(String, Encoding)</h4>
-  <div class="markdown level1 summary"><p>Compresses (&quot;gee-zips&quot;) the specified <code>string</code> using <span class="xref">System.IO.Compression.GZipStream</span> and default <a class="xref" href="GlitchedPolygons.Services.CompressionUtility.CompressionSettings.html">CompressionSettings</a>.</p>
+  <h4 id="GlitchedPolygons_Services_CompressionUtility_GZipUtility_Compress_System_String_Encoding_" data-uid="GlitchedPolygons.Services.CompressionUtility.GZipUtility.Compress(System.String,Encoding)">Compress(String, Encoding)</h4>
+  <div class="markdown level1 summary"><p>Compresses (&quot;gee-zips&quot;) the specified <code>string</code> using <see cref="!:GZipStream"></see> and default <a class="xref" href="GlitchedPolygons.Services.CompressionUtility.CompressionSettings.html">CompressionSettings</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -207,7 +183,7 @@ Implements the <a class="xref" href="GlitchedPolygons.Services.CompressionUtilit
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Text.Encoding</span></td>
+        <td><span class="xref">Encoding</span></td>
         <td><span class="parametername">encoding</span></td>
         <td><p>The encoding to use. Can be <code>null</code>; UTF8 will be used in that case.</p>
 </td>
@@ -235,12 +211,12 @@ Implements the <a class="xref" href="GlitchedPolygons.Services.CompressionUtilit
     <a href="https://github.com/GlitchedPolygons/CompressionUtility/new/master/apiSpec/new?filename=GlitchedPolygons_Services_CompressionUtility_GZipUtility_Decompress_System_Byte___GlitchedPolygons_Services_CompressionUtility_CompressionSettings_.md&amp;value=---%0Auid%3A%20GlitchedPolygons.Services.CompressionUtility.GZipUtility.Decompress(System.Byte%5B%5D%2CGlitchedPolygons.Services.CompressionUtility.CompressionSettings)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/GZipUtility.cs/#L81">View Source</a>
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/GZipUtility.cs/#L69">View Source</a>
   </span>
   <a id="GlitchedPolygons_Services_CompressionUtility_GZipUtility_Decompress_" data-uid="GlitchedPolygons.Services.CompressionUtility.GZipUtility.Decompress*"></a>
   <h4 id="GlitchedPolygons_Services_CompressionUtility_GZipUtility_Decompress_System_Byte___GlitchedPolygons_Services_CompressionUtility_CompressionSettings_" data-uid="GlitchedPolygons.Services.CompressionUtility.GZipUtility.Decompress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)">Decompress(Byte[], CompressionSettings)</h4>
-  <div class="markdown level1 summary"><p>Decompresses the specified bytes using <span class="xref">System.IO.Compression.GZipStream</span> and the
-<a class="xref" href="GlitchedPolygons.Services.CompressionUtility.CompressionSettings.html">CompressionSettings</a> that have been used to originally compress the bytes..</p>
+  <div class="markdown level1 summary"><p>Decompresses the specified bytes using <see cref="!:GZipStream"></see> and the
+<a class="xref" href="GlitchedPolygons.Services.CompressionUtility.CompressionSettings.html">CompressionSettings</a> that have been used to originally compress the bytes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -289,13 +265,13 @@ Implements the <a class="xref" href="GlitchedPolygons.Services.CompressionUtilit
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/GlitchedPolygons/CompressionUtility/new/master/apiSpec/new?filename=GlitchedPolygons_Services_CompressionUtility_GZipUtility_Decompress_System_String_System_Text_Encoding_.md&amp;value=---%0Auid%3A%20GlitchedPolygons.Services.CompressionUtility.GZipUtility.Decompress(System.String%2CSystem.Text.Encoding)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/new/master/apiSpec/new?filename=GlitchedPolygons_Services_CompressionUtility_GZipUtility_Decompress_System_String_Encoding_.md&amp;value=---%0Auid%3A%20GlitchedPolygons.Services.CompressionUtility.GZipUtility.Decompress(System.String%2CEncoding)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/GZipUtility.cs/#L119">View Source</a>
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/GZipUtility.cs/#L97">View Source</a>
   </span>
   <a id="GlitchedPolygons_Services_CompressionUtility_GZipUtility_Decompress_" data-uid="GlitchedPolygons.Services.CompressionUtility.GZipUtility.Decompress*"></a>
-  <h4 id="GlitchedPolygons_Services_CompressionUtility_GZipUtility_Decompress_System_String_System_Text_Encoding_" data-uid="GlitchedPolygons.Services.CompressionUtility.GZipUtility.Decompress(System.String,System.Text.Encoding)">Decompress(String, Encoding)</h4>
+  <h4 id="GlitchedPolygons_Services_CompressionUtility_GZipUtility_Decompress_System_String_Encoding_" data-uid="GlitchedPolygons.Services.CompressionUtility.GZipUtility.Decompress(System.String,Encoding)">Decompress(String, Encoding)</h4>
   <div class="markdown level1 summary"><p>Decompresses the specified gzipped <code>string</code> using the default <a class="xref" href="GlitchedPolygons.Services.CompressionUtility.CompressionSettings.html">CompressionSettings</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -320,7 +296,7 @@ Implements the <a class="xref" href="GlitchedPolygons.Services.CompressionUtilit
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Text.Encoding</span></td>
+        <td><span class="xref">Encoding</span></td>
         <td><span class="parametername">encoding</span></td>
         <td><p>The encoding to use. Can be <code>null</code>; UTF8 will be used in that case.</p>
 </td>
@@ -362,7 +338,7 @@ Implements the <a class="xref" href="GlitchedPolygons.Services.CompressionUtilit
                     <a href="https://github.com/GlitchedPolygons/CompressionUtility/new/master/apiSpec/new?filename=GlitchedPolygons_Services_CompressionUtility_GZipUtility.md&amp;value=---%0Auid%3A%20GlitchedPolygons.Services.CompressionUtility.GZipUtility%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/GZipUtility.cs/#L17" class="contribution-link">View Source</a>
+                    <a href="https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/GZipUtility.cs/#L13" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

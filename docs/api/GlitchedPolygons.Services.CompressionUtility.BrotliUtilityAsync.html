@@ -73,9 +73,9 @@
   
   <h1 id="GlitchedPolygons_Services_CompressionUtility_BrotliUtilityAsync" data-uid="GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync" class="text-break">Class BrotliUtilityAsync
   </h1>
-  <div class="markdown level0 summary"><p>Brotli implementation of the <a class="xref" href="GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.html">ICompressionUtility</a> interface.<p> </p>
-Implements the <a class="xref" href="GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.html">ICompressionUtility</a> interface.
-<a class="xref" href="GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.html">ICompressionUtility</a></p>
+  <div class="markdown level0 summary"><p>Brotli implementation of the <a class="xref" href="GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.html">ICompressionUtilityAsync</a> interface.<p> </p>
+Implements the <a class="xref" href="GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.html">ICompressionUtilityAsync</a> interface.
+<a class="xref" href="GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.html">ICompressionUtilityAsync</a></p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -87,35 +87,11 @@ Implements the <a class="xref" href="GlitchedPolygons.Services.CompressionUtilit
     <h5>Implements</h5>
     <div><a class="xref" href="GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.html">ICompressionUtilityAsync</a></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="GlitchedPolygons.Services.CompressionUtility.html">GlitchedPolygons.Services.CompressionUtility</a></h6>
   <h6><strong>Assembly</strong>: GlitchedPolygons.Services.CompressionUtility.dll</h6>
   <h5 id="GlitchedPolygons_Services_CompressionUtility_BrotliUtilityAsync_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class BrotliUtilityAsync : ICompressionUtilityAsync</code></pre>
+    <pre><code class="lang-csharp hljs">public class BrotliUtilityAsync : object, ICompressionUtilityAsync</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
@@ -124,11 +100,11 @@ Implements the <a class="xref" href="GlitchedPolygons.Services.CompressionUtilit
     <a href="https://github.com/GlitchedPolygons/CompressionUtility/new/master/apiSpec/new?filename=GlitchedPolygons_Services_CompressionUtility_BrotliUtilityAsync_Compress_System_Byte___GlitchedPolygons_Services_CompressionUtility_CompressionSettings_.md&amp;value=---%0Auid%3A%20GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Compress(System.Byte%5B%5D%2CGlitchedPolygons.Services.CompressionUtility.CompressionSettings)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/BrotliUtilityAsync.cs/#L27">View Source</a>
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/BrotliUtilityAsync.cs/#L22">View Source</a>
   </span>
   <a id="GlitchedPolygons_Services_CompressionUtility_BrotliUtilityAsync_Compress_" data-uid="GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Compress*"></a>
   <h4 id="GlitchedPolygons_Services_CompressionUtility_BrotliUtilityAsync_Compress_System_Byte___GlitchedPolygons_Services_CompressionUtility_CompressionSettings_" data-uid="GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Compress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)">Compress(Byte[], CompressionSettings)</h4>
-  <div class="markdown level1 summary"><p>Compresses an array of bytes using Brotli.NET</p>
+  <div class="markdown level1 summary"><p>Asynchronously compresses the specified bytes using <see cref="!:BrotliStream"></see> and the provided <a class="xref" href="GlitchedPolygons.Services.CompressionUtility.CompressionSettings.html">CompressionSettings</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -148,13 +124,13 @@ Implements the <a class="xref" href="GlitchedPolygons.Services.CompressionUtilit
       <tr>
         <td><span class="xref">System.Byte</span>[]</td>
         <td><span class="parametername">bytes</span></td>
-        <td><p>The bytes to compress.</p>
+        <td><p>The <code>byte[]</code> array to compress.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="GlitchedPolygons.Services.CompressionUtility.CompressionSettings.html">CompressionSettings</a></td>
         <td><span class="parametername">compressionSettings</span></td>
-        <td><p>The <span class="xref">System.IO.Compression.CompressionLevel</span> IS IGNORED, only the <a class="xref" href="GlitchedPolygons.Services.CompressionUtility.CompressionSettings.html#GlitchedPolygons_Services_CompressionUtility_CompressionSettings_bufferSize">bufferSize</a> is used!</p>
+        <td><p>The desired compression settings.</p>
 </td>
       </tr>
     </tbody>
@@ -169,22 +145,22 @@ Implements the <a class="xref" href="GlitchedPolygons.Services.CompressionUtilit
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Byte</span>[]&gt;</td>
-        <td><p>The compressed bytes.</p>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Byte</span>[]&gt;</td>
+        <td><p>The compressed <code>byte[]</code> array; <code>null</code> if the input data was <code>null</code>; an empty array if the input array was also empty.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/GlitchedPolygons/CompressionUtility/new/master/apiSpec/new?filename=GlitchedPolygons_Services_CompressionUtility_BrotliUtilityAsync_Compress_System_String_System_Text_Encoding_.md&amp;value=---%0Auid%3A%20GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Compress(System.String%2CSystem.Text.Encoding)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/new/master/apiSpec/new?filename=GlitchedPolygons_Services_CompressionUtility_BrotliUtilityAsync_Compress_System_String_Encoding_.md&amp;value=---%0Auid%3A%20GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Compress(System.String%2CEncoding)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/BrotliUtilityAsync.cs/#L79">View Source</a>
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/BrotliUtilityAsync.cs/#L50">View Source</a>
   </span>
   <a id="GlitchedPolygons_Services_CompressionUtility_BrotliUtilityAsync_Compress_" data-uid="GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Compress*"></a>
-  <h4 id="GlitchedPolygons_Services_CompressionUtility_BrotliUtilityAsync_Compress_System_String_System_Text_Encoding_" data-uid="GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Compress(System.String,System.Text.Encoding)">Compress(String, Encoding)</h4>
-  <div class="markdown level1 summary"><p>Compresses the specified <code>string</code> using <span class="xref">Brotli.BrotliStream</span> and default <a class="xref" href="GlitchedPolygons.Services.CompressionUtility.CompressionSettings.html">CompressionSettings</a>.</p>
+  <h4 id="GlitchedPolygons_Services_CompressionUtility_BrotliUtilityAsync_Compress_System_String_Encoding_" data-uid="GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Compress(System.String,Encoding)">Compress(String, Encoding)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously compresses the specified <code>string</code> using Brotli.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -208,7 +184,7 @@ Implements the <a class="xref" href="GlitchedPolygons.Services.CompressionUtilit
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Text.Encoding</span></td>
+        <td><span class="xref">Encoding</span></td>
         <td><span class="parametername">encoding</span></td>
         <td><p>The encoding to use. Can be <code>null</code>; UTF8 will be used in that case.</p>
 </td>
@@ -225,8 +201,8 @@ Implements the <a class="xref" href="GlitchedPolygons.Services.CompressionUtilit
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td><p>The gzipped <code>string</code>.</p>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>The compressed <code>string</code>.</p>
 </td>
       </tr>
     </tbody>
@@ -236,11 +212,12 @@ Implements the <a class="xref" href="GlitchedPolygons.Services.CompressionUtilit
     <a href="https://github.com/GlitchedPolygons/CompressionUtility/new/master/apiSpec/new?filename=GlitchedPolygons_Services_CompressionUtility_BrotliUtilityAsync_Decompress_System_Byte___GlitchedPolygons_Services_CompressionUtility_CompressionSettings_.md&amp;value=---%0Auid%3A%20GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Decompress(System.Byte%5B%5D%2CGlitchedPolygons.Services.CompressionUtility.CompressionSettings)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/BrotliUtilityAsync.cs/#L91">View Source</a>
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/BrotliUtilityAsync.cs/#L68">View Source</a>
   </span>
   <a id="GlitchedPolygons_Services_CompressionUtility_BrotliUtilityAsync_Decompress_" data-uid="GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Decompress*"></a>
   <h4 id="GlitchedPolygons_Services_CompressionUtility_BrotliUtilityAsync_Decompress_System_Byte___GlitchedPolygons_Services_CompressionUtility_CompressionSettings_" data-uid="GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Decompress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)">Decompress(Byte[], CompressionSettings)</h4>
-  <div class="markdown level1 summary"><p>Decompresses the specified bytes using a <span class="xref">Brotli.BrotliStream</span>.</p>
+  <div class="markdown level1 summary"><p>Asynchronously decompresses the specified bytes with Brotli using the
+<a class="xref" href="GlitchedPolygons.Services.CompressionUtility.CompressionSettings.html">CompressionSettings</a> that have been used to originally compress the bytes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -260,7 +237,7 @@ Implements the <a class="xref" href="GlitchedPolygons.Services.CompressionUtilit
       <tr>
         <td><span class="xref">System.Byte</span>[]</td>
         <td><span class="parametername">compressedBytes</span></td>
-        <td><p>The &quot;brotlified&quot; <code>byte[]</code> array that you want to decompress (the returned value from <a class="xref" href="GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_BrotliUtilityAsync_Compress_System_Byte___GlitchedPolygons_Services_CompressionUtility_CompressionSettings_">Compress(Byte[], CompressionSettings)</a>).</p>
+        <td><p>The compressed <code>byte[]</code> array that you want to decompress.</p>
 </td>
       </tr>
       <tr>
@@ -281,7 +258,7 @@ Implements the <a class="xref" href="GlitchedPolygons.Services.CompressionUtilit
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Byte</span>[]&gt;</td>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Byte</span>[]&gt;</td>
         <td><p>The decompressed <code>bytes[]</code>.</p>
 </td>
       </tr>
@@ -289,14 +266,14 @@ Implements the <a class="xref" href="GlitchedPolygons.Services.CompressionUtilit
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/GlitchedPolygons/CompressionUtility/new/master/apiSpec/new?filename=GlitchedPolygons_Services_CompressionUtility_BrotliUtilityAsync_Decompress_System_String_System_Text_Encoding_.md&amp;value=---%0Auid%3A%20GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Decompress(System.String%2CSystem.Text.Encoding)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/new/master/apiSpec/new?filename=GlitchedPolygons_Services_CompressionUtility_BrotliUtilityAsync_Decompress_System_String_Encoding_.md&amp;value=---%0Auid%3A%20GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Decompress(System.String%2CEncoding)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/BrotliUtilityAsync.cs/#L142">View Source</a>
+    <a href="https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/BrotliUtilityAsync.cs/#L96">View Source</a>
   </span>
   <a id="GlitchedPolygons_Services_CompressionUtility_BrotliUtilityAsync_Decompress_" data-uid="GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Decompress*"></a>
-  <h4 id="GlitchedPolygons_Services_CompressionUtility_BrotliUtilityAsync_Decompress_System_String_System_Text_Encoding_" data-uid="GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Decompress(System.String,System.Text.Encoding)">Decompress(String, Encoding)</h4>
-  <div class="markdown level1 summary"><p>Decompresses the specified brotli <code>string</code> using the default <a class="xref" href="GlitchedPolygons.Services.CompressionUtility.CompressionSettings.html">CompressionSettings</a>.</p>
+  <h4 id="GlitchedPolygons_Services_CompressionUtility_BrotliUtilityAsync_Decompress_System_String_Encoding_" data-uid="GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Decompress(System.String,Encoding)">Decompress(String, Encoding)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously decompresses the specified compressed <code>string</code> using Brotli.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -316,11 +293,11 @@ Implements the <a class="xref" href="GlitchedPolygons.Services.CompressionUtilit
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">compressedString</span></td>
-        <td><p>The compressed <code>string</code> to debrotlify.</p>
+        <td><p>The compressed <code>string</code> to decompress.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Text.Encoding</span></td>
+        <td><span class="xref">Encoding</span></td>
         <td><span class="parametername">encoding</span></td>
         <td><p>The encoding to use. Can be <code>null</code>; UTF8 will be used in that case.</p>
 </td>
@@ -337,8 +314,8 @@ Implements the <a class="xref" href="GlitchedPolygons.Services.CompressionUtilit
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td><p>The decompressed <code>string</code></p>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>The decompressed <code>string</code>.</p>
 </td>
       </tr>
     </tbody>
@@ -358,7 +335,7 @@ Implements the <a class="xref" href="GlitchedPolygons.Services.CompressionUtilit
                     <a href="https://github.com/GlitchedPolygons/CompressionUtility/new/master/apiSpec/new?filename=GlitchedPolygons_Services_CompressionUtility_BrotliUtilityAsync.md&amp;value=---%0Auid%3A%20GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/BrotliUtilityAsync.cs/#L19" class="contribution-link">View Source</a>
+                    <a href="https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/BrotliUtilityAsync.cs/#L14" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

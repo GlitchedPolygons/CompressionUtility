@@ -22,11 +22,11 @@ references:
   fullName.vb: GlitchedPolygons.Services.CompressionUtility.BrotliUtility.Compress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
   nameWithType: BrotliUtility.Compress(Byte[], CompressionSettings)
   nameWithType.vb: BrotliUtility.Compress(Byte(), CompressionSettings)
-- uid: GlitchedPolygons.Services.CompressionUtility.BrotliUtility.Compress(System.String,System.Text.Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.BrotliUtility.Compress(System.String,Encoding)
   name: Compress(String, Encoding)
-  href: api/GlitchedPolygons.Services.CompressionUtility.BrotliUtility.html#GlitchedPolygons_Services_CompressionUtility_BrotliUtility_Compress_System_String_System_Text_Encoding_
-  commentId: M:GlitchedPolygons.Services.CompressionUtility.BrotliUtility.Compress(System.String,System.Text.Encoding)
-  fullName: GlitchedPolygons.Services.CompressionUtility.BrotliUtility.Compress(System.String, System.Text.Encoding)
+  href: api/GlitchedPolygons.Services.CompressionUtility.BrotliUtility.html#GlitchedPolygons_Services_CompressionUtility_BrotliUtility_Compress_System_String_Encoding_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.BrotliUtility.Compress(System.String,Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.BrotliUtility.Compress(System.String, Encoding)
   nameWithType: BrotliUtility.Compress(String, Encoding)
 - uid: GlitchedPolygons.Services.CompressionUtility.BrotliUtility.Compress*
   name: Compress
@@ -44,11 +44,11 @@ references:
   fullName.vb: GlitchedPolygons.Services.CompressionUtility.BrotliUtility.Decompress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
   nameWithType: BrotliUtility.Decompress(Byte[], CompressionSettings)
   nameWithType.vb: BrotliUtility.Decompress(Byte(), CompressionSettings)
-- uid: GlitchedPolygons.Services.CompressionUtility.BrotliUtility.Decompress(System.String,System.Text.Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.BrotliUtility.Decompress(System.String,Encoding)
   name: Decompress(String, Encoding)
-  href: api/GlitchedPolygons.Services.CompressionUtility.BrotliUtility.html#GlitchedPolygons_Services_CompressionUtility_BrotliUtility_Decompress_System_String_System_Text_Encoding_
-  commentId: M:GlitchedPolygons.Services.CompressionUtility.BrotliUtility.Decompress(System.String,System.Text.Encoding)
-  fullName: GlitchedPolygons.Services.CompressionUtility.BrotliUtility.Decompress(System.String, System.Text.Encoding)
+  href: api/GlitchedPolygons.Services.CompressionUtility.BrotliUtility.html#GlitchedPolygons_Services_CompressionUtility_BrotliUtility_Decompress_System_String_Encoding_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.BrotliUtility.Decompress(System.String,Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.BrotliUtility.Decompress(System.String, Encoding)
   nameWithType: BrotliUtility.Decompress(String, Encoding)
 - uid: GlitchedPolygons.Services.CompressionUtility.BrotliUtility.Decompress*
   name: Decompress
@@ -72,11 +72,11 @@ references:
   fullName.vb: GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Compress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
   nameWithType: BrotliUtilityAsync.Compress(Byte[], CompressionSettings)
   nameWithType.vb: BrotliUtilityAsync.Compress(Byte(), CompressionSettings)
-- uid: GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Compress(System.String,System.Text.Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Compress(System.String,Encoding)
   name: Compress(String, Encoding)
-  href: api/GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_BrotliUtilityAsync_Compress_System_String_System_Text_Encoding_
-  commentId: M:GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Compress(System.String,System.Text.Encoding)
-  fullName: GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Compress(System.String, System.Text.Encoding)
+  href: api/GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_BrotliUtilityAsync_Compress_System_String_Encoding_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Compress(System.String,Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Compress(System.String, Encoding)
   nameWithType: BrotliUtilityAsync.Compress(String, Encoding)
 - uid: GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Compress*
   name: Compress
@@ -94,11 +94,11 @@ references:
   fullName.vb: GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Decompress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
   nameWithType: BrotliUtilityAsync.Decompress(Byte[], CompressionSettings)
   nameWithType.vb: BrotliUtilityAsync.Decompress(Byte(), CompressionSettings)
-- uid: GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Decompress(System.String,System.Text.Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Decompress(System.String,Encoding)
   name: Decompress(String, Encoding)
-  href: api/GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_BrotliUtilityAsync_Decompress_System_String_System_Text_Encoding_
-  commentId: M:GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Decompress(System.String,System.Text.Encoding)
-  fullName: GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Decompress(System.String, System.Text.Encoding)
+  href: api/GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_BrotliUtilityAsync_Decompress_System_String_Encoding_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Decompress(System.String,Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Decompress(System.String, Encoding)
   nameWithType: BrotliUtilityAsync.Decompress(String, Encoding)
 - uid: GlitchedPolygons.Services.CompressionUtility.BrotliUtilityAsync.Decompress*
   name: Decompress
@@ -153,11 +153,11 @@ references:
   fullName.vb: GlitchedPolygons.Services.CompressionUtility.GZipUtility.Compress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
   nameWithType: GZipUtility.Compress(Byte[], CompressionSettings)
   nameWithType.vb: GZipUtility.Compress(Byte(), CompressionSettings)
-- uid: GlitchedPolygons.Services.CompressionUtility.GZipUtility.Compress(System.String,System.Text.Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.GZipUtility.Compress(System.String,Encoding)
   name: Compress(String, Encoding)
-  href: api/GlitchedPolygons.Services.CompressionUtility.GZipUtility.html#GlitchedPolygons_Services_CompressionUtility_GZipUtility_Compress_System_String_System_Text_Encoding_
-  commentId: M:GlitchedPolygons.Services.CompressionUtility.GZipUtility.Compress(System.String,System.Text.Encoding)
-  fullName: GlitchedPolygons.Services.CompressionUtility.GZipUtility.Compress(System.String, System.Text.Encoding)
+  href: api/GlitchedPolygons.Services.CompressionUtility.GZipUtility.html#GlitchedPolygons_Services_CompressionUtility_GZipUtility_Compress_System_String_Encoding_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.GZipUtility.Compress(System.String,Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.GZipUtility.Compress(System.String, Encoding)
   nameWithType: GZipUtility.Compress(String, Encoding)
 - uid: GlitchedPolygons.Services.CompressionUtility.GZipUtility.Compress*
   name: Compress
@@ -175,11 +175,11 @@ references:
   fullName.vb: GlitchedPolygons.Services.CompressionUtility.GZipUtility.Decompress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
   nameWithType: GZipUtility.Decompress(Byte[], CompressionSettings)
   nameWithType.vb: GZipUtility.Decompress(Byte(), CompressionSettings)
-- uid: GlitchedPolygons.Services.CompressionUtility.GZipUtility.Decompress(System.String,System.Text.Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.GZipUtility.Decompress(System.String,Encoding)
   name: Decompress(String, Encoding)
-  href: api/GlitchedPolygons.Services.CompressionUtility.GZipUtility.html#GlitchedPolygons_Services_CompressionUtility_GZipUtility_Decompress_System_String_System_Text_Encoding_
-  commentId: M:GlitchedPolygons.Services.CompressionUtility.GZipUtility.Decompress(System.String,System.Text.Encoding)
-  fullName: GlitchedPolygons.Services.CompressionUtility.GZipUtility.Decompress(System.String, System.Text.Encoding)
+  href: api/GlitchedPolygons.Services.CompressionUtility.GZipUtility.html#GlitchedPolygons_Services_CompressionUtility_GZipUtility_Decompress_System_String_Encoding_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.GZipUtility.Decompress(System.String,Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.GZipUtility.Decompress(System.String, Encoding)
   nameWithType: GZipUtility.Decompress(String, Encoding)
 - uid: GlitchedPolygons.Services.CompressionUtility.GZipUtility.Decompress*
   name: Decompress
@@ -203,11 +203,11 @@ references:
   fullName.vb: GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.Compress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
   nameWithType: GZipUtilityAsync.Compress(Byte[], CompressionSettings)
   nameWithType.vb: GZipUtilityAsync.Compress(Byte(), CompressionSettings)
-- uid: GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.Compress(System.String,System.Text.Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.Compress(System.String,Encoding)
   name: Compress(String, Encoding)
-  href: api/GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_GZipUtilityAsync_Compress_System_String_System_Text_Encoding_
-  commentId: M:GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.Compress(System.String,System.Text.Encoding)
-  fullName: GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.Compress(System.String, System.Text.Encoding)
+  href: api/GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_GZipUtilityAsync_Compress_System_String_Encoding_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.Compress(System.String,Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.Compress(System.String, Encoding)
   nameWithType: GZipUtilityAsync.Compress(String, Encoding)
 - uid: GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.Compress*
   name: Compress
@@ -225,11 +225,11 @@ references:
   fullName.vb: GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.Decompress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
   nameWithType: GZipUtilityAsync.Decompress(Byte[], CompressionSettings)
   nameWithType.vb: GZipUtilityAsync.Decompress(Byte(), CompressionSettings)
-- uid: GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.Decompress(System.String,System.Text.Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.Decompress(System.String,Encoding)
   name: Decompress(String, Encoding)
-  href: api/GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_GZipUtilityAsync_Decompress_System_String_System_Text_Encoding_
-  commentId: M:GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.Decompress(System.String,System.Text.Encoding)
-  fullName: GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.Decompress(System.String, System.Text.Encoding)
+  href: api/GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_GZipUtilityAsync_Decompress_System_String_Encoding_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.Decompress(System.String,Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.Decompress(System.String, Encoding)
   nameWithType: GZipUtilityAsync.Decompress(String, Encoding)
 - uid: GlitchedPolygons.Services.CompressionUtility.GZipUtilityAsync.Decompress*
   name: Decompress
@@ -253,11 +253,11 @@ references:
   fullName.vb: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
   nameWithType: ICompressionUtility.Compress(Byte[], CompressionSettings)
   nameWithType.vb: ICompressionUtility.Compress(Byte(), CompressionSettings)
-- uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress(System.String,System.Text.Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress(System.String,Encoding)
   name: Compress(String, Encoding)
-  href: api/GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.html#GlitchedPolygons_Services_CompressionUtility_ICompressionUtility_Compress_System_String_System_Text_Encoding_
-  commentId: M:GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress(System.String,System.Text.Encoding)
-  fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress(System.String, System.Text.Encoding)
+  href: api/GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.html#GlitchedPolygons_Services_CompressionUtility_ICompressionUtility_Compress_System_String_Encoding_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress(System.String,Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress(System.String, Encoding)
   nameWithType: ICompressionUtility.Compress(String, Encoding)
 - uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress*
   name: Compress
@@ -275,11 +275,11 @@ references:
   fullName.vb: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
   nameWithType: ICompressionUtility.Decompress(Byte[], CompressionSettings)
   nameWithType.vb: ICompressionUtility.Decompress(Byte(), CompressionSettings)
-- uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress(System.String,System.Text.Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress(System.String,Encoding)
   name: Decompress(String, Encoding)
-  href: api/GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.html#GlitchedPolygons_Services_CompressionUtility_ICompressionUtility_Decompress_System_String_System_Text_Encoding_
-  commentId: M:GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress(System.String,System.Text.Encoding)
-  fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress(System.String, System.Text.Encoding)
+  href: api/GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.html#GlitchedPolygons_Services_CompressionUtility_ICompressionUtility_Decompress_System_String_Encoding_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress(System.String,Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress(System.String, Encoding)
   nameWithType: ICompressionUtility.Decompress(String, Encoding)
 - uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress*
   name: Decompress
@@ -303,11 +303,11 @@ references:
   fullName.vb: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Compress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
   nameWithType: ICompressionUtilityAsync.Compress(Byte[], CompressionSettings)
   nameWithType.vb: ICompressionUtilityAsync.Compress(Byte(), CompressionSettings)
-- uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Compress(System.String,System.Text.Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Compress(System.String,Encoding)
   name: Compress(String, Encoding)
-  href: api/GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_ICompressionUtilityAsync_Compress_System_String_System_Text_Encoding_
-  commentId: M:GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Compress(System.String,System.Text.Encoding)
-  fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Compress(System.String, System.Text.Encoding)
+  href: api/GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_ICompressionUtilityAsync_Compress_System_String_Encoding_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Compress(System.String,Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Compress(System.String, Encoding)
   nameWithType: ICompressionUtilityAsync.Compress(String, Encoding)
 - uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Compress*
   name: Compress
@@ -325,11 +325,11 @@ references:
   fullName.vb: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Decompress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
   nameWithType: ICompressionUtilityAsync.Decompress(Byte[], CompressionSettings)
   nameWithType.vb: ICompressionUtilityAsync.Decompress(Byte(), CompressionSettings)
-- uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Decompress(System.String,System.Text.Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Decompress(System.String,Encoding)
   name: Decompress(String, Encoding)
-  href: api/GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_ICompressionUtilityAsync_Decompress_System_String_System_Text_Encoding_
-  commentId: M:GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Decompress(System.String,System.Text.Encoding)
-  fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Decompress(System.String, System.Text.Encoding)
+  href: api/GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_ICompressionUtilityAsync_Decompress_System_String_Encoding_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Decompress(System.String,Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Decompress(System.String, Encoding)
   nameWithType: ICompressionUtilityAsync.Decompress(String, Encoding)
 - uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Decompress*
   name: Decompress
@@ -353,11 +353,11 @@ references:
   fullName.vb: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Compress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
   nameWithType: LzmaUtility.Compress(Byte[], CompressionSettings)
   nameWithType.vb: LzmaUtility.Compress(Byte(), CompressionSettings)
-- uid: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Compress(System.String,System.Text.Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Compress(System.String,Encoding)
   name: Compress(String, Encoding)
-  href: api/GlitchedPolygons.Services.CompressionUtility.LzmaUtility.html#GlitchedPolygons_Services_CompressionUtility_LzmaUtility_Compress_System_String_System_Text_Encoding_
-  commentId: M:GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Compress(System.String,System.Text.Encoding)
-  fullName: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Compress(System.String, System.Text.Encoding)
+  href: api/GlitchedPolygons.Services.CompressionUtility.LzmaUtility.html#GlitchedPolygons_Services_CompressionUtility_LzmaUtility_Compress_System_String_Encoding_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Compress(System.String,Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Compress(System.String, Encoding)
   nameWithType: LzmaUtility.Compress(String, Encoding)
 - uid: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Compress*
   name: Compress
@@ -375,11 +375,11 @@ references:
   fullName.vb: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Decompress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
   nameWithType: LzmaUtility.Decompress(Byte[], CompressionSettings)
   nameWithType.vb: LzmaUtility.Decompress(Byte(), CompressionSettings)
-- uid: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Decompress(System.String,System.Text.Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Decompress(System.String,Encoding)
   name: Decompress(String, Encoding)
-  href: api/GlitchedPolygons.Services.CompressionUtility.LzmaUtility.html#GlitchedPolygons_Services_CompressionUtility_LzmaUtility_Decompress_System_String_System_Text_Encoding_
-  commentId: M:GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Decompress(System.String,System.Text.Encoding)
-  fullName: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Decompress(System.String, System.Text.Encoding)
+  href: api/GlitchedPolygons.Services.CompressionUtility.LzmaUtility.html#GlitchedPolygons_Services_CompressionUtility_LzmaUtility_Decompress_System_String_Encoding_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Decompress(System.String,Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Decompress(System.String, Encoding)
   nameWithType: LzmaUtility.Decompress(String, Encoding)
 - uid: GlitchedPolygons.Services.CompressionUtility.LzmaUtility.Decompress*
   name: Decompress
@@ -403,11 +403,11 @@ references:
   fullName.vb: GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.Compress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
   nameWithType: LzmaUtilityAsync.Compress(Byte[], CompressionSettings)
   nameWithType.vb: LzmaUtilityAsync.Compress(Byte(), CompressionSettings)
-- uid: GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.Compress(System.String,System.Text.Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.Compress(System.String,Encoding)
   name: Compress(String, Encoding)
-  href: api/GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_LzmaUtilityAsync_Compress_System_String_System_Text_Encoding_
-  commentId: M:GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.Compress(System.String,System.Text.Encoding)
-  fullName: GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.Compress(System.String, System.Text.Encoding)
+  href: api/GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_LzmaUtilityAsync_Compress_System_String_Encoding_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.Compress(System.String,Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.Compress(System.String, Encoding)
   nameWithType: LzmaUtilityAsync.Compress(String, Encoding)
 - uid: GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.Compress*
   name: Compress
@@ -425,11 +425,11 @@ references:
   fullName.vb: GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.Decompress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
   nameWithType: LzmaUtilityAsync.Decompress(Byte[], CompressionSettings)
   nameWithType.vb: LzmaUtilityAsync.Decompress(Byte(), CompressionSettings)
-- uid: GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.Decompress(System.String,System.Text.Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.Decompress(System.String,Encoding)
   name: Decompress(String, Encoding)
-  href: api/GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_LzmaUtilityAsync_Decompress_System_String_System_Text_Encoding_
-  commentId: M:GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.Decompress(System.String,System.Text.Encoding)
-  fullName: GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.Decompress(System.String, System.Text.Encoding)
+  href: api/GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.html#GlitchedPolygons_Services_CompressionUtility_LzmaUtilityAsync_Decompress_System_String_Encoding_
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.Decompress(System.String,Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.Decompress(System.String, Encoding)
   nameWithType: LzmaUtilityAsync.Decompress(String, Encoding)
 - uid: GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.Decompress*
   name: Decompress

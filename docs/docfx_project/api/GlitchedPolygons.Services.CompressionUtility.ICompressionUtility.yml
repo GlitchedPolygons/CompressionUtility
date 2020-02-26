@@ -6,9 +6,9 @@ items:
   parent: GlitchedPolygons.Services.CompressionUtility
   children:
   - GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
-  - GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress(System.String,System.Text.Encoding)
+  - GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress(System.String,Encoding)
   - GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress(System.Byte[],GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
-  - GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress(System.String,System.Text.Encoding)
+  - GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress(System.String,Encoding)
   langs:
   - csharp
   - vb
@@ -79,16 +79,16 @@ items:
   nameWithType.vb: ICompressionUtility.Compress(Byte(), CompressionSettings)
   fullName.vb: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
   name.vb: Compress(Byte(), CompressionSettings)
-- uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress(System.String,System.Text.Encoding)
-  commentId: M:GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress(System.String,System.Text.Encoding)
-  id: Compress(System.String,System.Text.Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress(System.String,Encoding)
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress(System.String,Encoding)
+  id: Compress(System.String,Encoding)
   parent: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility
   langs:
   - csharp
   - vb
   name: Compress(String, Encoding)
   nameWithType: ICompressionUtility.Compress(String, Encoding)
-  fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress(System.String, System.Text.Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Compress(System.String, Encoding)
   type: Method
   source:
     remote:
@@ -110,7 +110,7 @@ items:
       type: System.String
       description: The <code>string</code> to compress.
     - id: encoding
-      type: System.Text.Encoding
+      type: Encoding
       description: The encoding to use. Can be <code>null</code>; UTF8 will be used in that case.
     return:
       type: System.String
@@ -135,11 +135,11 @@ items:
       repo: git@github.com:GlitchedPolygons/CompressionUtility.git
     id: Decompress
     path: ../../src/ICompressionUtility.cs
-    startLine: 34
+    startLine: 33
   assemblies:
   - GlitchedPolygons.Services.CompressionUtility
   namespace: GlitchedPolygons.Services.CompressionUtility
-  summary: "\nDecompresses the specified bytes using the\n<xref href=\"GlitchedPolygons.Services.CompressionUtility.CompressionSettings\" data-throw-if-not-resolved=\"false\"></xref> that have been used to originally compress the bytes..\n"
+  summary: "\nDecompresses the specified bytes using the\n<xref href=\"GlitchedPolygons.Services.CompressionUtility.CompressionSettings\" data-throw-if-not-resolved=\"false\"></xref> that have been used to originally compress the bytes.\n"
   example: []
   syntax:
     content: byte[] Decompress(byte[] compressedBytes, CompressionSettings compressionSettings)
@@ -155,23 +155,19 @@ items:
       description: The decompressed <code>bytes[]</code>.
     content.vb: Function Decompress(compressedBytes As Byte(), compressionSettings As CompressionSettings) As Byte()
   overload: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress*
-  exceptions:
-  - type: System.IO.InvalidDataException
-    commentId: T:System.IO.InvalidDataException
-    description: Thrown when the passed bytes are invalid in any way (e.g. corrupt/incomplete data, wrong format, etc...).
   nameWithType.vb: ICompressionUtility.Decompress(Byte(), CompressionSettings)
   fullName.vb: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress(System.Byte(), GlitchedPolygons.Services.CompressionUtility.CompressionSettings)
   name.vb: Decompress(Byte(), CompressionSettings)
-- uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress(System.String,System.Text.Encoding)
-  commentId: M:GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress(System.String,System.Text.Encoding)
-  id: Decompress(System.String,System.Text.Encoding)
+- uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress(System.String,Encoding)
+  commentId: M:GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress(System.String,Encoding)
+  id: Decompress(System.String,Encoding)
   parent: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility
   langs:
   - csharp
   - vb
   name: Decompress(String, Encoding)
   nameWithType: ICompressionUtility.Decompress(String, Encoding)
-  fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress(System.String, System.Text.Encoding)
+  fullName: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress(System.String, Encoding)
   type: Method
   source:
     remote:
@@ -180,7 +176,7 @@ items:
       repo: git@github.com:GlitchedPolygons/CompressionUtility.git
     id: Decompress
     path: ../../src/ICompressionUtility.cs
-    startLine: 42
+    startLine: 41
   assemblies:
   - GlitchedPolygons.Services.CompressionUtility
   namespace: GlitchedPolygons.Services.CompressionUtility
@@ -193,7 +189,7 @@ items:
       type: System.String
       description: The compressed <code>string</code> to decompress.
     - id: encoding
-      type: System.Text.Encoding
+      type: Encoding
       description: The encoding to use. Can be <code>null</code>; UTF8 will be used in that case.
     return:
       type: System.String
@@ -244,34 +240,15 @@ references:
     nameWithType: ()
     fullName: ()
 - uid: System.String
-  commentId: T:System.String
-  parent: System
   isExternal: true
   name: String
   nameWithType: String
   fullName: System.String
-- uid: System.Text.Encoding
-  commentId: T:System.Text.Encoding
-  parent: System.Text
+- uid: Encoding
   isExternal: true
   name: Encoding
   nameWithType: Encoding
-  fullName: System.Text.Encoding
-- uid: System
-  commentId: N:System
-  isExternal: true
-  name: System
-  nameWithType: System
-  fullName: System
-- uid: System.Text
-  commentId: N:System.Text
-  isExternal: true
-  name: System.Text
-  nameWithType: System.Text
-  fullName: System.Text
-- uid: System.IO.InvalidDataException
-  commentId: T:System.IO.InvalidDataException
-  isExternal: true
+  fullName: Encoding
 - uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress*
   commentId: Overload:GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.Decompress
   name: Decompress
