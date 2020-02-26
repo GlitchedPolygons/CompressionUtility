@@ -1,16 +1,17 @@
-
 language: csharp
-sudo: false
-solution: ./CompressionUtility.sln
-dist: trusty
+sudo: false # faster builds
+dist: xenial
 notifications:
   email: false
+env:
+  - DOTNET_CLI_TELEMETRY_OPTOUT=1
+before_install:
+  - git lfs pull
 install:
-  - dotnet restore ./CompressionUtility.sln
+  - dotnet restore
 mono: none
 dotnet: 3.1
 script:
-  - dotnet restore ./CompressionUtility.sln
+  - dotnet restore
   - cd tests/
   - dotnet test
-  
