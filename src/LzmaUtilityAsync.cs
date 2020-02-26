@@ -39,7 +39,8 @@ namespace GlitchedPolygons.Services.CompressionUtility
         {
             if (string.IsNullOrEmpty(text))
             {
-                return Task.FromResult(string.Empty);
+                const string n = null;
+                return Task.FromResult(n);
             }
 
             return Task.Run(() =>

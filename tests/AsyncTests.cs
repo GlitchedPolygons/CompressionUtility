@@ -46,6 +46,19 @@ namespace GlitchedPolygons.Services.CompressionUtility.Tests
             byte[] result = await GetImpl(type).Compress(null, COMPRESSION_SETTINGS);
             Assert.Null(result);
         }
+        
+        [Theory]
+        [InlineData(typeof(LzmaUtilityAsync), "")]
+        [InlineData(typeof(GZipUtilityAsync), "")]
+        [InlineData(typeof(BrotliUtilityAsync), "")]
+        [InlineData(typeof(LzmaUtilityAsync), null)]
+        [InlineData(typeof(GZipUtilityAsync), null)]
+        [InlineData(typeof(BrotliUtilityAsync), null)]
+        public async Task AsyncImpl_CompressNullOrEmptyString_ReturnsNull(Type type, string s)
+        {
+            string result = await GetImpl(type).Compress(s);
+            Assert.Null(result);
+        }
 
         [Theory]
         [InlineData(typeof(GZipUtilityAsync))]

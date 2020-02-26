@@ -51,6 +51,21 @@ namespace GlitchedPolygons.Services.CompressionUtility.Tests
             byte[] result = impl.Compress(null, COMPRESSION_SETTINGS);
             Assert.Null(result);
         }
+        
+        [Theory]
+        [InlineData(typeof(LzmaUtility), "")]
+        [InlineData(typeof(GZipUtility), "")]
+        [InlineData(typeof(BrotliUtility), "")]
+        [InlineData(typeof(LzmaUtility), null)]
+        [InlineData(typeof(GZipUtility), null)]
+        [InlineData(typeof(BrotliUtility), null)]
+        public void SyncImpl_CompressNullOrEmptyString_ReturnsNull(Type type, string s)
+        {
+            impl = GetImpl(type);
+
+            string result = impl.Compress(s);
+            Assert.Null(result);
+        }
 
         [Theory]
         [InlineData(typeof(LzmaUtility))]
