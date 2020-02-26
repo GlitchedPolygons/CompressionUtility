@@ -14,12 +14,12 @@
 Can be used in ASP.NET Core using the included dependency injection container (under Startup.cs call services.AddTransient and register the compression utility service there).
 </Description>
 <PackageProjectUrl>https://github.com/GlitchedPolygons/CompressionUtility</PackageProjectUrl>
-<PackageVersion>2.0.0</PackageVersion>
+<PackageVersion>2.0.1</PackageVersion>
 <PackageLicenseExpression>MIT</PackageLicenseExpression>
 <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
 <AssemblyName>GlitchedPolygons.Services.CompressionUtility</AssemblyName>
 <RootNamespace>GlitchedPolygons.Services.CompressionUtility</RootNamespace>
-<Version>2.0.0</Version>
+<Version>2.0.1</Version>
 <LangVersion>8</LangVersion>
 </PropertyGroup>
 
