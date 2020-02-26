@@ -27,7 +27,7 @@ items:
   assemblies:
   - GlitchedPolygons.Services.CompressionUtility
   namespace: GlitchedPolygons.Services.CompressionUtility
-  summary: "\nUseful utility interface for quickly and easily compress/decompress data using async/await.\n"
+  summary: "\nUseful utility interface for quickly and easily compressing/decompressing data using async/await.\n"
   example: []
   syntax:
     content: public interface ICompressionUtilityAsync

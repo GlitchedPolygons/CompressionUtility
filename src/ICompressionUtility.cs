@@ -4,7 +4,7 @@ using System.Text;
 namespace GlitchedPolygons.Services.CompressionUtility
 {
     /// <summary>
-    /// Useful utility interface for quickly and easily compress/decompress data.
+    /// Useful utility interface for quickly and easily compressing/decompressing data.
     /// </summary>
     public interface ICompressionUtility
     {
@@ -37,7 +37,7 @@ namespace GlitchedPolygons.Services.CompressionUtility
         /// Decompresses the specified compressed <c>string</c>.
         /// </summary>
         /// <param name="compressedString">The compressed <c>string</c> to decompress.</param>
-        /// <param name="encoding">The encoding to use. Can be <c>null</c>; UTF8 will be used in that case.</param>
+        /// <param name="encoding">The encoding to use. Can be <c>null</c>; UTF8 will be used in that case. Make sure to use the same </param>
         /// <returns>The decompressed <c>string</c></returns>.
         string Decompress(string compressedString, Encoding encoding = null);
     }

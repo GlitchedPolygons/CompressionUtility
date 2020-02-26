@@ -11,7 +11,7 @@ namespace GlitchedPolygons.Services.CompressionUtility
     using Decoder = SevenZip.Compression.LZMA.Decoder;
 
     /// <summary>
-    /// Compression utility class for LZMAing data.
+    /// Compression utility class for LZMA'ing data.
     /// Implements the <see cref="GlitchedPolygons.Services.CompressionUtility.ICompressionUtility" /> interface.
     /// </summary>
     /// <seealso cref="GlitchedPolygons.Services.CompressionUtility.ICompressionUtility" />
@@ -106,7 +106,7 @@ namespace GlitchedPolygons.Services.CompressionUtility
         }
 
         /// <summary>
-        /// Compresses the specified <c>string</c> using LZMA and <see cref="CompressionSettings.Default"/>.
+        /// Compresses the specified <c>string</c> using LZMA and <c>CompressionSettings.Default</c>.
         /// </summary>
         /// <param name="text">The <c>string</c> to compress.</param>
         /// <param name="encoding">The encoding to use. Can be <c>null</c>; UTF8 will be used in that case.</param>

@@ -14,7 +14,7 @@ namespace GlitchedPolygons.Services.CompressionUtility
 
         /// <summary>
         /// Choose the desired compression level.<para> </para>
-        /// The default value favors speed over maximum efficiency (<see cref="System.IO.Compression.CompressionLevel.Fastest"/>).
+        /// The default value favors speed over maximum efficiency.
         /// </summary>
         public CompressionLevel compressionLevel;
         

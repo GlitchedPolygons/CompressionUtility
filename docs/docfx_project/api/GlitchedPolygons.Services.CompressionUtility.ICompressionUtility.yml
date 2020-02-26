@@ -27,7 +27,7 @@ items:
   assemblies:
   - GlitchedPolygons.Services.CompressionUtility
   namespace: GlitchedPolygons.Services.CompressionUtility
-  summary: "\nUseful utility interface for quickly and easily compress/decompress data.\n"
+  summary: "\nUseful utility interface for quickly and easily compressing/decompressing data.\n"
   example: []
   syntax:
     content: public interface ICompressionUtility
@@ -190,7 +190,7 @@ items:
       description: The compressed <code>string</code> to decompress.
     - id: encoding
       type: Encoding
-      description: The encoding to use. Can be <code>null</code>; UTF8 will be used in that case.
+      description: 'The encoding to use. Can be <code>null</code>; UTF8 will be used in that case. Make sure to use the same '
     return:
       type: System.String
       description: The decompressed <code>string</code>

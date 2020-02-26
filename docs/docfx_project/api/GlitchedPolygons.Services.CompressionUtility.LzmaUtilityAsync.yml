@@ -117,7 +117,7 @@ items:
   assemblies:
   - GlitchedPolygons.Services.CompressionUtility
   namespace: GlitchedPolygons.Services.CompressionUtility
-  summary: "\nCompresses the specified <code>string</code> using LZMA and <xref href=\"GlitchedPolygons.Services.CompressionUtility.CompressionSettings.Default\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  summary: "\nCompresses the specified <code>string</code> using LZMA and <code>CompressionSettings.Default</code>.\n"
   example: []
   syntax:
     content: public Task<string> Compress(string text, Encoding encoding = null)
@@ -428,9 +428,6 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: GlitchedPolygons.Services.CompressionUtility.CompressionSettings.Default
-  commentId: P:GlitchedPolygons.Services.CompressionUtility.CompressionSettings.Default
-  isExternal: true
 - uid: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Compress(System.String,Encoding)
   commentId: M:GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.Compress(System.String,Encoding)
   parent: GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync

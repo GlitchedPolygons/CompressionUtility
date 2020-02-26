@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GlitchedPolygons.Services.CompressionUtility.CompressionSettings.html",
-          "hash": "YQltFGNwBdP8KBpfRqu63g=="
+          "hash": "YP/BixThL3OlLqGCxztOGg=="
         }
       },
       "is_incremental": false,
@@ -69,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GlitchedPolygons.Services.CompressionUtility.ICompressionUtility.html",
-          "hash": "o9XHrG9if1oXLbQA9A/m7g=="
+          "hash": "oS9dpq4fFdL5DdcdZ9ygwA=="
         }
       },
       "is_incremental": false,
@@ -81,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GlitchedPolygons.Services.CompressionUtility.ICompressionUtilityAsync.html",
-          "hash": "j7lspRp2wzm3exSQybKvpg=="
+          "hash": "DWD6/EawRXQWCPsJe5R13A=="
         }
       },
       "is_incremental": false,
@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GlitchedPolygons.Services.CompressionUtility.LzmaUtility.html",
-          "hash": "lnnMSsA+85L2CpUULMROoQ=="
+          "hash": "vJd9gHWO0mUKuQZ7KYD8mQ=="
         }
       },
       "is_incremental": false,
@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GlitchedPolygons.Services.CompressionUtility.LzmaUtilityAsync.html",
-          "hash": "ENVKm9+HMZI5zjzBo2xBSw=="
+          "hash": "EEdLbXttrwHSlHseFqSUdA=="
         }
       },
       "is_incremental": false,
@@ -117,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GlitchedPolygons.Services.CompressionUtility.html",
-          "hash": "xXMNaA98cPZmYOak18I/1w=="
+          "hash": "JdPpxc19e59KbnbLTtM5XQ=="
         }
       },
       "is_incremental": false,
@@ -144,7 +144,7 @@
           "hash": "30/cQNX/3hP2fkjpUCbrlA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -171,7 +171,7 @@
           "hash": "HvJ/wGm1IKrawv39Tl6bNw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -193,39 +193,37 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because last build info is missing.",
+        "can_incremental": true,
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "NoAvailableBuildCache"
+        "skipped_file_count": 0
       },
       "processors": {
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 10,
+          "skipped_file_count": 5
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 2,
+          "skipped_file_count": 2
+        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
           "skipped_file_count": 0
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 10,
-          "skipped_file_count": 0
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 2,
-          "skipped_file_count": 0
         }
       }
     },
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0

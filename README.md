@@ -11,13 +11,8 @@
 Useful compression utility for quickly and easily (de)compressing strings and byte[] arrays.
 Can be used in [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-2.1) apps using the included dependency injection container (under _Startup.cs_ call `services.AddTransient` and register the compression utility service into the DI container).
 
-This library is built as a **netstandard2.0** class library and available through [NuGet](https://www.nuget.org/packages/GlitchedPolygons.Services.CompressionUtility).
+This library is built as a **netstandard2.1** class library and available through [NuGet](https://www.nuget.org/packages/GlitchedPolygons.Services.CompressionUtility).
 
 ### Implementations
 
 * Currently, there are a few compression implementations available such as [GZip](http://gzip.org/) (making use of [`GZipStream`](https://docs.microsoft.com/en-us/dotnet/api/system.io.compression.gzipstream)), a [Brotli](https://github.com/google/brotli) implementation as well as [LZMA](https://www.7-zip.org/sdk.html) (uses the managed C# API). But more can be added in the future by implementing the [`ICompressionUtility`](https://github.com/GlitchedPolygons/CompressionUtility/blob/master/src/ICompressionUtility.cs) interface.
-
-## Dependencies
-
-* [Brotli.NET](https://www.nuget.org/packages/Brotli.NET)
-* xunit NuGet packages (for unit testing only).

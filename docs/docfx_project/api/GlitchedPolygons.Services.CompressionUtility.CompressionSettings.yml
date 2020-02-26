@@ -92,7 +92,7 @@ items:
   assemblies:
   - GlitchedPolygons.Services.CompressionUtility
   namespace: GlitchedPolygons.Services.CompressionUtility
-  summary: "\nChoose the desired compression level.<p> </p>\nThe default value favors speed over maximum efficiency (<see cref=\"!:System.IO.Compression.CompressionLevel.Fastest\"></see>).\n"
+  summary: "\nChoose the desired compression level.<p> </p>\nThe default value favors speed over maximum efficiency.\n"
   example: []
   syntax:
     content: public CompressionLevel compressionLevel
