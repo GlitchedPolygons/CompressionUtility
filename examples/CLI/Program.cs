@@ -6,7 +6,7 @@ namespace GlitchedPolygons.Services.CompressionUtility.Examples.CLI
 {
     static class Program
     {
-        private static readonly ICompressionUtilityAsync gzip = new GZipUtilityAsync();
+        private static readonly ICompressionUtilityAsync compressionUtility = new GZipUtilityAsync();
         
         private static async Task Main(string[] args)
         {
@@ -20,14 +20,14 @@ namespace GlitchedPolygons.Services.CompressionUtility.Examples.CLI
             
             if (args[0] == "-c")
             {
-                string compressed = await gzip.Compress(args[1]);
+                string compressed = await compressionUtility.Compress(args[1]);
                 Console.WriteLine("COMPRESSED STRING:  " + compressed);
                 return;
             }
 
             if (args[0] == "-d")
             {
-                string decompressed = await gzip.Decompress(args[1]);
+                string decompressed = await compressionUtility.Decompress(args[1]);
                 Console.WriteLine("DECOMPRESSED STRING:  " + decompressed);
                 return;
             }
